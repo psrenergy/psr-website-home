@@ -1,0 +1,39 @@
+.icon-element {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: $font-24;
+  background-color: $white;
+  @include border-radius(100%);
+  color: $theme-color;
+  @include box-shadow(0 1px 10px rgba(0,0,0, 0.08));
+  text-align: center;
+  &[aria-expanded=true] {
+    color: $darkOrange;
+    i {
+      &:before {
+        content: "\f106";
+      }
+    }
+  }
+}
+a {
+  &.icon-element {
+    @include transition(0.2s);
+    &:hover {
+      color: $darkOrange;
+    }
+  }
+}
+.icon-element-lg {
+  width: 90px;
+  height: 90px;
+  font-size: $font-32;
+}
+.icon-element-sm {
+  width: 35px;
+  height: 35px;
+  font-size: $font-16;
+}

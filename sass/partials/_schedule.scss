@@ -1,0 +1,333 @@
+/*-===============================
+    SCHEDULE AREA
+===============================-*/
+.schedule-area {
+  .tab-content {
+    .tab-pane {
+      position: relative;
+      &:after {
+        position: absolute;
+        left: 120px;
+        top: -7px;
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: block;
+        border: 1px solid rgba(126, 60, 249, 0.2);
+        border-right: 0;
+        border-bottom: 0;
+        background-color: $white;
+        @include transform(rotate(45deg));
+        @media #{$small_mobile} {
+          display: none;
+        }
+      }
+    }
+    .tab-pane2 {
+      .schedule-block,
+      .schedule-timeline {
+        border-color: rgba(246, 138, 3, 0.2);
+      }
+      &.active {
+        &:after {
+          left: 390px;
+          border-color: rgba(246, 138, 3, 0.2);
+        }
+      }
+    }
+    .tab-pane3 {
+      .schedule-block,
+      .schedule-timeline {
+        border-color: rgba(53, 143, 247, 0.2);
+      }
+      &.active {
+        &:after {
+          left: auto;
+          right: 390px;
+          border-color: rgba(53, 143, 247, 0.2);
+        }
+      }
+    }
+    .tab-pane4 {
+      .schedule-block,
+      .schedule-timeline {
+        border-color: rgba(56, 187, 12, 0.2);
+      }
+      &.active {
+        &:after {
+          left: auto;
+          right: 120px;
+          border-color: rgba(56, 187, 12, 0.2);
+        }
+      }
+    }
+  }
+}
+.schedule-block {
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(14,16,48,.05));
+  margin-bottom: 30px;
+  position: relative;
+  padding: 50px 50px;
+  border: 1px solid rgba(126, 60, 249, 0.2);
+  @include border-radius(4px);
+  @include transition(0.3s);
+  @media #{$small_mobile_four} {
+    padding: 40px 20px 40px 20px;
+  }
+  .inner-box {
+    .toggle-btn {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      border: none;
+      color: $theme-color-4;
+      font-size: $display-11;
+      width: 40px;
+      height: 40px;
+      line-height: 45px;
+      text-align: center;
+      background-color: rgba(63, 65, 97, 0.1);
+      @include border-radius(50%);
+      @include transition(0.3s);
+      outline: none;
+      @media #{$small_mobile_four} {
+        right: 20px;
+      }
+      span {
+        @include transition(0.3s);
+      }
+      &:hover {
+        background-color: $theme-color-2;
+        color: $white;
+      }
+    }
+    .inner-img-cont-block {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      @media #{$large_mobile} {
+        display: block;
+      }
+      @media #{$small_mobile} {
+        display: block;
+      }
+      .thumbs-box {
+        margin-right: 30px;
+        margin-bottom: 0;
+        @media #{$large_mobile} {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+        @media #{$small_mobile} {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+        img {
+          width: 130px;
+          height: 130px;
+          @include box-shadow(0 0 40px rgba(14,16,48,.05));
+          border: 5px solid $white;
+          @include border-radius(50%);
+        }
+      }
+      .img-cont-box {
+        .schedule__time {
+          font-size: $display-13;
+          font-weight: $font-weight-medium;
+        }
+        .schedule__title {
+          font-size: $display-8;
+          font-weight: $font-weight-semi-bold;
+          margin-top: 4px;
+          margin-bottom: 10px;
+          @media #{$large_mobile_three} {
+            font-size: $display-10;
+          }
+          a {
+            color: $theme-color;
+            @include transition(0.3s);
+            &:hover {
+              color: $theme-color-2;
+            }
+          }
+        }
+        .author__info {
+          font-size: $display-13;
+          font-weight: $font-weight-medium;
+          text-transform: capitalize;
+          a {
+            color: $theme-color-2;
+            @include transition(0.3s);
+            &:hover {
+              color: $theme-color-3;
+            }
+          }
+        }
+      }
+    }
+    .schedule-lower-content {
+      margin-left: 160px;
+      margin-top: 14px;
+      padding: 0 50px 0 0;
+      display: none;
+      @media #{$large_mobile} {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+      @media #{$small_mobile} {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+      &.active {
+        display: block;
+      }
+      .time__text {
+        font-size: $display-13;
+        font-weight: $font-weight-medium;
+      }
+      .schedule__text {
+        font-family: $theme-font-2;
+        line-height: 28px;
+        margin-top: 10px;
+      }
+      .schedule__list {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: $default-font;
+        color: $theme-color;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+        margin-top: 25px;
+        border-bottom: 2px solid rgba(127, 136, 151, 0.1);
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        @media #{$small_mobile_four} {
+          display: block;
+        }
+        .la-bookmark-o {
+          color: $theme-color-2;
+          font-size: $display-12;
+          margin-right: 5px;
+          @media #{$small_mobile_four} {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+        .schedule__item-title {
+          margin: 0 5px;
+          @media #{$small_mobile_four} {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .schedule__location {
+        position: relative;
+        padding-left: 30px;
+        .la-globe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: $theme-color-2;
+          font-size: $display-12;
+        }
+        ul {
+          li {
+            margin-bottom: 3px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            span {
+              &.schedule__location-name {
+                font-size: $default-font;
+                color: $theme-color;
+                font-weight: $font-weight-medium;
+                text-transform: uppercase;
+              }
+              &.schedule__location-address {
+                font-family: $theme-font-2;
+                font-size: $default-font-2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    .inner-box {
+      .toggle-btn {
+        background-color: $theme-color-2;
+        color: $white;
+        span {
+          @include transform(rotate(-180deg));
+        }
+      }
+    }
+  }
+}
+.schedule-timeline {
+  background-color: $theme-color-5;
+  @include box-shadow(0 0 40px rgba(14,16,48,.05));
+  margin-bottom: 30px;
+  position: relative;
+  padding: 50px 50px 50px 209px;
+  border: 1px solid rgba(126, 60, 249, 0.2);
+  @include border-radius(4px);
+  @include transition(0.3s);
+  @media #{$large_mobile} {
+    padding-left: 50px;
+  }
+  @media #{$small_mobile} {
+    padding-left: 50px;
+  }
+  @media #{$small_mobile_four} {
+    padding: 40px 20px 40px 20px;
+  }
+  .inner-box {
+    .break__icon {
+      position: absolute;
+      top: 59px;
+      left: 80px;
+      color: $theme-color-2;
+      font-size: $display-4;
+      @media #{$large_mobile} {
+        position: inherit;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
+      }
+      @media #{$small_mobile} {
+        position: inherit;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .break__time {
+      font-size: $display-13;
+      font-weight: $font-weight-medium;
+    }
+    .break__text {
+      font-weight: $font-weight-semi-bold;
+      margin-top: 4px;
+      font-size: $display-8;
+      @media #{$large_mobile_three} {
+        font-size: $display-10;
+      }
+    }
+  }
+}
+/*-===============================
+    SCHEDULE AREA 2
+===============================-*/
+.schedule-area2 {
+  padding-bottom: 30px;
+}

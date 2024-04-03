@@ -1,0 +1,36 @@
+/*---- btn ----*/
+.btn {
+  font-weight: $font-weight-medium;
+  padding: 12px 24px;
+  &:focus,
+  &.focus {
+    @include box-shadow(none);
+  }
+}
+.btn-sm {
+  padding: 6px 12px;
+}
+
+.btn-primary {
+  background-color: $darkOrange;
+  border-color: $darkOrange;
+}
+.btn-outline-primary {
+  border-color: $darkOrange;
+  color: $darkOrange;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  &:hover {
+    background-color: $darkOrange;
+    border-color: $darkOrange;
+  }
+}
+/*=== btn-link ===*/
+.btn-link {
+  color: $lightSlateGrey;
+  &:hover {
+    color: $darkOrange;
+  }
+}

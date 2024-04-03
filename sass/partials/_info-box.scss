@@ -1,0 +1,104 @@
+/*---------------- info-box-area ----------------*/
+.info-box-area {
+  position: relative;
+  overflow: hidden;
+}
+
+/*---------------- info-box ----------------*/
+.info-box {
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(14,16,48,.05));
+  padding: 50px 40px 42px 40px;
+  border: 1px solid rgba(126, 60, 249, 0.2);
+  @include border-radius(4px);
+  @include transition(0.4s);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  .info__icon {
+    color: $alter-color;
+    font-size: $display-7;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    @include border-radius(50%);
+    background-color: rgba(126, 60, 249, 0.1);
+    text-align: center;
+    @include transition(0.4s);
+  }
+  .info__title {
+    font-weight: $font-weight-semi-bold;
+    text-transform: capitalize;
+    font-size: $display-10;
+    margin-top: 25px;
+    margin-bottom: 23px;
+    @include transition(0.3s);
+  }
+  .info__text {
+    line-height: 25px;
+    font-family: $theme-font-2;
+    @include transition(0.4s);
+  }
+  .info__number {
+    position: absolute;
+    top: -55px;
+    right: -55px;
+    font-size: $display-11;
+    font-weight: $font-weight-medium;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 160px;
+    background-color: $alter-color;
+    @include border-radius(50%);
+    padding: 0 25px;
+    color: $white;
+    @include transition(0.4s);
+  }
+  &:hover {
+    @include transform(translateY(-4px));
+    border-color: $white;
+    background-color: $theme-color-2;
+    .info__title,
+    .info__text {
+      color: $white;
+    }
+    .info__icon,
+    .info__number {
+      color: $alter-color;
+      background-color: $white;
+    }
+  }
+}
+
+.info-box-color2 {
+  border: 1px solid rgba(246, 138, 3, 0.2);
+  .info__icon {
+    color: $alter-color-2;
+    background-color: rgba(246, 138, 3, 0.2);
+  }
+  .info__number {
+    background-color: $alter-color-2;
+  }
+}
+.info-box-color3 {
+  border: 1px solid rgba(53, 143, 247, 0.2);
+  .info__icon {
+    color: $alter-color-3;
+    background-color: rgba(53, 143, 247, 0.2);
+  }
+  .info__number {
+    background-color: $alter-color-3;
+  }
+}
+.info-box-color4 {
+  border: 1px solid rgba(56, 187, 12, 0.2);
+  .info__icon {
+    color: $alter-color-4;
+    background-color: rgba(56, 187, 12, 0.2);
+  }
+  .info__number {
+    background-color: $alter-color-4;
+  }
+}

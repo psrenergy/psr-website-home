@@ -1,0 +1,38 @@
+.form-control {
+  height: 50px;
+  color: $theme-color;
+  border-color: transparent;
+  background-color: rgba(127, 136, 151, 0.1);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: $font-15;
+  &:focus {
+    @include box-shadow(none);
+    border-color: $darkOrange;
+  }
+}
+.alert-message {
+  display: none;
+}
+/*=========== toggle-password =============*/
+.toggle-password {
+  display: inline-flex;
+  align-items: center;
+  &:focus {
+    @include box-shadow(none);
+  }
+  &:hover {
+    color: $darkOrange;
+  }
+  .eye-off {
+    display: none;
+  }
+  &.active {
+    .eye-off {
+      display: block;
+    }
+    .eye-on {
+      display: none;
+    }
+  }
+}

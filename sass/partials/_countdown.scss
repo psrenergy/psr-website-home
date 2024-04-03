@@ -1,0 +1,74 @@
+/*-========= countdown ============-*/
+#countdown {
+  .wrapper {
+    width: 190px;
+    height: 190px;
+    margin-right: auto;
+    margin-left: auto;
+    @include border-radius(100%);
+    background-color: $white;
+    @include box-shadow(0 1px 10px rgba(14, 16, 48, 0.05));
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @media #{$tab_device} {
+      width: 120px;
+      height: 120px;
+    }
+    @media #{$large_mobile} {
+      width: auto;
+      height: auto;
+      @include border-radius(4px);
+      padding: 20px;
+    }
+    @media #{$small_mobile} {
+      width: auto;
+      height: auto;
+      @include border-radius(4px);
+      padding: 20px;
+    }
+    .time {
+      color: $theme-color;
+      font-size: $font-50;
+      line-height: 50px;
+      font-weight: $font-weight-semi-bold;
+      @media #{$tab_device} {
+        font-size: $font-30;
+        line-height: 30px;
+      }
+      @media #{$large_mobile} {
+        font-size: $font-30;
+        line-height: 30px;
+      }
+      @media #{$small_mobile} {
+        font-size: $font-30;
+        line-height: 30px;
+      }
+    }
+    .label {
+      font-size: $font-20;
+      font-weight: $font-weight-medium;
+      display: block;
+      margin-top: 10px;
+      text-transform: capitalize;
+      @media #{$tab_device} {
+        font-size: $font-15;
+        margin-top: 4px;
+      }
+      @media #{$large_mobile} {
+        font-size: $font-15;
+        margin-top: 4px;
+      }
+      @media #{$small_mobile} {
+        font-size: $font-15;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+
+

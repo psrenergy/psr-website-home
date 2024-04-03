@@ -1,0 +1,55 @@
+/*====================================================
+    ERROR
+ ====================================================*/
+.error-area {
+  position: relative;
+  z-index: 1;
+  .error-content {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    .section-heading {
+      .section__title {
+        font-size: $display-5;
+        @media #{$small_mobile_three} {
+          font-size: $display-6;
+        }
+      }
+    }
+    .section-description {
+      .section__desc {
+        font-weight: $font-weight-medium;
+        font-size: $display-13;
+        line-height: 30px;
+        br {
+          @media #{$tab_device} {
+            display: none;
+          }
+          @media #{$large_mobile} {
+            display: none;
+          }
+          @media #{$small_mobile} {
+            display: none;
+          }
+        }
+        a {
+          color: $theme-color-2;
+        }
+      }
+    }
+    .or-text {
+      margin-bottom: 40px;
+      color: $theme-color-2;
+      background-color: rgba(255, 138, 1, 0.1);
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: $display-7;
+      @include border-radius(50%);
+      font-weight: $font-weight-semi-bold;
+    }
+  }
+}

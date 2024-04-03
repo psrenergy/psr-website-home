@@ -1,0 +1,46 @@
+/*====== fun-fact-item ======*/
+.fun-fact-item {
+  background-color: $white;
+  width: 235px;
+  height: 235px;
+  position: relative;
+  @include border-radius(100%);
+  @include box-shadow(0 1px 10px rgba(14, 16, 48, 0.08));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @media #{$large_mobile} {
+    width: 210px;
+    height: 210px;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid rgba(128, 137, 150, 0.1);
+    @include border-radius(100%);
+  }
+  span {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: rgba(128, 137, 150, 0.1);
+    font-size: $font-70;
+  }
+  .fun-fact-title {
+    margin-bottom: 10px;
+    font-size: $font-50;
+  }
+  .fun-fact-meta {
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

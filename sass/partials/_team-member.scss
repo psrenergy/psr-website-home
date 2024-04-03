@@ -1,0 +1,19 @@
+.single-team-img-container {
+  position: relative;
+  z-index: 1;
+  img {
+    width: 100%;
+    @include border-radius(4px);
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    border: 10px solid rgba(35, 61, 99, 0.1);
+    height: 100%;
+    width: 100%;
+    left: -40px;
+    bottom: -40px;
+    z-index: -1;
+    @include border-radius(4px);
+  }
+}

@@ -1,0 +1,73 @@
+/*====== card =====*/
+.card{
+  border: 0;
+  @include box-shadow(0 1px 10px rgba(14, 16, 48, 0.08));
+  margin-bottom: 30px;
+  @include border-radius(6px);
+}
+/*====== card-img-top =====*/
+.card-img-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/*====== card-title =====*/
+.card-title {
+  font-size: $font-24;
+  a {
+    color: $theme-color;
+    @include transition(0.2s);
+    &:hover {
+      color: $darkOrange;
+    }
+  }
+}
+/*====== card-body =====*/
+.card-body {
+  padding: 30px;
+}
+/*====== card-number-icon =====*/
+.card-number-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-30;
+  opacity: 0.2;
+}
+/*====== media =====*/
+.media {
+  @media #{$small_mobile} {
+    flex-direction: column;
+  }
+}
+.media-body {
+  @media #{$small_mobile} {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+/*====== media-text =====*/
+.media-text {
+  font-weight: $font-weight-medium;
+  a {
+    color: $lightSlateGrey;
+    display: inline-block;
+  }
+}
+.media-title {
+  a {
+    color: $theme-color;
+  }
+}
+
+.media-title,
+.media-text {
+  a {
+    @include transition(0.2s);
+    &:hover {
+      color: $darkOrange;
+    }
+  }
+}
+
+

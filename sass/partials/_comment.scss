@@ -1,0 +1,30 @@
+/*===== comments =====*/
+.comments {
+  li {
+    border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    &:last-child {
+      border-bottom-width: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  ul {
+    margin-top: 25px;
+    margin-left: 94px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(128, 137, 150, 0.1);
+    @media #{$small_mobile} {
+      margin-left: 30px;
+    }
+  }
+}
+
+.comment {
+  .avatar {
+    img {
+      width: 100%;
+    }
+  }
+}

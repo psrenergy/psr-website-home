@@ -1,0 +1,93 @@
+/*===== schedule-tab =====*/
+.schedule-tab {
+  .nav-item {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    @media #{$large_mobile} {
+      flex: auto;
+    }
+    @media #{$small_mobile} {
+      flex: auto;
+    }
+  }
+  .nav-link {
+    padding: 30px;
+    text-align: center;
+    color: $theme-color;
+    background-color: $white;
+    @media #{$tab_device} {
+      padding: 20px;
+    }
+    @media #{$large_mobile} {
+      padding: 20px;
+    }
+    @media #{$small_mobile} {
+      padding: 20px;
+    }
+    span {
+      display: block;
+      font-weight: $font-weight-medium;
+    }
+    .date {
+      font-size: $font-50;
+      margin-bottom: 15px;
+      font-weight: $font-weight-semi-bold;
+      @media #{$tab_device} {
+        font-size: $font-40;
+      }
+      @media #{$large_mobile} {
+        font-size: $font-40;
+      }
+      @media #{$small_mobile} {
+        font-size: $font-40;
+      }
+    }
+    .month {
+      font-size: $font-20;
+      text-transform: uppercase;
+      @media #{$tab_device} {
+        font-size: $font-18;
+      }
+      @media #{$large_mobile} {
+        font-size: $font-18;
+      }
+      @media #{$small_mobile} {
+        font-size: $font-18;
+      }
+    }
+    .day-text {
+      margin-top: 10px;
+    }
+    &.active {
+      background-color: $darkOrange;
+    }
+    &:hover:not(.active) {
+      @include box-shadow(0 1px 10px rgba(14, 16, 48, 0.08));
+    }
+  }
+}
+/*===== nav-pills =====*/
+.nav-pills {
+  .nav-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .nav-link {
+    color: $theme-color;
+    background-color: $white;
+    @include box-shadow(0 1px 10px rgba(14, 16, 48, 0.08));
+    font-weight: $font-weight-medium;
+    &.active {
+      background-color: $darkOrange;
+    }
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  @include border-radius(4px);
+  margin-bottom: 30px;
+  .gallery-img {
+    width: 100%;
+    @include border-radius(4px);
+    @include transition(0.5s);
+  }
+  .gallery-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(0.5s);
+  }
+  .icon-element {
+    @include transform(translateY(20px));
+    @include transition(0.5s);
+  }
+  &:hover {
+    .gallery-img {
+      @include transform(scale(1.1));
+    }
+    .icon-element {
+      @include transform(translateY(0));
+    }
+    .gallery-content {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$theme-font: 'Roboto', sans-serif;
+$theme-font-2: 'Oswald', sans-serif;
+/*======= font sizes =========*/
+$font-90: 90px;
+$font-80: 80px;
+$font-70: 70px;
+$font-60: 60px;
+$font-50: 50px;
+$font-40: 40px;
+$font-30: 30px;
+$font-32: 32px;
+$font-28: 28px;
+$font-26: 26px;
+$font-24: 24px;
+$font-22: 22px;
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+$font-15: 15px;
+$font-14: 14px;
+$font-13: 13px;
+/*======= colors =========*/
+$theme-color: #3f4161;
+$white: #fff;
+$black: #000;
+$lightGray: #D3D3D3;
+$GhostWhite: #F8F8FF;
+$lightSlateGrey: #778899;
+$blueViolet: #8a2be2;
+$darkOrange: #F68A03;
+$deepSkyBlue: #358FF7;
+$limeGreen: #32cd32;
+$yellow: #FDE449;
+$blue: #4267B2;
+$cyan: #00acee;
+/*======= font weight =========*/
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+/*======= responsive variables =========*/
+$laptop_m: '(max-width: 1366px)';
+$laptop_m_two: '(max-width: 1280px)';
+$laptop_m_three: '(max-width: 1199px)';
+$laptop_m_four: '(max-width: 1024px)';
+$tab_device: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 480px) and (max-width: 767px)';
+$small_mobile: 'only screen and (min-width: 320px) and (max-width: 479px)';

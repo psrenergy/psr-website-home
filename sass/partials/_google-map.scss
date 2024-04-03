@@ -1,0 +1,12 @@
+/*-===============================
+    MPA AREA
+===============================-*/
+.map-container #map {
+  width: 100%;
+  height: 500px;
+}
+.map-container #map .gm-style .gmnoprint,
+.map-container #map .gm-style button.gm-control-active.gm-fullscreen-control,
+.map-container #map .gm-style .gm-style-cc {
+  display: none;
+}

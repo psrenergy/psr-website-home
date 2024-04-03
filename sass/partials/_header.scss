@@ -1,0 +1,224 @@
+.header-area {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1024;
+  &.fixed-top {
+    position: fixed;
+    top: 0;
+    background-color: $white;
+    @include box-shadow(0 1px 10px rgba(0,0,0, 0.1));
+    @include transition(0.5s);
+    .sticky-logo-hide {
+      display: none;
+    }
+    .sticky-logo-show {
+      display: block;
+    }
+    .main-menu-white {
+      >ul {
+        >li {
+          >a {
+            color: $theme-color;
+            &:hover {
+              color: $darkOrange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header--area {
+  position: relative;
+  top: auto;
+}
+/*===== logo-box =====*/
+.logo-box {
+  @media #{$tab_device} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media #{$large_mobile} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media #{$small_mobile} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/*===== main-menu =====*/
+.main-menu {
+  @media #{$tab_device} {
+    display: none;
+  }
+  @media #{$large_mobile} {
+    display: none;
+  }
+  @media #{$small_mobile} {
+    display: none;
+  }
+  >ul{
+    >li {
+      display: inline-block;
+      position: relative;
+      font-weight: $font-weight-medium;
+      margin-right: 30px;
+      @media #{$laptop_m_four} {
+        margin-right: 10px;
+      }
+      >a {
+        color: $theme-color;
+        @include transition(0.2s);
+        text-transform: uppercase;
+        display: block;
+        padding-bottom: 24px;
+        margin-bottom: -24px;
+        &:hover {
+          color: $darkOrange;
+        }
+      }
+      .drop-down-menu {
+        position: absolute;
+        left: 0;
+        top: 55px;
+        width: 225px;
+        background-color: $white;
+        padding: 20px;
+        @include border-radius(4px);
+        @include box-shadow(0 0 10px rgba(82, 85, 90, 0.1));
+        @include transition(0.3s);
+        opacity: 0;
+        visibility: hidden;
+        li {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          a {
+            color: $lightSlateGrey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-transform: capitalize;
+            &:hover {
+              color: $darkOrange;
+            }
+          }
+        }
+      }
+      &:hover {
+        .drop-down-menu {
+          top: 45px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+/*===== main-menu-white =====*/
+.main-menu-white {
+  >ul {
+    >li {
+      >a {
+        color: $white;
+      }
+    }
+  }
+}
+/*====== main-header-action =======*/
+.main-header-action {
+  @media #{$tab_device} {
+    display: none;
+  }
+  @media #{$large_mobile} {
+    display: none;
+  }
+  @media #{$small_mobile} {
+    display: none;
+  }
+}
+/*====== off-canvas =======*/
+.off-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: $white;
+  overflow-x: hidden;
+  z-index: 1035;
+  @include transition(0.4s cubic-bezier(0.7, 0, 0.2, 1));
+  @include box-shadow(0 1px 8px rgba(0, 0, 0, 0.1));
+  padding: 20px;
+  @include transform(translateX(-100%));
+  &.active {
+    @include transform(translateX(0));
+  }
+}
+/*=== off-canvas-menu ===*/
+.off-canvas-menu {
+  text-transform: capitalize;
+  padding-top: 60px;
+  font-weight: $font-weight-medium;
+  >li {
+    margin-bottom: 15px;
+    >a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $theme-color;
+    }
+    .off-canvas-dropdown {
+      display: none;
+      padding-left: 20px;
+      font-size: $font-15;
+      >li {
+        >a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+/*=== off-canvas-dropdown-toggle ===*/
+.off-canvas-dropdown-toggle {
+  &.icon-element {
+    border: 0;
+    font-size: $font-20;
+  }
+  &.active,
+  &:hover {
+    color: $darkOrange;
+  }
+  &.active {
+    i {
+      &:before {
+        content: "\f106";
+      }
+    }
+  }
+}
+
+.off-canvas-open,
+.sticky-logo-show {
+  display: none;
+}
+.off-canvas-open {
+  @media #{$tab_device} {
+    display: inline-flex;
+  }
+  @media #{$large_mobile} {
+    display: inline-flex;
+  }
+  @media #{$small_mobile} {
+    display: inline-flex;
+  }
+}

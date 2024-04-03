@@ -1,0 +1,29 @@
+.accordion {
+  .card {
+    margin-bottom: 15px;
+  }
+  .card-header {
+    background-color: transparent;
+    padding: 0;
+    border-bottom-color: rgba(128, 137, 150, 0.1);
+  }
+  .btn {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font-18;
+    &[aria-expanded=true] {
+      color: $darkOrange;
+      i {
+        &:before {
+          content: "\f068";
+        }
+      }
+    }
+  }
+  .card-body {
+    padding: 1.25rem;
+  }
+}

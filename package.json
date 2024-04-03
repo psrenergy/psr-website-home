@@ -1,0 +1,24 @@
+{
+  "name": "elaze",
+  "version": "1.0.0",
+  "description": "This is an HTML template for cryptocurrency website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamran-hussen/elaze.git"
+  },
+  "author": "Kamran Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamran-hussen/elaze/issues"
+  },
+  "homepage": "https://github.com/kamran-hussen/elaze#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

@@ -1,0 +1,28 @@
+/*-===============================
+    SUBSCRIBER AREA
+===============================-*/
+.subscriber-area {
+  position: relative;
+  overflow: hidden;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -10px;
+    width: 20%;
+    height: 35%;
+    background-position: center;
+    background-image: url("../images/dots.png");
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  &:after {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: -10px;
+    @include transform(rotate(-33deg));
+  }
+}
