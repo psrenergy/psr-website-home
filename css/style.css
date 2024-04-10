@@ -1048,10 +1048,71 @@ body {
       color: #F68A03; }
 
 /*====== card-model =====*/
-.card-model {
-  background-color: transparent;
-  border: none;
+.grid-item-model {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits text color */
 }
+
+.card-model {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  transition: all 0.3s ease;
+  padding: 20px;
+  border: none; /* Remove borders */
+  cursor: pointer;
+  overflow: hidden; /* Prevents content from overflowing */
+  position: relative; /* Needed for absolute positioning of description */
+  height: 200px; /* Adjust based on your content, ensuring enough space for description */
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Ensure icon, title, subtitle are stacked */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensure text is centered */
+  transition: transform 0.3s ease;
+}
+
+.icon {
+  margin-bottom: 10px; /* Space between icon and title */
+}
+
+.title, .subtitle {
+  margin-bottom: 5px; /* Space between title and subtitle */
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* Make description cover the entire card */
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(255,255,255,0.9); /* Light background for readability */
+  color: #000; /* Adjust text color as needed */
+  padding: 20px; /* Padding inside the description */
+  display: flex;
+  align-items: center; /* Center description text vertically */
+  justify-content: center; /* Center description text horizontally */
+  text-align: center; /* Ensure text is wrapped and centered */
+  overflow: auto; /* Allows text to scroll if it exceeds card height */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card-model:hover .content {
+  transform: translateY(-100%); /* Move original content up to hide */
+}
+
+.card-model:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
 
 /*====== card-body =====*/
 .card-body {
