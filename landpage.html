@@ -40,22 +40,38 @@
 ======================================-->
 
 <!--================================
-         START HERO AREA
+     START HERO AREA
 =================================-->
 <section class="hero-area text-left">
-    <div class="hero-item hero-bg-4 pt-100 pb-100">
-        <div class="overlay opacity-8 z-index-0"></div><!-- overlay -->
+    <div class="hero-item pt-100 pb-100">
+        <!-- Video Background -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
+            <source src="images/video_hero_2.mp4" type="video/mp4">
+        </video>
+
+        <!-- Color Gradient Overlay -->
+        <div class="overlay-video"></div><!-- overlay -->
+
         <div class="container position-relative z-index-1">
             <div class="hero-content">
-                <h2 class="sec-title text-white mb-1 text-uppercase font-90"><img src="images/small-post-img.jpg" alt="model image" class="logo-modelo">MODELO</h2>
-                <p class="sec-desc text-white mb-4 text-uppercase">Welcome to upcoming new event 2022</p>
-                <a href="sign-up.html" class="btn btn-primary">Register Now</a>
+                <h2 class="sec-title text-white mb-1 font-60" style="margin-right: 500px;"><b>Explore PSR potential to develop tools and solve problems</b></h2>
+                <p class="sec-title mb-4 text-uppercase font-20" style="margin-top: 20px; color: #A49375">Leading the energy transition around the world</p>
             </div><!-- end hero-content -->
         </div><!-- container -->
     </div><!-- end hero-item -->
 </section><!-- end hero-area -->
 <!--================================
-        END HERO AREA
+    END HERO AREA
+=================================-->
+
+<!--================================
+     START BAND AREA
+=================================-->
+<div class="faixa-impacto">
+    <p class="frase-impacto">SDDP 18.0 - Download new version <a href="https://example.com" class="link-faixa">here</a>!</p>
+</div>
+<!--================================
+    END BAND AREA
 =================================-->
 
 <!--======================================
@@ -65,14 +81,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img src="images/img-loading.jpg" data-src="images/img13.jpg" alt="feature image" class="w-100 rounded lazy hover-y">
+                <img src="images/PICTURE_SECTION_OVERVIEW.svg" alt="feature image" style="width: 500px; height: auto;">
             </div><!-- end col-lg-6 -->
             <div class="col-lg-6">
                 <div class="about-content-box mt-5 mt-lg-0 pl-lg-5">
-                    <h2 class="sec-title mb-4">Software overview</h2>
-                    <div class="title-shape border-bottom-0"><span></span></div>
-                    <p class="my-4">The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</p>
-                    <a href="#" class="btn-link">www.brightonwaterfront.com</a>
+                    <h2 class="sec-title mb-4 font-38">PSR has extensive experience in providing energy sector solutions worldwide</h2>
+                    <p class="my-4">PSR has developed a suite of tools that jointly cover the full range of analytical questions around the power system as well as coupled sectors, such as electricity, natural gas, and the WEF nexus (water, energy, and food security). The different tools can be used separately or combined, depending on analytical priorities, and required technical depth.</p>
                 </div>
             </div><!-- end col-lg-6 -->
         </div><!-- end row -->
@@ -88,35 +102,50 @@
 <section class="feature-area section--padding bgGhostWhite">
     <div class="container">
         <div class="text-left">
-            <h2 class="sec-title mb-4">Highlights</h2>
-            <div class="title-shape border-bottom-0 d-inline-block"><span></span></div>
+            <h2 class="sec-title font-40" style="margin-bottom: 10px;">PSR Solutions</h2>
+            <h3 class="font-20" style="margin-bottom: 25px;">Energy Systems Modeling Tool Kit</p>
         </div>
-        <div class="row mt-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="text-center mb-4">
-                    <span class="fal fa-bus icon-element bg-gradient text-white"></span>
-                    <h3 class="card-title mt-3 mb-4">Transportation</h3>
-                    <p class="card-text mb-4">Quis ipsum dolor seiet cei amet ultrices gravida Risu viverra maenas. bbamboozled posh cockup</p>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Read More <i class="fal fa-angle-right ml-1"></i></a>
-                </div><!-- end card -->
-            </div><!-- end col-lg-4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="text-center mb-4">
-                    <span class="fal fa-hotel icon-element bg-gradient text-white"></span>
-                    <h3 class="card-title mt-3 mb-4">Accommodation</h3>
-                    <p class="card-text mb-4">Quis ipsum dolor seiet cei amet ultrices gravida Risu viverra maenas. bbamboozled posh cockup</p>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Read More <i class="fal fa-angle-right ml-1"></i></a>
-                </div><!-- end card -->
-            </div><!-- end col-lg-4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="text-center mb-4">
-                    <span class="fal fa-utensils icon-element bg-gradient text-white"></span>
-                    <h3 class="card-title mt-3 mb-4">Healthy Food</h3>
-                    <p class="card-text mb-4">Quis ipsum dolor seiet cei amet ultrices gravida Risu viverra maenas. bbamboozled posh cockup</p>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Read More <i class="fal fa-angle-right ml-1"></i></a>
-                </div><!-- end card -->
-            </div><!-- end col-lg-4 -->
-        </div><!-- end row -->
+        <div id="grid-container" class="row">
+            <!-- Example Card 1 -->
+            <div class="col-md-4 grid-item" onclick="toggleSection(this)" data-content="Content for Card 1" data-bg-color="#f0f0f0">
+              <div class="card-model">
+                <div class="card-body text-center">
+                    <img src="images/SSDP_LOGO_DARK.PNG" alt="sddp logo" style="width: 80px; height: auto;">
+                    <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>SDDP</b></h5>
+                    <p class="card-text">Operation Planning</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 grid-item" onclick="toggleSection(this)" data-content="Content for Card 2" data-bg-color="#f0f0f0">
+                <div class="card-model">
+                  <div class="card-body text-center">
+                      <img src="images/OPTGEN_LOGO_DARK.PNG" alt="sddp logo" style="width: 80px; height: auto;">
+                      <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>OptGen</b></h5>
+                      <p class="card-text">Expansion Planning</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-item" onclick="toggleSection(this)" data-content="Content for Card 3" data-bg-color="#f0f0f0">
+                <div class="card-model">
+                  <div class="card-body text-center">
+                      <img src="images/NCP_LOGO_DARK.PNG" alt="sddp logo" style="width: 80px; height: auto;">
+                      <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>NCP</b></h5>
+                      <p class="card-text">Short-term Dispatch</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-item" onclick="toggleSection(this)" data-content="Content for Card 4" data-bg-color="#f0f0f0">
+                <div class="card-model">
+                  <div class="card-body text-center">
+                      <img src="images/NCP_LOGO_DARK.PNG" alt="sddp logo" style="width: 80px; height: auto;">
+                      <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>NetPlan</b></h5>
+                      <p class="card-text">Transmission Planning</p>
+                  </div>
+                </div>
+            </div>
+            <!-- Repeat for other cards, adjusting data-content and data-bg-color as needed -->
+        </div>
+
     </div><!-- end container -->
 </section><!-- end feature-area -->
 <!--======================================
@@ -344,5 +373,6 @@
 <script src="js/countdown.jquery.js"></script>
 <script src="js/jquery.lazy.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
