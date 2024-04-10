@@ -1049,67 +1049,78 @@ body {
 
 /*====== card-model =====*/
 .grid-item-model {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Inherits text color */
+  text-decoration: none;
+  color: inherit;
 }
-
 .card-model {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center the content vertically */
-  align-items: center; /* Center the content horizontally */
-  transition: all 0.3s ease;
+  justify-content: center; /* Start with content centered */
+  align-items: center;
   padding: 20px;
-  border: none; /* Remove borders */
+  border: none;
   cursor: pointer;
-  overflow: hidden; /* Prevents content from overflowing */
-  position: relative; /* Needed for absolute positioning of description */
-  height: 200px; /* Adjust based on your content, ensuring enough space for description */
+  background-color: transparent; /* Initial background */
+  transition: background-color 0.3s ease; /* Background fade on hover */
+  width: 100%;
+  min-height: 200px; /* Adjust based on content */
+  position: relative;
+  overflow: hidden;
 }
 
 .content {
   display: flex;
-  flex-direction: column; /* Ensure icon, title, subtitle are stacked */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Ensure text is centered */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   transition: transform 0.3s ease;
+  position: absolute; /* Use absolute for precise control */
+  left: 50%; /* Center content */
+  transform: translateX(-50%); /* Adjust for exact centering */
+  width: 60%; /* Adjust width of the content area */
+  z-index: 2; /* Ensures content is above the description */
 }
 
-.icon {
-  margin-bottom: 10px; /* Space between icon and title */
-}
-
-.title, .subtitle {
-  margin-bottom: 5px; /* Space between title and subtitle */
-}
+/* Icon, title, and subtitle adjustments remain the same */
 
 .description {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; /* Make description cover the entire card */
+  top: 20px;
+  bottom: 20px;
+  left: 100%; /* Initially positioned off-screen to the right */
+  width: 50%; /* Adjust width for the description */
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(255,255,255,0.9); /* Light background for readability */
-  color: #000; /* Adjust text color as needed */
-  padding: 20px; /* Padding inside the description */
+  transition: opacity 0.3s ease, visibility 0.3s ease, left 0.3s ease;
   display: flex;
-  align-items: center; /* Center description text vertically */
-  justify-content: center; /* Center description text horizontally */
-  text-align: center; /* Ensure text is wrapped and centered */
-  overflow: auto; /* Allows text to scroll if it exceeds card height */
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 0 1px;
+  /* background-color: rgba(255, 255, 255, 0.9);  For readability */
+  z-index: 1;
+  font-size: 0.9em; /* Smaller font */
+  line-height: 1.2; /* Tighter line spacing */
+  overflow: hidden;
 }
 
 .card-model:hover .content {
-  transform: translateY(-100%); /* Move original content up to hide */
+  transform: translateX(-90%); /* Reduced movement to stay within the card */
 }
 
 .card-model:hover .description {
+  left: 50%; /* Bring description into view beside the content */
   opacity: 1;
   visibility: visible;
+  overflow-y: auto; /* Enable scrolling for overflow */
 }
+
+.card-model:hover {
+  /* background-color: rgba(255, 255, 255, 0.9);  Background transition on hover */
+}
+
+
+
 
 
 
