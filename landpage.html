@@ -15,8 +15,12 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- inject:css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -54,7 +58,7 @@
 
         <div class="container position-relative z-index-1">
             <div class="hero-content">
-                <h2 class="sec-title text-white mb-1 font-60" style="margin-right: 500px;"><b>Explore PSR potential to develop tools and solve problems</b></h2>
+                <h2 class="sec-title text-white mb-1 font-60" style="margin-right: 450px;">Explore PSR potential to develop tools and solve problems</h2>
                 <p class="sec-title mb-4 text-uppercase font-20" style="margin-top: 20px; color: #A49375">Leading the energy transition around the world</p>
             </div><!-- end hero-content -->
         </div><!-- container -->
@@ -75,9 +79,9 @@
 =================================-->
 
 <!--======================================
-        START EVENT AREA
+        START OVERVIEW AREA
 ======================================-->
-<section class="event-area section-padding">
+<section class="overview-area section-padding">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -93,69 +97,275 @@
     </div><!-- end container -->
 </section><!-- end event-area -->
 <!--======================================
-        END EVENT AREA
+        END OVERVIEW AREA
+======================================-->
+
+<!--================================
+     START SOLUTIONS AREA
+=================================-->
+<section class="solutions-area section--padding bg-image-solutions">
+    <div class="container">
+        <div class="text-left">
+            <h2 class="sec-title font-40" style="margin-bottom: 10px; color: #ffffff;">Energy Systems</h2>
+            <h2 class="sec-title font-40" style="margin-bottom: 50px; color: #DAEAE9;">Modeling Suite</h2>
+        </div>
+
+        <!-- Primeiros três cards retangulares -->
+        <div class="row justify-content-center">
+            <div class="col-lg-4 mb-4">
+                <div class="card-solution text-center">
+                    <div class="card-solution-body">
+                        <img src="images/SDDP_LOGO_OFFICIAL.png" class="card-solution-img" alt="SDDP">
+                        <h5 class="card-solution-title mb-0"> <b>SDDP</b></h5>
+                        <p class="card-text">Operation Planning</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card-solution text-center">
+                    <div class="card-solution-body">
+                        <img src="images/OPTGEN_LOGO_OFFICIAL.png" class="card-solution-img" alt="OptGen">
+                        <h5 class="card-solution-title mb-0"> <b>OptGen</b></h5>
+                        <p class="card-text">Expansion Planning</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card-solution text-center">
+                    <div class="card-solution-body">
+                        <img src="images/NCP_LOGO_OFFICIAL.png" class="card-solution-img" alt="NCP">
+                        <h5 class="card-solution-title mb-0"> <b>NCP</b></h5>
+                        <p class="card-text">Short-term Dispatch</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+
+        <!-- Trecho informativo de texto -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-5">
+                    <p class="font-weight-100" style="font-size: 24px; color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et magna quis ligula tempor dictum.</p>
+                </div>
+            </div>
+        </div><!-- end row -->
+
+        <!-- Novo título alinhado à esquerda -->
+        <div class="text-left">
+            <h2 class="sec-title font-40" style="margin-bottom: 10px; color: #ffffff;">Renewable</h2>
+            <h2 class="sec-title font-40" style="margin-bottom: 50px; color: #DAEAE9;">Modeling</h2>
+        </div>
+
+        <!-- Três novos cards menores -->
+        <div class="row justify-content-center">
+            <div class="col-lg-4 mb-4">
+                <div class="card-transparent text-left">
+                    <p class="font-weight-100" style="font-size: 24px; color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et magna quis ligula tempor dictum.</p>
+                </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card card-solution-2">
+                        <img src="images/NCP_LOGO_OFFICIAL.png" class="card-solution-2-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-solution-2-body">
+                            <h5 class="card-solution-title">TSL</h5>
+                            <p class="card-text">Renewable Modeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card card-solution-2">
+                        <img src="images/NCP_LOGO_OFFICIAL.png" class="card-solution-2-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-solution-2-body">
+                            <h5 class="card-solution-title">HERA</h5>
+                            <p class="card-text">Hydro Modeling</p>
+                        </div>
+                    </div>
+                </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end feature-area -->
+<!--================================
+    END SOLUTIONS AREA
+=================================-->
+
+<!--======================================
+        START CAPABILITIES AREA
+======================================-->
+<section class="capabilities-area section---padding">
+    <div class="container">
+        <div class="text-left">
+            <h2 class="sec-title font-48" style="margin-bottom: 30px; color: #002846;">Modeling Capabilities</h2>
+        </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-hydro.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Hydro plants and PSP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-renewable.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Renewable energy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-hydrogen.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Hydrogen and energy supply chains</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-thermal.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Thermal plants</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-network.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Transmission networks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-storage.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Batteries and storage devices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-fuels.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Fuel networks and contracts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-gasnetwork.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Gas production and pipelines</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card-capabilities">
+                        <img src="images/icon-emissions.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
+                        <div class="card-content">
+                            <p class="card-capabilities-title">Emissions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+    </div><!-- end container -->
+</section><!-- end team-area -->
+<!--======================================
+        END CAPABILITIES AREA
 ======================================-->
 
 <!--======================================
-        START FEATURE AREA
- ======================================-->
-<section class="feature-area section--padding bgGhostWhite">
+        START COMPLEMENTARY TOOLS AREA
+======================================-->
+<section class="capabilities-area section--padding bgGhostGreen">
     <div class="container">
         <div class="text-left">
-            <h2 class="sec-title font-40" style="margin-bottom: 10px;">PSR Solutions</h2>
-            <h3 class="font-20" style="margin-bottom: 25px;">Energy Systems Modeling Tool Kit</p>
+            <h2 class="sec-title font-40" style="margin-bottom: 30px; color: #2A838A;">Embedded tools and computing environments</h2>
         </div>
-        <div id="grid-container" class="row">
-            <!-- Example Card 1 -->
-            <a href="https://example.com/page1" class="col-md-4 grid-item-model">
-                <div class="card-model">
-                  <div class="content">
-                    <img src="images/SDDP_LOGO_OFFICIAL.PNG" alt="sddp logo" class="icon-model" style="width: 80px; height: auto;">
-                    <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>SDDP</b></h5>
-                    <p class="card-text">Operation <br> Planning</p>
-                  </div>
-                  <p class="description">SDDP is a stochastic dispatch model for electrical systems with the representation of transmission and fuel networks, used in long-, medium-, and short-term operation studies. </p>
-                </div>
-            </a>
-            <a href="https://example.com/page1" class="col-md-4 grid-item-model">
-                <div class="card-model">
-                  <div class="content">
-                    <img src="images/OPTGEN_LOGO_OFFICIAL.PNG" alt="sddp logo" style="width: 80px; height: auto;">
-                    <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>OptGen</b></h5>
-                    <p class="card-text">Expansion <br> Planning</p>
-                  </div>
-                  <p class="description">SDDP is a stochastic dispatch model for electrical systems with the representation of transmission and fuel networks, used in long-, medium-, and short-term operation studies. </p>
-                </div>
-            </a>
-            <a href="https://example.com/page1" class="col-md-4 grid-item-model">
-                <div class="card-model">
-                  <div class="content">
-                    <img src="images/NCP_LOGO_OFFICIAL.PNG" alt="sddp logo" style="width: 80px; height: auto;">
-                    <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>NCP</b></h5>
-                    <p class="card-text">Short-term <br> Dispatch</p>
-                  </div>
-                  <p class="description">SDDP is a stochastic dispatch model for electrical systems with the representation of transmission and fuel networks, used in long-, medium-, and short-term operation studies. </p>
-                </div>
-            </a>
-            <a href="https://example.com/page1" class="col-md-4 grid-item-model">
-                <div class="card-model">
-                  <div class="content">
-                    <img src="images/NETPLAN_LOGO_DARK.PNG" alt="sddp logo" style="width: 80px; height: auto;">
-                    <h5 class="card-title" style="margin-bottom: 5px; margin-top: 15px;"><b>NetPlan</b></h5>
-                    <p class="card-text">Transmission <br> Planning</p>
-                  </div>
-                  <p class="description">SDDP is a stochastic dispatch model for electrical systems with the representation of transmission and fuel networks, used in long-, medium-, and short-term operation studies. </p>
-                </div>
-            </a>
 
-            <!-- Repeat for other cards, adjusting data-content and data-bg-color as needed -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card-tools" >
+                    <div class="card-tools-body">
+                        <h5 class="card-tools-title">PSRIO</h5>
+                        <h6 class="card-tools-subtitle">Business Intelligence for <em>Data Analysis</em> </h6>
+                        <p class="card-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card-tools">
+                    <div class="card-tools-body">
+                        <h5 class="card-tools-title mb-10">PSR Cloud</h5>
+                        <h6 class="card-tools-subtitle mb-2"><em>Cloud Computing</em> Environment</h6>
+                        <p class="card-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card-tools" >
+                    <div class="card-tools-body">
+                        <h5 class="card-tools-title">PSR Factory</h5>
+                        <h6 class="card-tools-subtitle">API for <em>Database Management</em> </h6>
+                        <p class="card-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card-tools no-hover">
+                    <div class="card-tools-body">
+                        <img src="images/image-complementary-tools.png" class="complementary-tools-img">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div><!-- end container -->
-</section><!-- end feature-area -->
+</section><!-- end team-area -->
 <!--======================================
-        END FEATURE AREA
+        END COMPLEMENTARY TOOLS AREA
 ======================================-->
+
+<!--======================================
+        START ADVANTAGES TOOLS AREA
+======================================-->
+<section class="capabilities-area section--padding">
+    <div class="container">
+        <div class="text-left">
+            <h2 class="sec-title font-40" style="margin-bottom: 10px;">Why choose PSR?</h2>
+            <p style="font-size: 36px; margin-bottom: 50px; color: #2A838A;">Our competitive edge</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="feature-list">
+                    <li>Expertise in <b>modeling storage technologies</b> of any type and size</li>
+                    <li><b>State-of-the-art algorithms</b> and parallel processing implementation, providing <b>highest quality results</b> with low execution times</li>
+                    <li><b>Transparent and fully documented</b> strategies and methodologies created by PSR, with <b>thousands of citations in the academic literature</b></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="feature-list">
+                    <li>Built-in leading commercial optimization solver to <b>ensure high performance</b></li>
+                    <li>Best-in-class methodology for <b>decision-making under uncertainty</b></li>
+                    <li><b>Customized features</b> developed for a client by request and made available to all other users, who can benefit from those developments</li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!-- end container -->
+</section><!-- end team-area -->
+<!--======================================
+        END ADVANTAGES TOOLS AREA
+======================================-->
+
 
 <!--======================================
         License EVENT AREA
@@ -184,105 +394,6 @@
 </section><!-- end event-area -->
 <!--======================================
         END EVENT AREA
-======================================-->
-
-<!--======================================
-        START TEAM AREA
-======================================-->
-<section class="team-area section--padding">
-    <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-between">
-            <div class="mb-3 mb-lg-0">
-                <h2 class="sec-title mb-4">Resource Modeling</h2>
-            </div>
-            <a href="speakers.html" class="btn btn-primary">View more</a>
-        </div><!-- end d-flex -->
-        <div class="row mt-5">
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Alex Smith</a></h3>
-                        <p class="card-text mb-4">Co Founder</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team2.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Rose Taylor</a></h3>
-                        <p class="card-text mb-4">Lead Developer</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team3.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Jef Collin</a></h3>
-                        <p class="card-text mb-4">Manager</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team4.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Mike Hardson</a></h3>
-                        <p class="card-text mb-4">Designer</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team5.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">John Smith</a></h3>
-                        <p class="card-text mb-4">Supporter</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team6.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Kevin Martin</a></h3>
-                        <p class="card-text mb-4">Assistant</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team5.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Fredric Martinsson</a></h3>
-                        <p class="card-text mb-4">Lead Designer</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card text-center hover-y">
-                    <img src="images/img-loading.jpg" data-src="images/team6.jpg" alt="Speaker image" class="card-img-top lazy">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="speaker-single.html">Agaton Johnsson</a></h3>
-                        <p class="card-text mb-4">Developer Expert</p>
-                        <a href="speaker-single.html" class="btn btn-sm btn-light">View Profile</a>
-                    </div><!-- end card-body -->
-                </div><!-- end card -->
-            </div><!-- end col-lg-3 -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-</section><!-- end team-area -->
-<!--======================================
-        END TEAM AREA
 ======================================-->
 
 <!--================================
