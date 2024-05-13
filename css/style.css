@@ -216,6 +216,22 @@
   background-position: center;
   }
 
+.bg-image-financial {
+  background-image: linear-gradient(90deg, rgba(0, 40, 70, 0.9) 53%, rgba(22, 41, 68, 0.8) 90%), url(../images/section-financial-tools.jpg) ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-position: center;
+  }
+
+.bg-image-support {
+  background-image: url(../images/section-support.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-position: bottom;
+  }
+
 /*========== font-size ==========*/
 .font-120 {
   font-size: 120px !important; }
@@ -329,11 +345,32 @@
   background-color: #2b7277;
   border-color: #2b7277; }
 
-/*=== btn-link ===*/
+
 .btn-link {
   color: #778899; }
   .btn-link:hover {
     color: #c6eaec; }
+
+.button-support-link {
+      display: inline-block;
+      margin-top: 20px;
+      line-height: 50px;
+      width: 200px;
+      height: 50px;
+      background-color: #A49375; /* Cor de fundo azul */
+      color: white; /* Texto branco */
+      text-align: center;
+      text-decoration: none; /* Remove o sublinhado típico dos links */
+      font-size: 20px;
+      font-weight: 400;
+      border-radius: 5px; /* Bordas arredondadas */
+      transition: background-color 0.3s; /* Transição suave para hover */
+  }
+
+  .button-support-link:hover {
+      background-color: #907b58; /* Cor mais escura ao passar o mouse */
+      color: #ddd3c2; /* Muda a cor do texto para dourado */
+  }
 
 .icon-element {
   display: inline-flex;
@@ -415,6 +452,16 @@ body {
   color: #778899;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
+
+.link-faixa{
+  color: #fff;
+  text-decoration: underline;
+  }
+
+  .link-faixa:hover{
+    color: #b2bcc6;
+    text-decoration: underline;
+    }
 
 /*-=========== loader =============-*/
 .loader {
@@ -1240,9 +1287,45 @@ body {
   border-left: 3px solid #2A838A; /* Linha vertical */
 }
 
-/*====== card-body =====*/
-.card-body {
-  padding: 30px; }
+.card-financial {
+  display: flex;
+  flex-direction: row; /* Orientação horizontal */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: .5rem;
+  padding: 20px; /* Espaçamento interno */
+  margin-bottom: 10px;
+  height: 150px;
+  width: 500px;
+}
+.card-financial-img-left {
+  width: 18%; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-left: 20px ;
+  margin-right: 20px ;
+}
+
+.card-financial-body {
+  padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.card-financial-title {
+  font-size: 24px; 
+  font-weight: 800; }
+
+.financial-title {
+  font-size: 48px; 
+  font-weight: 600;
+}
+
+.financial-title em {
+  font-size: 48px; 
+  font-weight: 600;
+  color: #C3B191;
+  font-style: normal !important;
+}
 
 /*====== card-number-icon =====*/
 .card-number-icon {
@@ -1257,7 +1340,10 @@ body {
     height: 0;
     transition: height 0.5s ease-in-out;
   }
- 
+
+
+
+
 /*====== media =====*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .media {
