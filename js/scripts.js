@@ -37,4 +37,79 @@ function toggleSection(clickedCard) {
     // Show the section
     $tempSection.collapse('show');
   }
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const celestialBodies = document.querySelectorAll('.planet, .sun');
+    const container = document.querySelector('.integration-area');
   
+    function adjustOrbitsForMobile() {
+        celestialBodies.forEach(body => {
+            if (body.classList.contains('planet')) {
+                // Verificar se é mobile e ajustar o valor do data-orbit
+                const orbitRadius = window.innerWidth < 768 ? body.getAttribute('data-orbit-mobile') * 50 : body.getAttribute('data-orbit') * 50;
+                const angle = body.getAttribute('data-angle');
+                const x = orbitRadius * Math.cos(angle * Math.PI / 180);
+                const y = orbitRadius * Math.sin(angle * Math.PI / 180);
+                body.style.width = `${body.getAttribute('data-size')}px`;
+                body.style.height = `${body.getAttribute('data-size')}px`;
+                body.style.left = `calc(50% + ${x}px)`;
+                body.style.top = `calc(50% + ${y}px)`;
+                body.style.transform = 'translate(-50%, -50%)';
+                body.style.backgroundColor = body.getAttribute('data-color');
+            }
+
+          // Adicionando evento de clique que redireciona para uma URL
+          celestialBodies.forEach(body => {
+            body.addEventListener('click', function() {
+            window.location.href = body.getAttribute('data-url');
+          });
+        });
+  
+            if (window.innerWidth > 768) {
+            // Create tooltip
+            const tooltip = document.createElement('div');
+            tooltip.className = 'tooltip-model';
+            tooltip.innerHTML = `<strong>${body.id}</strong>`;
+            container.appendChild(tooltip);  // Append to container to avoid overflow issues
+
+  
+            // Event listeners for mouseover and mouseout
+            body.addEventListener('mouseover', function(e) {
+                const rect = body.getBoundingClientRect();
+                const containerRect = container.getBoundingClientRect();
+  
+                tooltip.style.display = 'block';
+                tooltip.style.left = `${rect.left - containerRect.left + (rect.width / 2) - (tooltip.offsetWidth / 2)}px`; // Center horizontally relative to container
+                tooltip.style.top = `${rect.bottom - containerRect.top + 3}px`; // Position below the planet or sun relative to container
+  
+                // Diminuir a opacidade de todos os outros corpos celestes
+                celestialBodies.forEach(otherBody => {
+                    if (otherBody !== body) {
+                        otherBody.style.opacity = '0.5';
+                    }
+                });
+            });
+  
+            body.addEventListener('mouseout', function() {
+                tooltip.style.display = 'none';
+  
+                // Restaurar a opacidade de todos os corpos celestes ao sair
+                celestialBodies.forEach(otherBody => {
+                    otherBody.style.opacity = '1';
+                });
+            });
+          }
+        });
+    }
+  
+    // Detectar mudança de tamanho da tela
+    window.addEventListener('resize', adjustOrbitsForMobile);
+  
+    // Ajustar órbitas no carregamento inicial
+    adjustOrbitsForMobile();
+  });
+  
+
+
+

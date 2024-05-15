@@ -161,8 +161,8 @@
 .colorBlueViolet {
   color: #8a2be2 !important; }
 
-.colorDarkOrange {
-  color: #F68A03 !important; }
+.colorBluePSR2 {
+  color: #2A838A !important; }
 
 .colorDeepSkyBlue {
   color: #358FF7 !important; }
@@ -232,6 +232,30 @@
   background-position: bottom;
   }
 
+  .bg-image-technical-sddp {
+    background-image: url(../images/section-sddp-technical-2.png) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size:contain;  
+    background-position: right;
+    }
+
+.bg-image-hero-psrio {
+    background-image: linear-gradient(90deg, rgba(218, 234, 233, 0.79) 0%, rgba(218, 234, 233, 0.79) 90%), url(../images/hero-psrio.png) ;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;  
+      background-position: center;
+      }
+
+.bg-image-psrio-marketplace {
+  background-color: #DAEAE9 !important;
+  background-image: url(../images/section-psrio-marketplace.png) ;
+  background-repeat: no-repeat;
+  background-size: 25%; /* Aumenta o tamanho da imagem */
+  background-position: right center; /* Mantém a imagem alinhada à direita e centraliza verticalmente */
+  }
+
 /*========== font-size ==========*/
 .font-120 {
   font-size: 120px !important; }
@@ -282,6 +306,10 @@
   .section---padding {
     padding-top: 50px;
     padding-bottom: 50px; }
+
+    .section----padding {
+      padding-top: 25px;
+      padding-bottom: 25px; }
 
 /* padding top */
 .pt-120 {
@@ -372,6 +400,29 @@
       color: #ddd3c2; /* Muda a cor do texto para dourado */
   }
 
+  .button-tools-link {
+    display: inline-block;
+    margin-top: 20px;
+    line-height: 50px;
+    width: auto;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2A838A; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado típico dos links */
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+.button-tools-link:hover {
+    background-color: #186b71; /* Cor mais escura ao passar o mouse */
+    color: #ddd3c2; /* Muda a cor do texto para dourado */
+}
+
 .icon-element {
   display: inline-flex;
   align-items: center;
@@ -458,10 +509,20 @@ body {
   text-decoration: underline;
   }
 
-  .link-faixa:hover{
-    color: #b2bcc6;
-    text-decoration: underline;
-    }
+.link-faixa:hover{
+  color: #b2bcc6;
+  text-decoration: underline;
+  }
+
+.link-license{
+  color: #fff;
+  text-decoration: underline;
+  }
+
+.link-license:hover{
+  color: #b2bcc6;
+  text-decoration: underline;
+  } 
 
 /*-=========== loader =============-*/
 .loader {
@@ -1053,6 +1114,17 @@ body {
   z-index: -1; /* On top of the video, behind the text */
 }
 
+.overlay-video-sddp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #002846, #0C4156);
+  opacity: 0.60;
+  z-index: -1; /* On top of the video, behind the text */
+}
+
 .container.position-relative {
   z-index: 1; /* Ensures the text and content are on top */
 }
@@ -1082,6 +1154,169 @@ body {
   text-decoration: underline !important;  /* Adiciona um sublinhado ao passar o mouse sobre o link */
 }
 
+
+.section-title-model
+{
+  font-size:40px;
+  color: #002846;
+}
+
+.section-title-model em
+{
+  color: #2A838A;
+  font-style: normal !important;
+}
+
+.section-title-model-marketplace
+{
+  font-size:40px;
+  color: #002846;
+}
+
+.section-title-model-marketplace em
+{
+  color: #2A838A;
+  font-weight: 500;
+  font-style: normal !important;
+}
+
+/*===== integration =====*/
+.integration-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden; /* Para cortar a parte superior e inferior */
+  height: 600px;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinhar ao topo para permitir que o esquema ultrapasse */
+  width: 100%;
+  position: relative;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.solar-system {
+  position: relative;
+  width: 700px;
+  height: 700px;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px dashed #8888889e;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  overflow: hidden !important; /* Adiciona esta linha */
+}
+
+.planet {
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer; /* Faz o cursor parecer clicável quando sobre os planetas */
+  z-index: 10;
+  background-size: cover; /* Garante que a imagem cubra o círculo completo */
+  background-position: center; /* Centraliza a imagem no círculo */
+  background-repeat: no-repeat;
+}
+
+.sun {
+  width: 150px;
+  height: 150px;
+  background-color: #ff0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer; /* Faz o cursor parecer clicável quando sobre os planetas */
+  z-index: 10; /* Garantir que o sol fique acima de tudo */
+  background-size: 50%; /* Garante que a imagem cubra o círculo completo */
+  background-position: center; /* Centraliza a imagem no círculo */
+  background-repeat: no-repeat;
+  background-image: url(../images/SDDP_BRANCO.svg);
+}
+
+.tooltip-model {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  color: #3c3f42;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+  font-size: 22px;
+  text-align: center;
+  display: none; /* Esconde a tooltip por padrão */
+  pointer-events: none; /* Permite passar o mouse por cima sem desativar */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .integration-area {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 1200px;
+  }
+
+  .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .text-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .image-content {
+      justify-content: center;
+  }
+
+  .solar-system {
+      width: 90px;
+      height: 90px;
+  }
+
+  .orbit {
+      width: 180px !important; /* Ajustar as dimensões das órbitas para mobile */
+      height: 180px !important;
+  }
+
+  .orbit:nth-child(2) {
+      width: 300px !important; /* Ajustar as dimensões das órbitas para mobile */
+      height: 300px !important;
+  }
+
+  .planet {
+      width: 50px !important; /* Ajustar o tamanho dos planetas para mobile */
+      height: 50px !important;
+  }
+
+  .sun {
+      width: 75px; /* Ajustar o tamanho do sol para mobile */
+      height: 75px;
+  }
+}
+
 /*====== card =====*/
 .card {
   border: 0;
@@ -1097,8 +1332,7 @@ body {
 .card-img-top {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px; 
-  height: 50px;
-  width: 50px; }
+}
 
 /*====== card-title =====*/
 .card-title {
@@ -1111,7 +1345,7 @@ body {
     -o-transition: all 0.2s;
     transition: all 0.2s; }
     .card-title a:hover {
-      color: #F68A03; }
+      color: #2A838A; }
 
 /*====== card-model =====*/
 .card-solution {
@@ -1141,7 +1375,7 @@ body {
 
 .card-solution-title {
   font-size: 24px; 
-  font-weight: 800; }
+  font-weight: 600; }
 
 .card-transparent {
     border: none;
@@ -1171,6 +1405,19 @@ body {
     padding-left: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
+.card-support {
+  border: none;
+  background-color: #e3f3f2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: .5rem;
+  margin-bottom: 10px;
+}
+
+.card-support:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 .card-capabilities {
   display: flex;
   flex-direction: row; /* Orientação horizontal */
@@ -1182,11 +1429,9 @@ body {
 .card-capabilities-img-left {
   width: 21%; /* Define a largura da imagem */
   height: auto; /* Mantém a proporção da imagem */
-  margin-left: 20px ;
+  vertical-align: top; /* Alinha o conteúdo no topo */
+  margin-left: 0px ;
   margin-right: 20px ;
-}
-.card-capabilities-body {
-  padding-left: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
 .card-capabilities:hover {
@@ -1195,6 +1440,30 @@ body {
 
 .card-capabilities-title {
   font-size: 25px; /* Espaçamento entre a imagem e o texto */
+}
+
+.card-capabilities-body {
+  margin-top: 5px;
+  font-size: 16px; /* Espaçamento entre a imagem e o texto */
+}
+
+.card-capabilities-sddp {
+  display: flex;
+  flex-direction: row; /* Orientação horizontal */
+  align-items: start;  /* Centraliza verticalmente */
+  margin-bottom: 10px;
+  /* height: 110px; */
+}
+
+.card-capabilities-sddp-title {
+  font-size: 20px; /* Espaçamento entre a imagem e o texto */
+  color: #00111e
+}
+
+.card-capabilities-sddp-body {
+  margin-top: 5px;
+  font-size: 16px; /* Espaçamento entre a imagem e o texto */
+  color: #001b2f;
 }
 
 .card-tools {
@@ -1212,7 +1481,6 @@ body {
 .card-tools.no-hover:hover {
   background-color: #DAEAE9;
 }
-
 
 .card-tools-body {
   padding: 10px;
@@ -1252,6 +1520,49 @@ body {
 .card-tools-body .btn {
   font-size: 18px; /* Defina o tamanho da fonte desejado */
 }
+
+.card-license {
+  border: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 10px rgba(14, 16, 48, 0.08);
+  -moz-box-shadow: 0 1px 10px rgba(14, 16, 48, 0.08);
+  box-shadow: 0 1px 10px rgba(14, 16, 48, 0.08);
+  margin-bottom: 30px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 20px; }
+
+  .card-landpage-overview {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center; /* Alinha o texto e outros elementos no centro horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.card-landpage-overview .card-img-top {
+    width: 30%; /* Auto para manter as proporções da imagem */
+    height: auto;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.card-landpage-overview .card-body {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* Adaptação responsiva para exibição adequada em diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    .card-landpage-overview {
+        margin-bottom: 15px;
+    }
+}
+
 
 .complementary-tools-img{
   width: 100%; /* Define a largura da imagem */
@@ -1298,7 +1609,6 @@ body {
   padding: 20px; /* Espaçamento interno */
   margin-bottom: 10px;
   height: 150px;
-  width: 500px;
 }
 .card-financial-img-left {
   width: 18%; /* Define a largura da imagem */
@@ -1326,6 +1636,32 @@ body {
   color: #C3B191;
   font-style: normal !important;
 }
+
+.get-sddp-title {
+  font-size: 36px; 
+  font-weight: 600;
+}
+
+.get-sddp-title em {
+  font-size: 36px; 
+  font-weight: 600;
+  color: #81abae;
+  font-style: normal !important;
+}
+
+.integration-title {
+  font-size: 48px; 
+  font-weight: 600;
+  color: #00111e;
+}
+
+.integration-title em {
+  font-size: 48px; 
+  font-weight: 600;
+  color: #418185;
+  font-style: normal !important;
+}
+
 
 /*====== card-number-icon =====*/
 .card-number-icon {
