@@ -1818,6 +1818,36 @@ body {
   font-style: normal !important;
 }
 
+.card-extra-tools {
+  position: relative;
+  display: flex;
+  flex-direction: row; /* Orientação horizontal */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: none;
+  transition: box-shadow 0.3s ease;
+  border-radius: .5rem;
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 10px;
+}
+
+.card-extra-tools:hover{
+  background-color: #b7d7d5; /* Cor de fundo quando houver hover */
+}
+
+.card-extra-tools-img-left {
+  width: 15%; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-left: 10px ;
+  margin-right: 20px ;
+}
+
+.card-extra-tools-title {
+  font-size: 24px; 
+  font-weight: 800; }
+
+.card-extra-tools-body {
+  padding-left: 5px; /* Espaçamento entre a imagem e o texto */
+}
 
 /*====== card-number-icon =====*/
 .card-number-icon {
@@ -1833,7 +1863,124 @@ body {
     transition: height 0.5s ease-in-out;
   }
 
+/* card clicável */
+.stretched-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  color: inherit;
+  text-decoration: none;
+}
 
+/*====== formulário para download ====== */
+.popup-form {
+  display: none; /* Certifique-se de que o pop-up esteja oculto por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center; /* Centro horizontalmente */
+  align-items: center; /* Centro verticalmente */
+  opacity: 0; /* Defina a opacidade como 0 */
+  transition: opacity 0.3s; /* Adicione uma transição suave */
+}
+
+.popup-form-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  position: relative; /* Necessário para posicionar o botão de fechar */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-form.show {
+  display: flex; /* Mostrar o pop-up quando a classe 'show' é adicionada */
+  opacity: 1; /* Tornar o pop-up visível */
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.back-link {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.link-back {
+  color: white;
+  text-decoration: none;
+}
+
+.link-back:hover {
+  color: white;
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse, opcional */
+}
+
+/* ===== responsive download table ===== */
+.table-container {
+  padding: 20px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.btn-download-link {
+  width: auto;
+  white-space: nowrap;
+  display: inline-block; /* Adiciona um display inline-block para ajustar ao conteúdo */
+  padding: 5px 10px; /* Ajusta o padding para garantir que o botão não seja muito largo */
+  text-align: center; /* Centraliza o texto */
+  background-color: #007bff; /* Certifica-se de que a cor do botão está correta */
+  color: white; /* Cor do texto */
+  border: none; /* Remove bordas */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.btn-download-link:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  text-decoration: none; /* Remove sublinhado ao passar o mouse */
+  color: #fff;
+}
 
 
 /*====== media =====*/
