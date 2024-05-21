@@ -189,6 +189,8 @@
 .bgGhostBlue {
   background-color: #42425c !important; }
 
+.bgDarkBlue {
+  background-color: #0C4156 !important; }
 
 .bg-blue {
   background-color: #4267B2 !important;
@@ -1110,7 +1112,7 @@ body {
   -o-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-  .hero-video {
+.hero-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -1118,6 +1120,17 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.hero-video-hera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-start;
+  z-index: -1;
 }
 
 .overlay-video {
@@ -1161,6 +1174,16 @@ body {
   height: 100%;
   background: linear-gradient(45deg, #115e4a, #093d2f);
   opacity: 0.8;
+}
+
+.overlay-video-hera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #368287, #47a9b0);
+  opacity: 0.6;
 }
 
 .container.position-relative {
@@ -1323,6 +1346,18 @@ body {
   color: #2A838A;
   font-weight: 500;
   font-style: normal !important;
+}
+
+.section-support-title
+{
+  font-size:40px;
+  color: #ffffff;
+}
+
+.section-support-text
+{
+  font-size:20px;
+  color: #ffffff;
 }
 
 /* Para imagens dentro da classe .overview-area */
@@ -1569,7 +1604,7 @@ body {
 
 .card-support {
   border: none;
-  background-color: #e3f3f2;
+  background-color: #A49375;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   border-radius: .5rem;
@@ -1579,6 +1614,11 @@ body {
 .card-support:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
+.card-solution-title {
+  font-size: 24px; 
+  font-weight: 500; 
+  color: #fff; }
 
 .card-capabilities {
   display: flex;
@@ -1742,6 +1782,7 @@ body {
   color: #333; /* Define a cor do texto */
   text-transform: none; /* Define transformações de texto (opcional) */
 }
+
 .feature-list li::before {
   content: '\f111'; /* Unicode para icon-circle-blank */
   font-family: 'FontAwesome'; /* Define a fonte para FontAwesome */
@@ -1752,6 +1793,36 @@ body {
   color: #2A838A; /* Cor do ícone */
 }
 .feature-list li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 5.5px; /* Centraliza a linha no meio do ícone */
+  top: 17.5px; /* Início da linha após o ícone */
+  height: calc(120%); /* Altura até o próximo ícone */
+  border-left: 3px solid #2A838A; /* Linha vertical */
+}
+
+.feature-list-style li {
+  padding-left: 30px; /* Espaçamento à esquerda para o texto */
+  margin-bottom: 20px; /* Espaço entre itens */
+  position: relative; /* Necessário para posicionamento absoluto dos ícones */
+  line-height: 1.6; /* Espaçamento entre linhas */
+
+  font-size: 20px; /* Define o tamanho da fonte */
+  font-weight: 600; /* Define a espessura da fonte */
+  color: #2A838A; /* Define a cor do texto */
+  text-transform: none; /* Define transformações de texto (opcional) */
+}
+
+.feature-list-style li::before {
+  content: '\f111'; /* Unicode para icon-circle-blank */
+  font-family: 'FontAwesome'; /* Define a fonte para FontAwesome */
+  position: absolute; /* Posiciona absolutamente em relação ao item da lista */
+  left: 0; /* Alinha à esquerda */
+  top: 0; /* Alinha ao topo */
+  font-size: 16px; /* Tamanho do ícone */
+  color: #2A838A; /* Cor do ícone */
+}
+.feature-list-style li:not(:last-child)::after {
   content: '';
   position: absolute;
   left: 5.5px; /* Centraliza a linha no meio do ícone */
@@ -1785,7 +1856,7 @@ body {
 
 .card-financial-title {
   font-size: 24px; 
-  font-weight: 800; }
+  font-weight: 600; }
 
 .financial-title {
   font-size: 48px; 
