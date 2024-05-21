@@ -645,6 +645,12 @@ body {
     .sec-desc {
       font-size: 16px; } }
 
+  .sec-title em {
+      color: #DAEAE9;
+      text-decoration: none;
+      font-style: normal !important;
+  }
+
 /*-=========== list-item-white =============-*/
 .list-item li {
   margin-bottom: 7px; }
