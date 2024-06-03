@@ -1199,6 +1199,7 @@ body {
 }
 
 .frase-impacto {
+  text-align: center !important;
   color: white !important;    /* Cor do texto */
   font-size: 24px;              /* Tamanho do texto */
   font-weight: bold !important; /* Peso da fonte */
@@ -1215,9 +1216,26 @@ body {
   text-decoration: underline !important;  /* Adiciona um sublinhado ao passar o mouse sobre o link */
 }
 
+.analytics-overview-card-text
+{
+  text-align: center !important;
+  margin: 0 !important;
+  color: #778899 !important;
+}
+
+.analytics-overview-card-text.number
+{
+  font-size: 30px !important; 
+  font-weight: 700 !important;
+}
+
 .capabilities-area {
   position: relative;
   overflow: hidden; /* Ensures no overflow from the line */
+}
+
+.card-solution-text {
+  text-align: center !important;
 }
 
 /*======= timeline =======*/
@@ -1573,7 +1591,7 @@ body {
 .card-solution-title {
   font-size: 24px; 
   font-weight: 700;
-  color: #002846;
+  color: #002846 !important;
 }
 
 .card-transparent {
