@@ -358,31 +358,34 @@
   padding-bottom: 70px !important; }
 
 /*---- btn ----*/
-.btn {
+.analytics-btn {
   font-weight: 500;
   padding: 12px 24px; 
   border-radius: .5rem;
+  color: #fff;
 }
-  .btn:focus, .btn.focus {
+  .analytics-btn:focus, .analytics-btn.focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
 
-.btn-sm {
+.analytics-btn-sm {
   padding: 6px 12px; }
 
-.btn-primary {
+.analytics-btn-primary {
   background-color: #2A838A;
   border-color: #2A838A; }
 
-.btn-outline-primary {
+.analytics-btn-outline-primary {
   border-color: #2A838A;
   color: #2A838A; }
 
-.btn-primary:hover,
-.btn-outline-primary:hover {
+.analytics-btn-primary:hover,
+.analytics-btn-outline-primary:hover {
   background-color: #2b7277;
-  border-color: #2b7277; }
+  border-color: #2b7277; 
+  color: #fff;
+}
 
 
 .btn-link {
@@ -1238,6 +1241,19 @@ body {
   text-align: center !important;
 }
 
+.analytics-solution-text
+{
+  font-size: 24px; 
+  color: #ffffff; 
+  line-height: 32px;
+  text-align: start !important;
+}
+
+.card-financial-tools-text{
+  text-align: start !important;
+
+}
+
 /*======= timeline =======*/
 .timeline {
   display: flex;
@@ -1416,6 +1432,7 @@ body {
 .text-content {
   flex: 1;
   padding-right: 20px;
+  margin-top: 90px;
 }
 
 .image-content {
@@ -1488,8 +1505,10 @@ body {
   .integration-area {
       flex-direction: column;
       align-items: center;
+      justify-content:flex-start;
       text-align: center;
-      height: 1200px;
+      height: 900px;
+      padding-top: 50px !important;
   }
 
   .content-wrapper {
@@ -1499,11 +1518,12 @@ body {
 
   .text-content {
       padding-right: 0;
-      margin-bottom: 20px;
+      margin-top: 0px !important;
   }
 
   .image-content {
       justify-content: center;
+      margin-top: 120px;
   }
 
   .solar-system {
@@ -1661,7 +1681,8 @@ body {
 }
 
 .card-capabilities-title {
-  font-size: 25px; /* Espaçamento entre a imagem e o texto */
+  font-size: 22px; /* Espaçamento entre a imagem e o texto */
+  text-align: start !important;
 }
 
 .card-capabilities-body {
@@ -1724,6 +1745,8 @@ body {
 {
   font-size:20px;
   color: #00111e;
+  text-align: start !important;
+  margin-bottom: 30px !important;
 }
 
 .card-tools-subtitle em
