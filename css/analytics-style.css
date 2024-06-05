@@ -777,25 +777,6 @@ body {
     .list-group-item a:hover {
       color: #F68A03; }
 
-/*-=========== back-to-top =============-*/
-#back-to-top {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  visibility: hidden; }
-  #back-to-top.active {
-    opacity: 1;
-    visibility: visible; }
-  #back-to-top:hover {
-    background-color: #F68A03;
-    color: #fff; }
-
 .header-area {
   position: absolute;
   top: 0;
@@ -1394,6 +1375,22 @@ body {
   color: #ffffff;
 }
 
+.integration-body {
+	text-align: left !important;
+	font-size: 20px !important; 
+	margin-bottom: 20px !important; 
+	line-height: 32px !important; 
+	color: #778899 !important;
+}
+.integration-body.b {
+	text-align: left !important;
+	font-size: 20px !important; 
+	margin-bottom: 20px !important; 
+	line-height: 32px !important; 
+	color: #778899 !important;
+	font-weight: 600 !important;
+}
+
 /* Para imagens dentro da classe .overview-area */
 .overview-area img {
   max-width: 100%;
@@ -1419,7 +1416,8 @@ body {
   align-items: flex-start;
   position: relative;
   overflow: hidden; /* Para cortar a parte superior e inferior */
-  height: 600px;
+  height: 650px;
+  padding-bottom: 20px
 }
 .content-wrapper {
   display: flex;
@@ -1681,7 +1679,7 @@ body {
 }
 
 .card-capabilities-title {
-  font-size: 22px; /* Espaçamento entre a imagem e o texto */
+  font-size: 20px; /* Espaçamento entre a imagem e o texto */
   text-align: start !important;
 }
 
