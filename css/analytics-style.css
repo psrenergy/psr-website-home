@@ -190,7 +190,7 @@
   background-color: #42425c !important; }
 
 .bgDarkBlue {
-  background-color: #0C4156 !important; }
+  background-color: #002846 !important; }
 
 .bg-blue {
   background-color: #4267B2 !important;
@@ -210,6 +210,19 @@
   background-size: cover;
   background-position: center; }
 
+  .bgRoadMap {
+    background-image: url(../images/analytics-roadmap-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom; }
+
+    .bgTraining {
+      background-image: url(../images/analytics-training-background.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position:right; }
+
+
 .bg-image-solutions {
   background-image: linear-gradient(90deg, rgba(0, 40, 70, 0.9) 53%, rgba(22, 41, 68, 0.8) 90%), url(../images/section_solutions_background.jpg) ;
   background-size: 100%;
@@ -228,7 +241,7 @@
 
 
   .bg-image-licensing {
-    background-image: linear-gradient(90deg, rgba(0, 40, 70, 0.7) 53%, rgba(22, 41, 68, 0.7) 90%), url(../images/section-financial-tools.jpg) ;
+    background-image: linear-gradient(270deg, rgba(42, 131, 138, 0.43) 0%, rgba(42, 131, 138, 0.8) 49%,rgba(2, 44, 73, 1) 84%, rgba(0, 40, 70, 1) 100%), url(../images/section-financial-tools.jpg) ;
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;  
@@ -242,6 +255,14 @@
   background-size: cover;  
   background-position: bottom;
   }
+
+  .bg-image-support-hero {
+    background-image:linear-gradient(90deg, rgba(0, 40, 70, 0.8) 0%, rgba(42, 131, 138, 0.8) 100%), url(../images/analytics-support-hero.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: top;
+    }
 
   .bg-image-technical-sddp {
     background-image: url(../images/section-sddp-technical-2.png) ;
@@ -360,6 +381,7 @@
 /*---- btn ----*/
 .analytics-btn {
   font-weight: 500;
+  font-size: 22px;
   padding: 12px 24px; 
   border-radius: .5rem;
   color: #fff;
@@ -376,6 +398,10 @@
   background-color: #2A838A;
   border-color: #2A838A; }
 
+  .analytics-btn-secondary {
+    background-color: #A49375;
+    border-color: #A49375; }
+
 .analytics-btn-outline-primary {
   border-color: #2A838A;
   color: #2A838A; }
@@ -384,6 +410,11 @@
 .analytics-btn-outline-primary:hover {
   background-color: #2b7277;
   border-color: #2b7277; 
+  color: #fff;
+}
+.analytics-btn-secondary:hover {
+  background-color: #907b58;
+  border-color: #907b58; 
   color: #fff;
 }
 
@@ -416,6 +447,29 @@
       color: #ddd3c2; /* Muda a cor do texto para dourado */
   }
 
+  .analytics-button-support-link {
+    display: inline-block;
+    margin-top: 20px;
+    line-height: 35px;
+    width: auto;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #A49375; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado típico dos links */
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+.analytics-button-support-link:hover {
+    background-color: #907b58; /* Cor mais escura ao passar o mouse */
+    color: #ddd3c2; /* Muda a cor do texto para dourado */
+}
+
   .button-tools-link {
     display: inline-block;
     margin-top: 20px;
@@ -437,6 +491,24 @@
 .button-tools-link:hover {
     background-color: #186b71; /* Cor mais escura ao passar o mouse */
     color: #ddd3c2; /* Muda a cor do texto para dourado */
+}
+
+/* Wave SVG */
+.wave {
+  position: relative;
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  overflow: hidden;
+  background-color: #DAEAE9; /* Ensure this matches the bgGhostGreen section */
+  margin-top: -35px; /* Adjust to eliminate gaps */
+  line-height: 0;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8FF; /* Ensure this matches the bgGhostWhite section */
 }
 
 .icon-element {
@@ -1235,6 +1307,18 @@ body {
 
 }
 
+.card-roadmap {
+  color: transparent;
+}
+.card-roadmap-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.card-roadmap-text {
+  font-size: 20px;
+  color: #002846 !important;
+}
+
 /*======= timeline =======*/
 .timeline {
   display: flex;
@@ -1342,6 +1426,12 @@ body {
 {
   font-size:40px;
   color: #002846;
+}
+
+.section-title-model.gold
+{
+  font-size:40px;
+  color: #C3B191;
 }
 
 .section-title-model em
@@ -1640,6 +1730,49 @@ body {
     padding-left: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
+.card-license {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: .5rem;
+  margin-bottom: 10px;
+}
+
+.card-license-title.blue {
+  font-size: 24px; 
+  font-weight: 700;
+  color: #002846 !important;
+}
+.card-license-title.green {
+  font-size: 24px; 
+  font-weight: 700;
+  color: #2A838A !important;
+}
+.card-license-title.lightBlue {
+  font-size: 24px; 
+  font-weight: 700;
+  color: #2f6b98 !important;
+}
+
+.card-license-text {
+  text-align: left;
+  font-size: 18px;
+  color: #002846;
+}
+
+.analytics-card-support-hero {
+  background-color: transparent;
+  border-radius: .5rem;
+  margin-bottom: 10px;
+  height: 110px;
+}
+
+.analytics-card-support-hero-title {
+  color: #fff;
+  font-size: 18px;
+}
+
 .card-support {
   border: none;
   background-color: #A49375;
@@ -1749,8 +1882,54 @@ body {
 
 .card-tools-subtitle em
 {
-  color: #2A838A;
+  color: #2A838A !important;
   font-style: normal !important;
+}
+
+.analytics-section-body
+{
+  font-size:20px;
+  color: #00111e;
+  text-align: start !important;
+  margin-bottom: 30px !important;
+}
+
+.analytics-section-body.darkBg
+{
+  font-size:20px;
+  color: #fff !important;
+  text-align: start !important;
+  margin-bottom: 30px !important;
+}
+
+.analytics-section-body.right {
+  text-align: right !important;
+}
+
+.analytics-section-body.highlight {
+  color: #2A838A !important;
+  font-weight: 700;
+}
+
+.analytics-section-body-link{
+  color: #00111e;
+  text-decoration: underline;
+  }
+
+.analytics-section-body-link.highlight{
+    color: #2A838A !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.analytics-section-body-link:hover{
+  color: #00111e !important;
+  text-decoration: underline;
+}
+
+.analytics-section-body-link.highlight:hover{
+  color: #043135 !important;
+  text-decoration: underline;
 }
 
 .card-tools-body h5,
