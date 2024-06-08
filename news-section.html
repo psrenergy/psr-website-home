@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção de Notícias</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/analytics-style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/news-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="analytics-news-section mb-4">
+            <h2>Notícias</h2>
+            <div id="analytics-news-sectionContainer" class="row">
+                <!-- Os cards de notícias serão inseridos aqui -->
+            </div>
+            <button id="analytics-news-viewMore" class="btn btn-primary mt-4">Ver mais</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sectionContainer = document.getElementById('analytics-news-sectionContainer');
+            const viewMore = document.getElementById('analytics-news-viewMore');
+            const filterTag = "economia"; // Substitua pelo filtro desejado
+
+            fetch('news.json')
+                .then(response => response.json())
+                .then(data => {
+                    const filteredNews = data
+                        .filter(news => news.tags.includes(filterTag))
+                        .sort((a, b) => new Date(b.date) - new Date(a.date))
+                        .slice(0, 3); // Mostra apenas 3 notícias
+
+                    appendNews(filteredNews);
+
+                    viewMore.addEventListener('click', () => {
+                        window.location.href = `news.html?filter=${filterTag}`;
+                    });
+                });
+
+            function appendNews(newsData) {
+                sectionContainer.innerHTML = '';
+                newsData.forEach(news => {
+                    const card = document.createElement('div');
+                    card.classList.add('col-md-4');
+                    card.innerHTML = `
+                        <div class="analytics-news-news-card">
+                            ${new Date(news.date).getTime() === new Date(newsData[0].date).getTime() ? '<div class="analytics-news-new-badge">NEW</div>' : ''}
+                            <img src="${news.image}" alt="${news.title}">
+                            <h3>${news.title}</h3>
+                            <div class="analytics-news-tags">
+                                ${news.tags.map(tag => `<span class="analytics-news-tag">${tag}</span>`).join('')}
+                            </div>
+                            <div class="analytics-news-author-date">
+                                <span><strong>Autor:</strong> ${news.authors.join(', ')}</span>
+                                <span><strong>Data:</strong> ${new Date(news.date).toLocaleDateString()}</span>
+                            </div>
+                            <p>${news.content}</p>
+                            <a href="${news.url}" class="btn btn-primary">Learn more</a>
+                        </div>
+                    `;
+                    sectionContainer.appendChild(card);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
