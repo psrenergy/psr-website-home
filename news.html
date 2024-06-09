@@ -16,15 +16,27 @@
 	<link rel="stylesheet" href="css/news-styles.css">
 </head>
 <body>
+
+    <section class="analytics-news-hero-area-2">
+        <div class="analytics-news-hero-item analytics-news-hero-bg-4">
+            <!-- Color Gradient Overlay -->
+            <div class="analytics-news-hero-overlay"></div><!-- overlay -->
+            <div class="container position-relative z-index-1">
+                <div class="analytics-news-hero-content text-center">
+                    <h2 class="sec-title text-white" id="analytics-news-title">News & Articles</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
         <div class="analytics-news-filter mb-4">
             <div id="analytics-news-tagSearchContainer" class="analytics-news-tag-search-container">
                 <div id="analytics-news-selectedTags" class="analytics-news-selected-tags"></div>
-                <input type="text" id="analytics-news-tagSearch" class="form-control" placeholder="Procurar por tag ou autor...">
+                <input type="text" id="analytics-news-tagSearch" class="form-control" placeholder="Search for theme or author...">
                 <button id="analytics-news-clearSearch" class="analytics-news-clear-search">x</button>
                 <ul id="analytics-news-suggestions" class="analytics-news-suggestions"></ul>
             </div>
-            <button id="analytics-news-clearFilter" class="btn btn-secondary mt-2">Limpar Filtro</button>
             <div id="analytics-news-tagContainer" class="analytics-news-tag-container mt-2">
                 <!-- As tags serão preenchidas dinamicamente -->
             </div>
@@ -143,14 +155,14 @@ document.addEventListener("DOMContentLoaded", () => {
                   <img src="${news.image}" alt="${news.title}">
                   <h3>${news.title}</h3>
                   <div class="analytics-news-tags">
-                      ${news.tags.map(tag => `<span class="analytics-news-tag">${tag}</span>`).join('')}
+                      ${news.tags.map(tag => `<span class="analytics-news-tag-card">${tag}</span>`).join('')}
                   </div>
                   <div class="analytics-news-author-date">
                       <span><strong>Autor:</strong> ${news.authors.join(', ')}</span>
                       <span><strong>Data:</strong> ${new Date(news.date).toLocaleDateString()}</span>
                   </div>
                   <p>${news.content}</p>
-                  <a href="${news.url}" class="btn btn-primary">Learn more</a>
+                  <a href="${news.url}" class="analytics-news-card-btn">Read more</a>
               </div>
           `;
           newsContainer.appendChild(card);
