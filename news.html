@@ -54,208 +54,202 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const newsContainer = document.getElementById('analytics-news-newsContainer');
-  const tagContainer = document.getElementById('analytics-news-tagContainer');
-  const tagSearch = document.getElementById('analytics-news-tagSearch');
-  const clearSearch = document.getElementById('analytics-news-clearSearch');
-  const clearFilter = document.getElementById('analytics-news-clearFilter');
-  const loadMore = document.getElementById('analytics-news-loadMore');
-  const selectedTagsContainer = document.getElementById('analytics-news-selectedTags');
-  const suggestions = document.getElementById('analytics-news-suggestions');
-  const urlParams = new URLSearchParams(window.location.search);
-  const initialFilter = urlParams.get('filter') ? [urlParams.get('filter')] : [];
+        document.addEventListener("DOMContentLoaded", () => {
+            const newsContainer = document.getElementById('analytics-news-newsContainer');
+            const tagContainer = document.getElementById('analytics-news-tagContainer');
+            const tagSearch = document.getElementById('analytics-news-tagSearch');
+            const clearSearch = document.getElementById('analytics-news-clearSearch');
+            const loadMore = document.getElementById('analytics-news-loadMore');
+            const selectedTagsContainer = document.getElementById('analytics-news-selectedTags');
+            const suggestions = document.getElementById('analytics-news-suggestions');
+            const urlParams = new URLSearchParams(window.location.search);
+            const initialFilter = urlParams.get('filter') ? [urlParams.get('filter')] : [];
 
-  let allNewsData = [];
-  let displayedNews = [];
-  let currentIndex = 0;
-  const itemsPerPage = 9;
-  let selectedTags = [...initialFilter];
+            let allNewsData = [];
+            let displayedNews = [];
+            let currentIndex = 0;
+            const itemsPerPage = 9;
+            let selectedTags = [...initialFilter];
 
-  fetch('news.json')
-      .then(response => response.json())
-      .then(data => {
-          allNewsData = data.sort((a, b) => new Date(b.date) - new Date(a.date)); // Ordena as notícias por data
-          const tags = new Set();
-          const authors = new Set();
-          allNewsData.forEach(news => {
-              news.tags.forEach(tag => tags.add(tag));
-              news.authors.forEach(author => authors.add(author));
-          });
+            fetch('news.json')
+                .then(response => response.json())
+                .then(data => {
+                    allNewsData = data.sort((a, b) => new Date(b.date) - new Date(a.date)); // Ordena as notícias por data
+                    const tags = new Set();
+                    const authors = new Set();
+                    allNewsData.forEach(news => {
+                        news.tags.forEach(tag => tags.add(tag));
+                        news.authors.forEach(author => authors.add(author));
+                    });
 
-          updateTagContainer(Array.from(tags), allNewsData);
-          if (initialFilter.length > 0) {
-              filterNewsByTag(initialFilter, allNewsData);
-              initialFilter.forEach(tag => addSelectedTag(tag, allNewsData));
-          } else {
-              displayNews(allNewsData);
-          }
+                    updateTagContainer(Array.from(tags), allNewsData);
+                    if (initialFilter.length > 0) {
+                        filterNewsByTag(initialFilter, allNewsData);
+                        initialFilter.forEach(tag => addSelectedTag(tag, allNewsData));
+                    } else {
+                        displayNews(allNewsData);
+                    }
 
-          tagSearch.addEventListener('input', () => {
-              const searchTerm = tagSearch.value.toLowerCase().trim();
-              updateSuggestions(searchTerm, tags, authors);
-          });
+                    tagSearch.addEventListener('input', () => {
+                        const searchTerm = tagSearch.value.toLowerCase().trim();
+                        updateSuggestions(searchTerm, tags, authors);
+                    });
 
-          tagSearch.addEventListener('keypress', (e) => {
-              if (e.key === 'Enter') {
-                  e.preventDefault();
-                  const searchTerm = tagSearch.value.toLowerCase().trim();
-                  if (searchTerm !== '' && !selectedTags.includes(searchTerm)) {
-                      selectedTags.push(searchTerm);
-                      addSelectedTag(searchTerm, allNewsData);
-                      tagSearch.value = '';
-                      updateSuggestions('', tags, authors);
-                  }
-              }
-          });
+                    tagSearch.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            const searchTerm = tagSearch.value.toLowerCase().trim();
+                            if (searchTerm !== '' && !selectedTags.includes(searchTerm)) {
+                                selectedTags.push(searchTerm);
+                                addSelectedTag(searchTerm, allNewsData);
+                                tagSearch.value = '';
+                                updateSuggestions('', tags, authors);
+                            }
+                        }
+                    });
 
-          clearSearch.addEventListener('click', clearAllFilters);
+                    clearSearch.addEventListener('click', clearAllFilters);
 
-          clearFilter.addEventListener('click', clearAllFilters);
+                    loadMore.addEventListener('click', () => {
+                        loadMoreNews();
+                    });
+                });
 
-          loadMore.addEventListener('click', () => {
-              loadMoreNews();
-          });
-      });
+            function displayNews(newsData) {
+                newsContainer.innerHTML = '';
+                currentIndex = 0;
+                displayedNews = [];
+                loadMore.style.display = 'none';
 
-  function displayNews(newsData) {
-      newsContainer.innerHTML = '';
-      currentIndex = 0;
-      displayedNews = [];
-      loadMore.style.display = 'none';
+                if (newsData.length > itemsPerPage) {
+                    loadMore.style.display = 'block';
+                }
 
-      if (newsData.length > itemsPerPage) {
-          loadMore.style.display = 'block';
-      }
+                displayedNews = newsData.slice(0, itemsPerPage);
+                currentIndex += itemsPerPage;
+                appendNews(displayedNews);
+            }
 
-      displayedNews = newsData.slice(0, itemsPerPage);
-      currentIndex += itemsPerPage;
-      appendNews(displayedNews);
-  }
+            function loadMoreNews() {
+                const moreNews = allNewsData.slice(currentIndex, currentIndex + itemsPerPage);
+                displayedNews = displayedNews.concat(moreNews);
+                currentIndex += itemsPerPage;
+                appendNews(moreNews);
 
-  function loadMoreNews() {
-      const moreNews = allNewsData.slice(currentIndex, currentIndex + itemsPerPage);
-      displayedNews = displayedNews.concat(moreNews);
-      currentIndex += itemsPerPage;
-      appendNews(moreNews);
+                if (currentIndex >= allNewsData.length) {
+                    loadMore.style.display = 'none';
+                }
+            }
 
-      if (currentIndex >= allNewsData.length) {
-          loadMore.style.display = 'none';
-      }
-  }
+            function appendNews(newsData) {
+                const mostRecentDate = allNewsData[0].date; // Data da notícia mais recente
+                newsData.forEach(news => {
+                    const isNew = new Date(news.date).getTime() === new Date(mostRecentDate).getTime();
+                    const card = document.createElement('div');
+                    card.classList.add('col-lg-4', 'col-md-6', 'mb-4');
+                    card.innerHTML = `
+                        <div class="card hover-y">
+                            <div class="card-head position-relative">
+                                <img src="${news.image}" alt="${news.title}" class="card-img-top lazy">
+                                <div class="badge-container">
+                                    <span class="position-absolute top-0 left-0 mt-3 ml-3 badge badge-md badge-light"><i class="la la-calendar"></i> ${new Date(news.date).toLocaleDateString()}</span>
+                                    ${isNew ? '<div class="analytics-news-new-badge position-absolute top-0 right-0 mt-3 mr-3">NEW</div>' : ''}
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-item">
+                                    <li class="d-inline-block mr-3"><span class="fal fa-user mr-2 colorBluePSR2 font-14"></span>By ${news.authors.join(', ')}</li>
+                                </ul>
+                                <h4 class="card-title"><a href="${news.url}"><b>${news.title}</b></a></h4>
+                                <div class="analytics-news-tags" style="margin-bottom: 10px !important;">
+                                    ${news.tags.map(tag => `<span class="analytics-news-tag-card">${tag}</span>`).join('')}
+                                </div>
+                                <p class="card-text" style="margin-bottom: 10px !important;">${news.content}</p>
+                                <a href="${news.url}" class="btn-link btn-news-link-right">Continue Reading <i class="fal fa-angle-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    `;
+                    newsContainer.appendChild(card);
+                });
+            }
 
-  function appendNews(newsData) {
-    const mostRecentDate = allNewsData[0].date; // Data da notícia mais recente
-    newsData.forEach(news => {
-        const isNew = new Date(news.date).getTime() === new Date(mostRecentDate).getTime();
-        const card = document.createElement('div');
-        card.classList.add('col-lg-4', 'col-md-6');
-        card.innerHTML = `
-            <div class="card hover-y">
-                <div class="card-head position-relative">
-                    <img src="${news.image}" alt="${news.title}" class="card-img-top lazy">
-                    <div class="badge-container">
-                        <span class="position-absolute top-0 left-0 mt-3 ml-3 badge badge-md badge-light"><i class="la la-calendar"></i> ${new Date(news.date).toLocaleDateString()}</span>
-                        ${isNew ? '<div class="analytics-news-new-badge position-absolute top-0 right-0 mt-3 mr-3">NEW</div>' : ''}
-                    </div>
-                </div>
-                <div class="card-body">
-                    <ul class="list-item">
-                        <li class="d-inline-block mr-3"><span class="fal fa-user mr-2 colorBluePSR2 font-14"></span>By ${news.authors.join(', ')}</li>
-                    </ul>
-                    <h4 class="card-title"><a href="${news.url}"><b>${news.title}</b></a></h4>
-                    <div class="analytics-news-tags" style="margin-bottom: 10px !important;">
-                        ${news.tags.map(tag => `<span class="analytics-news-tag-card">${tag}</span>`).join('')}
-                    </div>
-                    <p class="card-text" style="margin-bottom: 10px !important;">${news.content}</p>
-                    <a href="${news.url}" class="btn-link btn-news-link-right">Continue Reading <i class="fal fa-angle-right ml-1"></i></a>
-                </div>
-            </div>
-        `;
-        newsContainer.appendChild(card);
-    });
-}
+            function filterNewsByTag(tags, newsData) {
+                if (tags.length === 0) {
+                    displayNews(newsData);
+                    return;
+                }
+                const filteredNews = newsData.filter(news =>
+                    tags.every(tag => news.tags.includes(tag) || news.authors.some(author => author.toLowerCase().includes(tag.toLowerCase())))
+                );
+                displayNews(filteredNews);
+            }
 
+            function updateTagContainer(tags, newsData) {
+                tagContainer.innerHTML = '';
+                tags.forEach(tag => {
+                    if (!selectedTags.includes(tag.toLowerCase())) {
+                        const tagElement = document.createElement('div');
+                        tagElement.classList.add('analytics-news-tag');
+                        tagElement.textContent = tag;
+                        tagElement.addEventListener('click', () => {
+                            if (!selectedTags.includes(tag.toLowerCase())) {
+                                selectedTags.push(tag.toLowerCase());
+                                addSelectedTag(tag, newsData);
+                                updateSuggestions('', tags, authors);
+                            }
+                        });
+                        tagContainer.appendChild(tagElement);
+                    }
+                });
+            }
 
-  function filterNewsByTag(tags, newsData) {
-      if (tags.length === 0) {
-          displayNews(newsData);
-          return;
-      }
-      const filteredNews = newsData.filter(news =>
-          tags.every(tag => news.tags.includes(tag) || news.authors.some(author => author.toLowerCase().includes(tag.toLowerCase())))
-      );
-      displayNews(filteredNews);
-  }
+            function addSelectedTag(tag, newsData) {
+                const tagElement = document.createElement('div');
+                tagElement.classList.add('analytics-news-tag');
+                tagElement.textContent = tag;
+                tagElement.addEventListener('click', () => {
+                    selectedTags = selectedTags.filter(t => t !== tag.toLowerCase());
+                    tagElement.remove();
+                    filterNewsByTag(selectedTags, newsData);
+                    updateTagContainer(Array.from(new Set(newsData.flatMap(news => news.tags))), newsData);
+                });
+                selectedTagsContainer.appendChild(tagElement);
+                filterNewsByTag(selectedTags, newsData);
+                updateTagContainer(Array.from(new Set(newsData.flatMap(news => news.tags))), newsData);
+            }
 
-  function updateTagContainer(tags, newsData) {
-      tagContainer.innerHTML = '';
-      tags.forEach(tag => {
-          if (!selectedTags.includes(tag.toLowerCase())) {
-              const tagElement = document.createElement('div');
-              tagElement.classList.add('analytics-news-tag');
-              tagElement.textContent = tag;
-              tagElement.addEventListener('click', () => {
-                  if (!selectedTags.includes(tag.toLowerCase())) {
-                      selectedTags.push(tag.toLowerCase());
-                      addSelectedTag(tag, newsData);
-                      updateSuggestions('', tags, authors);
-                  }
-              });
-              tagContainer.appendChild(tagElement);
-          }
-      });
-  }
+            function updateSuggestions(searchTerm, tags, authors) {
+                suggestions.innerHTML = '';
+                if (searchTerm.trim() !== '') {
+                    const filteredTags = Array.from(tags).filter(tag => tag.toLowerCase().includes(searchTerm));
+                    const filteredAuthors = Array.from(authors).filter(author => author.toLowerCase().includes(searchTerm));
+                    [...filteredTags, ...filteredAuthors].forEach(suggestion => {
+                        const suggestionItem = document.createElement('li');
+                        suggestionItem.textContent = suggestion;
+                        suggestionItem.addEventListener('click', () => {
+                            if (!selectedTags.includes(suggestion.toLowerCase())) {
+                                selectedTags.push(suggestion.toLowerCase());
+                                addSelectedTag(suggestion, allNewsData);
+                                tagSearch.value = '';
+                                updateSuggestions('', tags, authors);
+                            }
+                        });
+                        suggestions.appendChild(suggestionItem);
+                    });
+                }
+            }
 
-  function addSelectedTag(tag, newsData) {
-      const tagElement = document.createElement('div');
-      tagElement.classList.add('analytics-news-tag');
-      tagElement.textContent = tag;
-      tagElement.addEventListener('click', () => {
-          selectedTags = selectedTags.filter(t => t !== tag.toLowerCase());
-          tagElement.remove();
-          filterNewsByTag(selectedTags, newsData);
-          updateTagContainer(Array.from(new Set(newsData.flatMap(news => news.tags))), newsData);
-      });
-      selectedTagsContainer.appendChild(tagElement);
-      filterNewsByTag(selectedTags, newsData);
-      updateTagContainer(Array.from(new Set(newsData.flatMap(news => news.tags))), newsData);
-  }
-
-  function updateSuggestions(searchTerm, tags, authors) {
-      suggestions.innerHTML = '';
-      if (searchTerm.trim() !== '') {
-          const filteredTags = Array.from(tags).filter(tag => tag.toLowerCase().includes(searchTerm));
-          const filteredAuthors = Array.from(authors).filter(author => author.toLowerCase().includes(searchTerm));
-          [...filteredTags, ...filteredAuthors].forEach(suggestion => {
-              const suggestionItem = document.createElement('li');
-              suggestionItem.textContent = suggestion;
-              suggestionItem.addEventListener('click', () => {
-                  if (!selectedTags.includes(suggestion.toLowerCase())) {
-                      selectedTags.push(suggestion.toLowerCase());
-                      addSelectedTag(suggestion, allNewsData);
-                      tagSearch.value = '';
-                      updateSuggestions('', tags, authors);
-                  }
-              });
-              suggestions.appendChild(suggestionItem);
-          });
-      }
-  }
-
-  function clearAllFilters() {
-      tagSearch.value = '';
-      selectedTags = [];
-      selectedTagsContainer.innerHTML = '';
-      const tags = new Set(allNewsData.flatMap(news => news.tags));
-      const authors = new Set(allNewsData.flatMap(news => news.authors));
-      updateTagContainer(Array.from(tags), allNewsData);
-      displayNews(allNewsData);
-      updateSuggestions('', tags, authors);
-  }
-});
-
-    
+            function clearAllFilters() {
+                tagSearch.value = '';
+                selectedTags = [];
+                selectedTagsContainer.innerHTML = '';
+                const tags = new Set(allNewsData.flatMap(news => news.tags));
+                const authors = new Set(allNewsData.flatMap(news => news.authors));
+                updateTagContainer(Array.from(tags), allNewsData);
+                displayNews(allNewsData);
+                updateSuggestions('', tags, authors);
+            }
+        });
     </script>
 </body>
 </html>
