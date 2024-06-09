@@ -2263,6 +2263,15 @@ input {
   text-decoration: none;
 }
 
+.back-link-news {
+  margin-bottom: 30px;
+  font-size: 14px !important;
+}
+
+.back-link-news img {
+  font-size: 14px !important;
+}
+
 .link-back:hover {
   color: white;
   text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse, opcional */
@@ -2359,7 +2368,7 @@ table tbody tr:hover {
 
 .analytics-news-suggestions {
   position: absolute;
-  top: 40px;
+  top: 60px;
   left: 0;
   width: 100%;
   background: white;
@@ -2541,6 +2550,12 @@ table tbody tr:hover {
   justify-content: flex-end;
   color: #fff;
   margin-bottom: 20px;
+  border-color: #A49375;
+  border-width: 0px;
+  
+}
+.analytics-news-card-btn:hover{
+  background-color: #6a5839;
 }
 
 #analytics-news-loadMore {
@@ -2548,7 +2563,10 @@ table tbody tr:hover {
   margin: 0 auto;
 }
 
-
+#analytics-news-viewMore {
+  display: block;
+  margin: 0 auto;
+}
 
 /* styles.css ================================= */
 
@@ -2658,6 +2676,27 @@ table tbody tr:hover {
   background: #fff;
 }
 
+.analytics-news-article-tags
+{
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+  background-color: #2A838A;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.analytics-news-article-tags:hover
+{
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+  background-color: #115055;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 12px;
+}
+
+
 .analytics-news-body p 
 {
   font-size: 16px;
@@ -2752,12 +2791,12 @@ table tbody tr:hover {
 }
 
 #analytics-news-tag-cloud .badge:hover {
-  background-color: #007bff;
+  background-color: #2A838A;
   color: white;
 }
 
 .analytics-news-sidebar h4.card-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .analytics-news-sidebar ul {
@@ -2808,6 +2847,44 @@ table tbody tr:hover {
   margin-bottom: 0.5rem;
 }
 
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.linkedin-button img {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+.social-media-card {
+  display: inline-flex;
+  padding:0;
+  gap: 10px;
+}
+.button-share-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #5c6a71;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.button-share-card:hover{
+  background-color: #333739;
+  color: white;
+}
 
 /*====== media =====*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {

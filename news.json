@@ -41,7 +41,7 @@
         "date": "2024-06-04T08:00:00Z",
         "authors": ["Autor 6"],
         "tags": ["política", "economia"],
-        "image": "images/image-3.jpg",
+        "image": "images/article-iceland-3.png",
         "url": "url-to-full-article-5"
     },
     {
@@ -95,7 +95,7 @@
         "date": "2024-06-10T12:15:00Z",
         "authors": ["Autor 12"],
         "tags": ["esportes", "saúde", "economia"],
-        "image": "images/image-2.jpg",
+        "image": "images/article-panama-1.png",
         "url": "url-to-full-article-11"
     },
     {
@@ -104,7 +104,7 @@
         "date": "2024-06-11T17:00:00Z",
         "authors": ["Autor 13"],
         "tags": ["negócios", "economia"],
-        "image": "images/image-3.jpg",
+        "image": "images/article-canada-2.png",
         "url": "url-to-full-article-12"
     }
 ]

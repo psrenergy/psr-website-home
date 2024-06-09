@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Notícia 8</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+    
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -13,19 +23,24 @@
     <link rel="stylesheet" href="css/analytics-style.css">
 </head>
 <body>
-
+<!-- HERO SECTION -->
     <section class="analytics-news-hero-area">
         <div class="analytics-news-hero-item analytics-news-hero-bg-4">
             <!-- Color Gradient Overlay -->
             <div class="analytics-news-hero-overlay"></div><!-- overlay -->
             <div class="container position-relative z-index-1">
                 <div class="analytics-news-hero-content text-center">
+                    <p class="back-link-news">
+                        <a href="https://example.com" class="link-back">
+                          <i class="fa fa-chevron-left"></i>   Back to News & Articles
+                        </a>
+                    </p>
                     <h2 class="sec-title text-white" id="analytics-news-title">Notícia 8</h2>
                     <p id="analytics-news-authors"><a class="analytics-news-author text-white link" href="news.html?filter=Autor 9">Autor 9</a></p>
                     <p class="analytics-news-date text-white" id="analytics-news-date">07/06/2024</p>
                     <div class="analytics-news-tags-container">
-                        <p id="analytics-news-tags"><a class="analytics-news-tags text-white" href="news.html?filter=economia">Economia</a></p>
-                        <p id="analytics-news-tags"><a class="analytics-news-tags text-white" href="news.html?filter=ciência">Ciência</a></p>
+                        <p id="analytics-news-tags"><a class="analytics-news-article-tags text-white" href="news.html?filter=economia">Economia</a></p>
+                        <p id="analytics-news-tags"><a class="analytics-news-article-tags text-white" href="news.html?filter=ciência">Ciência</a></p>
                     </div>
                 </div>
             </div>
@@ -36,6 +51,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
+                <!-- CORPO DO ARTIGO -->
                 <div class="analytics-news-body" id="analytics-news-body">
                 <!-- parágrafo padrão com exemplo de aplicação de bold (<strong>) e highlight estilo marcatexto -->
                 <p>
@@ -105,19 +121,58 @@
                 <p>Para citações curtas, use a tag <q>q</q>, como em <q>Isto é uma citação curta</q>.</p>
                 <p>Para links, use a tag <a>a</a>, como neste <a href="https://www.example.com">link de exemplo</a>.</p>
 				</div>
+
+                <!-- CARD DOS AUTORES -->
                 <div id="analytics-news-authors-section">
                     <div class="analytics-news-author-card">
                         <img src="images/author9.jpg" alt="Autor 9">
                         <div class="analytics-news-author-info">
                             <h5>Autor 9</h5>
                             <p>Biografia do Autor 9</p>
+                            <div class="mt-3">
+                                <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-PROFILE" class="linkedin-button" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analytics-news-author-card">
+                        <img src="images/author9.jpg" alt="Autor 9">
+                        <div class="analytics-news-author-info">
+                            <h5>Autor 10</h5>
+                            <p>Biografia do Autor 10</p>
+                            <div class="mt-3">
+                                <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-PROFILE" class="linkedin-button" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- SIDE BAR -->
             <div class="col-lg-4">
                 <div class="sidebar">
                     <div class="analytics-news-sidebar">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Share this article</h4>
+                                <div class="container social-media-card">
+                                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-PROFILE" class="button-share-card" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-PROFILE" class="button-share-card" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-PROFILE" class="button-share-card" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-PROFILE" class="button-share-card" target="_blank">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card mb-4">
                             <div class="card-body">
                                 <h4 class="card-title">Tag Cloud</h4>
@@ -128,7 +183,7 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Notícias Recentes</h4>
+                                <h4 class="card-title">Recent publications</h4>
                                 <ul id="analytics-news-recent-news" class="list-unstyled">
                                     <!-- Notícias recentes serão carregadas aqui -->
                                 </ul>
