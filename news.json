@@ -1,0 +1,110 @@
+[
+    {
+        "title": "Notícia 1",
+        "content": "Resumo da notícia 1.",
+        "date": "2024-06-01T10:00:00Z",
+        "authors": ["Autor 1", "Autor 2"],
+        "tags": ["tecnologia", "ciência"],
+        "image": "images/image-1.jpg",
+        "url": "url-to-full-article-1"
+    },
+    {
+        "title": "Notícia 2",
+        "content": "Resumo da notícia 2.",
+        "date": "2024-06-02T12:30:00Z",
+        "authors": ["Autor 3"],
+        "tags": ["negócios", "economia"],
+        "image": "images/image-2.jpg",
+        "url": "url-to-full-article-2"
+    },
+    {
+        "title": "Notícia 3",
+        "content": "Resumo da notícia 3.",
+        "date": "2024-05-28T09:00:00Z",
+        "authors": ["Autor 1"],
+        "tags": ["ciência", "saúde"],
+        "image": "images/image-3.jpg",
+        "url": "url-to-full-article-3"
+    },
+    {
+        "title": "Notícia 4",
+        "content": "Resumo da notícia 4.",
+        "date": "2024-06-03T14:00:00Z",
+        "authors": ["Autor 4", "Autor 5"],
+        "tags": ["tecnologia", "inovação"],
+        "image": "images/image-2.jpg",
+        "url": "url-to-full-article-4"
+    },
+    {
+        "title": "Notícia 5",
+        "content": "Resumo da notícia 5.",
+        "date": "2024-06-04T08:00:00Z",
+        "authors": ["Autor 6"],
+        "tags": ["política", "economia"],
+        "image": "images/article-iceland-3.png",
+        "url": "url-to-full-article-5"
+    },
+    {
+        "title": "Notícia 6",
+        "content": "Resumo da notícia 6.",
+        "date": "2024-06-05T15:00:00Z",
+        "authors": ["Autor 7"],
+        "tags": ["esportes"],
+        "image": "images/image-1.jpg",
+        "url": "url-to-full-article-6"
+    },
+    {
+        "title": "Notícia 7",
+        "content": "Resumo da notícia 7.",
+        "date": "2024-06-06T10:30:00Z",
+        "authors": ["Autor 8"],
+        "tags": ["saúde", "bem-estar"],
+        "image": "images/image-2.jpg",
+        "url": "url-to-full-article-7"
+    },
+    {
+        "title": "Notícia 8",
+        "content": "Resumo da notícia 8.",
+        "date": "2024-06-07T11:00:00Z",
+        "authors": ["Autor 9"],
+        "tags": ["ciência", "inovação"],
+        "image": "images/image-3.jpg",
+        "url": "url-to-full-article-8"
+    },
+    {
+        "title": "Notícia 9",
+        "content": "Resumo da notícia 9.",
+        "date": "2024-06-08T16:00:00Z",
+        "authors": ["Autor 10"],
+        "tags": ["negócios", "tecnologia"],
+        "image": "images/image-1.jpg",
+        "url": "url-to-full-article-9"
+    },
+    {
+        "title": "Notícia 10",
+        "content": "Resumo da notícia 10.",
+        "date": "2024-06-09T09:45:00Z",
+        "authors": ["Autor 11"],
+        "tags": ["política", "tecnologia"],
+        "image": "images/image-1.jpg",
+        "url": "url-to-full-article-10"
+    },
+    {
+        "title": "Notícia 11",
+        "content": "Resumo da notícia 11.",
+        "date": "2024-06-10T12:15:00Z",
+        "authors": ["Autor 12"],
+        "tags": ["esportes", "saúde", "economia"],
+        "image": "images/article-panama-1.png",
+        "url": "url-to-full-article-11"
+    },
+    {
+        "title": "Notícia 12",
+        "content": "Resumo da notícia 12.",
+        "date": "2024-06-11T17:00:00Z",
+        "authors": ["Autor 13"],
+        "tags": ["negócios", "economia"],
+        "image": "images/article-canada-2.png",
+        "url": "url-to-full-article-12"
+    }
+]
