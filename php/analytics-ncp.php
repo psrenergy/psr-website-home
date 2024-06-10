@@ -15,19 +15,19 @@
 <div class="hero-item pt-100 pb-100">
 <!-- Video Background -->
 <video autoplay="autoplay" class="hero-video" loop="loop" muted="muted" playsinline="playsinline">
-<source src="images/video_hero_1.mp4" type="video/mp4"/>
+<source src="images/video_hero_ncp.mp4" type="video/mp4"/>
 </video>
 <!-- Color Gradient Overlay -->
 <div class="overlay-video-sddp"></div><!-- overlay -->
 <div class="container position-relative z-index-1">
 <div class="hero-content" style="display: flex; align-items: center;">
-<img alt="Descrição da Imagem" src="images/sddp.svg" style="width: 90px; height: auto; margin-right: 20px;"/>
+<img alt="Descrição da Imagem" src="images/ncp.svg" style="width: 90px; height: auto; margin-right: 20px;"/>
 <div>
-<h2 class="sec-title text-white font-60" style="margin-right: 400px; font-weight: 700 !important;">SDDP</h2>
-<p class="sec-title mb-4" style="margin-right: 400px; color: #fff; font-size: 30px;">Energy Systems Operation Planning</p>
+<h2 class="sec-title text-white font-60" style="margin-right: 400px; font-weight: 700 !important;">NCP</h2>
+<p class="sec-title mb-4" style="margin-right: 400px; color: #fff; font-size: 30px;">Short term dispatch model</p>
 </div>
 </div><!-- end hero-content -->
-<a class="button-support-link" href="https://www.example.com" style="font-weight: 500;">Download SDDP</a>
+<a class="button-support-link" href="https://www.example.com" style="font-weight: 500;">Download NCP</a>
 </div><!-- container -->
 </div><!-- end hero-item -->
 </section><!-- end hero-area -->
@@ -38,7 +38,7 @@
      START BAND AREA
 =================================-->
 <div class="faixa-impacto">
-<p class="frase-impacto">View the latest version <a class="link-faixa" href="https://example.com">release notes</a></p>
+<p class="frase-impacto">NCP 6.0 - Download new version <a class="link-faixa" href="https://example.com">here</a>!</p>
 </div>
 <!--================================
     END BAND AREA
@@ -49,18 +49,19 @@
 <section class="overview-area section----padding">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-4">
+<div class="col-lg-6">
 <img alt="feature image" class="img-fluid" src="images/image-sddp-overview.png"/>
-</div><!-- end col-lg-4 -->
-<div class="col-lg-8">
+</div><!-- end col-lg-6 -->
+<div class="col-lg-6">
 <div class="about-content-box mt-5 mt-lg-0 pl-lg-5">
 <p class="my-4" style="font-size: 25px; line-height: 32px; color: #002846;">
-<b>SDDP</b> is a stochastic dispatch model for electrical systems with detailed representation of 
-                        transmission and fuel networks. It is used for long, medium and short-term operational studies and 
-                        is highly flexible in terms of its temporal and spatial levels of detail.
+<b>NCP</b> is a <b>short-term operative optimization model</b> that determines the least cost dispatch of power 
+                        systems in hourly time steps or less (30, 15 or 5-minutes). In addition to all elements represented 
+                        by SDDP, NCP incorporates typical short-term issues.  NCP can also be used to determine <b>revenue 
+                        maximization dispatch strategies</b> for electricity companies in competitive markets.
                     </p>
 </div>
-</div><!-- end col-lg-8 -->
+</div><!-- end col-lg-6 -->
 </div><!-- end row -->
 </div><!-- end container -->
 </section><!-- end event-area -->
@@ -78,19 +79,10 @@
 <div class="row">
 <div class="col-lg-4 mb-4">
 <div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-hydro.png"/>
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-integration.png"/>
 <div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Hydro plants</b></p>
-<p class="card-capabilities-sddp-body">Variable production coefficient, evaporation, filtration, non-controllable spillage, etc.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 mb-4">
-<div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-conf.png"/>
-<div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Thermal plants</b></p>
-<p class="card-capabilities-sddp-body">Unit commitment, combined-cycle power plants, nonlinear heat rate, fuel contracts.</p>
+<p class="card-capabilities-sddp-title"><b>Integration with mid/long-term solutions</b></p>
+<p class="card-capabilities-sddp-body">Target storage, target generation, terminal function</p>
 </div>
 </div>
 </div>
@@ -98,17 +90,53 @@
 <div class="card-capabilities-sddp">
 <img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-renewable.png"/>
 <div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Renewable modeling</b></p>
-<p class="card-capabilities-sddp-body">Detailed modeling and production of synthetic scenarios for variable renewable energy sources with Time Series Lab.</p>
+<p class="card-capabilities-sddp-title"><b>Typical horizon</b></p>
+<p class="card-capabilities-sddp-body">The most common applications are the day-ahead, week-ahead and re-dispatch planning</p>
 </div>
 </div>
 </div>
 <div class="col-lg-4 mb-4">
 <div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-efficiency.png"/>
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-coopt.png"/>
 <div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Energy efficiency</b></p>
-<p class="card-capabilities-sddp-body">Regulations to reduce energy waste and environmental impact by optimizing energy generation.</p>
+<p class="card-capabilities-sddp-title"><b>Co-optimization of dispatch, reserve and inertia</b></p>
+<p class="card-capabilities-sddp-body">Including nesting reserve modeling</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card-capabilities-sddp">
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-hydro-unit.png"/>
+<div class="card-content">
+<p class="card-capabilities-sddp-title"><b>Hydroelectric units</b></p>
+<p class="card-capabilities-sddp-body">Forebay and flow ramps, inertia provision, unit commitment, net head, hill curve, etc</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card-capabilities-sddp">
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-thermal.png"/>
+<div class="card-content">
+<p class="card-capabilities-sddp-title"><b>Thermal plants</b></p>
+<p class="card-capabilities-sddp-body">Non-linear heat rate curve, start-up costs, CHP modeling, forbidden zones, etc</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card-capabilities-sddp">
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-storage.png"/>
+<div class="card-content">
+<p class="card-capabilities-sddp-title"><b>Storage devices</b></p>
+<p class="card-capabilities-sddp-body">Round-trip efficiency,  charge and discharge ramping constraints, maximum regulation time</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card-capabilities-sddp">
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-energy-bids.png"/>
+<div class="card-content">
+<p class="card-capabilities-sddp-title"><b>Energy and reserve bids</b></p>
+<p class="card-capabilities-sddp-body">For renewable sources,  storage devices, thermal and hydro plants</p>
 </div>
 </div>
 </div>
@@ -116,44 +144,17 @@
 <div class="card-capabilities-sddp">
 <img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-dsm.png"/>
 <div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Demand Side Management</b></p>
-<p class="card-capabilities-sddp-body">Response to price, signals by segment by system, area, or bus-level.</p>
+<p class="card-capabilities-sddp-title"><b>Demand side management</b></p>
+<p class="card-capabilities-sddp-body">Response to price, signals by segment by system, area, or bus-level</p>
 </div>
 </div>
 </div>
 <div class="col-lg-4 mb-4">
 <div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-reliability.png"/>
+<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-ncp-multi-objective.png"/>
 <div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Reliability analysis</b></p>
-<p class="card-capabilities-sddp-body">Stochastic reliability study focusing on renewable energy and storage using Coral.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 mb-4">
-<div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-storage.png"/>
-<div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Storage devices</b></p>
-<p class="card-capabilities-sddp-body">Storage capacity, charge and discharge capacities, efficiencies, ramping constraints.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 mb-4">
-<div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-reserve.png"/>
-<div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Operating reserves</b></p>
-<p class="card-capabilities-sddp-body">Dynamic Probabilistic Reserve (DPR) based on renewable scenarios.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 mb-4">
-<div class="card-capabilities-sddp">
-<img alt="Logo TSL Renewable Modeling" class="card-capabilities-img-left" src="images/icon-sddp-maintenance.png"/>
-<div class="card-content">
-<p class="card-capabilities-sddp-title"><b>Maintenance</b></p>
-<p class="card-capabilities-sddp-body">User-defined or optimized plant maintenance.</p>
+<p class="card-capabilities-sddp-title"><b>Multi-objective frequency control ancillary services</b></p>
+<p class="card-capabilities-sddp-body">Largest generator contingency, system inertia, interconnection flows, absolute limits</p>
 </div>
 </div>
 </div>
@@ -167,19 +168,33 @@
 <!--======================================
         START TECHNICAL DATA I AREA
 ======================================-->
-<section class="capabilities-area section---padding bgGhostGreen">
+<section class="capabilities-area section--padding bgGhostGreen">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-8">
+<div class="col-lg-12">
 <div class="about-content-box mt-5pl-lg-5">
-<h2 class="section-title-model" style="margin-bottom: 30px; ">SDDP finds the <em>optimal operation policy</em> of the system </h2>
-<p class="card-tools-text">The objective of <b>SDDP</b> is to minimize the sum of costs for purchase and transportation of fuels for thermal plants, 
-                        pollutant emission costs, hydro and thermal plants' O&amp;M costs, transmission wheeling rates, cost of energy not supplied and other penalties.  
-                        In other words, the model calculates the least-cost operation policy of the system, taking all the aspects above into consideration. </p>
+<h2 class="section-title-model" style="margin-bottom: 30px; "> <em>Accuracy</em> of short-term planning </h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-content">
+<h2>Effective resource management</h2>
+<p>Short-term planning should be in line with real life</p>
 </div>
-</div><!-- end col-lg-6 -->
-<div class="col-lg-2">
-<img alt="feature image" src="images/image-sddp-optimal.svg" style="width: 300px; height: auto;"/>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h2>Greater level of detail</h2>
+<p>Represents a wide diversity of elements and constraints</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h2>A more assertive dispatch</h2>
+<p>Provides intuitive results and simplifies qualitative analysis</p>
+</div>
+</div>
+</div>
+</div>
 </div><!-- end col-lg-6 -->
 </div><!-- end row -->
 </div><!-- end container -->
@@ -194,7 +209,7 @@
 <div class="container">
 <div class="row align-items-center">
 <div class="col-lg-6">
-<h2 class="get-sddp-title font-40" style="font-size: 40px !important; color:#ffffff">Get SDDP today</h2>
+<h2 class="get-sddp-title font-40" style="font-size: 40px !important; color:#ffffff">Get NCP today</h2>
 <a class="button-support-link" href="https://www.example.com" style="font-weight: 500;">Talk to an expert</a>
 <a class="button-support-link" href="https://www.example.com" style="margin-left: 20px; font-weight: 500;">Licensing schemes</a>
 </div>
@@ -216,7 +231,7 @@
 <section class="capabilities-area section--padding bgGhostWhite">
 <div class="container">
 <div class="text-left">
-<h2 class="section-title-model" style="margin-bottom: 30px; font-weight: 450; ">Find out where <em>SDDP is used</em></h2>
+<h2 class="section-title-model" style="margin-bottom: 30px; font-weight: 450; ">Find out where <em>NCP is used</em></h2>
 </div>
 <div class="row mt-5">
 <div class="col-lg-4 col-md-6">
@@ -276,24 +291,25 @@
 <!--======================================
         START TECHNICAL DATA II AREA
 ======================================-->
-<section class="capabilities-area section--padding bg-image-technical-sddp">
+<section class="capabilities-area section--padding">
 <div class="container">
 <div class="row align-items-center">
 <div class="col-lg-12">
 <div class="about-content-box mt-5pl-lg-5">
-<h2 class="section-title-model" style="margin-bottom: 30px; "> PSR solves <em>large-scale multi-stage</em> optimization problems under <em>uncertainty</em></h2>
-<p class="card-tools-text" style="margin-bottom: 30px; ">SDDP stands for <b>Stochastic Dual Dynamic Programming</b>, an algorithm developed by PSR in 
-                        the 1980s for solving large-scale multi-stage optimization problems under uncertainty. 
-                        It's not necessary to enumerate the combinations of reservoir levels and the future cost function approximation is 
-                        made through a Benders decomposition scheme. </p>
+<h2 class="section-title-model" style="margin-bottom: 30px; "> Coupling short-term <em>decisions</em> with long-term <em>objectives</em></h2>
+<p class="card-tools-text" style="margin-bottom: 30px; ">
+                        NCP can be integrated with mid/long-term models such as SDDP, by reading a terminal
+                        function (future cost or benefit function) of a given week or month. It considers 
+                        all elements modeled in SDDP plus additional information from sub-hourly operations. 
+                    </p>
 <p class="card-tools-text">
-                        SDDP algorithm has been extended to several areas and became the global industry standard, 
-                        with more than 1.700 citations in the scientific literature. It has been successfully applied 
-                        for more than thirty years for mid- and long-term optimal stochastic scheduling of very complex real 
-                        systems with multi-scale storage and probabilistic modelings such as hydro inflows, 
-                        renewable intermittency, demand, and fuel prices. </p>
+                        The short-term energy planning tool is formulated by NCP as a large scale mixed-integer
+                        linear programming model. The problem is solved with state-of-the-art optimization 
+                        techniques for Linear and Mixed-Integer Linear Programming (including Branch &amp; Bound, 
+                        branch &amp; cut generation strategies, and heuristics).
+                    </p>
 </div>
-<a class="analytics-btn analytics-btn-primary" href="#" id="downloadBtn" style="margin-top: 30px; font-size: 22px;">Download SDDP folder</a>
+<a class="analytics-btn analytics-btn-primary" href="#" style="margin-top: 30px; font-size: 22px;">Download NCP folder</a>
 </div><!-- end col-lg-6 -->
 </div><!-- end row -->
 </div><!-- end container -->
@@ -301,55 +317,27 @@
 <!--======================================
         END TECHNICAL DATA II AREA
 ======================================-->
-<!-- Configura pop-up de informações necessárias para fazer download do folder -->
-<div class="popup-form" id="popupForm">
-<div class="popup-form-content">
-<span class="close">×</span>
-<h2>You are almost there!</h2>
-<form id="downloadForm">
-<label for="name">Name:</label>
-<input id="name" name="name" required="" type="text"/>
-<label for="email">E-mail:</label>
-<input id="email" name="email" required="" type="email"/>
-<label for="company">Company:</label>
-<input id="company" name="company" required="" type="text"/>
-<label for="country">Country:</label>
-<input id="country" name="country" required="" type="text"/>
-<label for="phone">Phone number:</label>
-<input id="phone" name="phone" required="" type="tel"/>
-<button class="analytics-btn analytics-btn-primary" style="margin-top: 30px; font-size: 16px;" type="submit">Download</button>
-</form>
-</div>
-</div>
 <!--======================================
         START EXTRA TOOLS AREA
 ======================================-->
-<section class="financial-tools-area section--padding bgGhostGreen">
+<section class="financial-tools-area section---padding bgGhostGreen">
 <div class="container">
-<div class="row align-items-center">
-<div class="col-lg-4 align-items-center">
+<div class="row">
+<div class="col-lg-8">
 <div class="text-left" style="margin-right: 20px;">
 <h2 class="section-title-model font-40" style="margin-bottom: 20px; font-weight: 600;">
-<em>Included complementary tools</em>
+<em>Included tools</em>
 </h2>
-<p class="font-weight-100" style="font-size: 24px;">
-                        The SDDP license comes with a suite of additional tools designed to enhance your experience and productivity.
+<p class="font-weight-100" style="font-size: 24px; line-height:30px;">
+                        The NCP license comes with additional tools designed to enhance your experience and productivity. 
+                        PSRIO is an advanced data analysis and visualiation tool and PSR Cloud is a platform for remote execution
+                        in a distributed environment.
                     </p>
 </div>
 </div><!-- end col-lg-4 -->
-<div class="col-lg-8 align-items-self">
+<div class="col-lg-4 align-items-self">
 <div class="row align-items-center">
-<div class="col-md-6 mb-4">
-<div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
-<a class="stretched-link" href="URL_DO_SEU_LINK"></a>
-<img alt="Logo TSL Renewable Modeling" class="card-extra-tools-img-left" src="images/tsl_blue.svg" style="width: 14%;"/>
-<div class="card-extra-tools-body">
-<h5 class="card-extra-tools-title">Time Series Lab</h5>
-<p class="card-text">Renewable Modeling Tool</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 mb-4">
+<div class="col-md-12 mb-4">
 <div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
 <a class="stretched-link" href="URL_DO_SEU_LINK"></a>
 <img alt="Logo TSL Renewable Modeling" class="card-extra-tools-img-left" src="images/psrio_dark.svg"/>
@@ -359,23 +347,13 @@
 </div>
 </div>
 </div>
-<div class="col-md-6 mb-4">
+<div class="col-md-12 mb-4">
 <div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
 <a class="stretched-link" href="URL_DO_SEU_LINK"></a>
 <img alt="Logo TSL Renewable Modeling" class="card-extra-tools-img-left" src="images/psrcloud_blue.svg" style="width: 14%;"/>
 <div class="card-extra-tools-body">
 <h5 class="card-extra-tools-title">PSR Cloud</h5>
 <p class="card-text">Cloud Computing Environment</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 mb-4">
-<div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
-<a class="stretched-link" href="URL_DO_SEU_LINK"></a>
-<img alt="Logo TSL Renewable Modeling" class="card-extra-tools-img-left" src="images/coral.png"/>
-<div class="card-extra-tools-body">
-<h5 class="card-extra-tools-title">Coral</h5>
-<p class="card-text">Reliability Analysis Tool</p>
 </div>
 </div>
 </div>
@@ -430,6 +408,11 @@
 <!--======================================
         END SUPPORT AREA
 =======================================-->
+<!-- start back-to-top -->
+<a class="icon-element icon-element-sm" href="#" id="back-to-top">
+<i class="far fa-angle-up" title="Go top"></i>
+</a>
+<!-- end back-to-top -->
 <!-- theme js files -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
