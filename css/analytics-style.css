@@ -458,6 +458,12 @@
 	background-color: #2A838A;
 	border-color: #2A838A;
 }
+.btn-contact {
+	border-radius: 10px;
+	color: #fff;
+	padding-right: 40px;
+	padding-left: 40px;
+}
 .analytics-btn-secondary {
 	background-color: #A49375;
 	border-color: #A49375;
@@ -1236,24 +1242,74 @@ body {
 .breadcrumb-item.active {
 	color: rgba(255, 255, 255, 0.7);
 }
+
+/*=========== toggle-password =============*/
 .form-control {
-	height: 50px;
-	color: #3f4161;
-	border-color: transparent;
-	background-color: rgba(127, 136, 151, 0.1);
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 15px;
+    height: 50px;
+    color: #3f4161;
+    border-color: transparent;
+    background-color: rgba(127, 136, 151, 0.1);
+    padding-left: 20px;
+    padding-right: 40px; /* Espaço adicional para a seta */
+    font-size: 15px;
+    border-radius: 4px;
+    position: relative;
 }
+
 .form-control:focus {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	border-color: #3f4161;
+    box-shadow: none;
+    border-color: #3f4161;
+    outline: none;
 }
+
+.form-select {
+    height: 50px;
+    color: #3f4161;
+    border-color: transparent;
+    background-color: rgba(127, 136, 151, 0.1);
+    padding-left: 20px;
+    padding-right: 40px; /* Espaço adicional para a seta */
+    font-size: 15px;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3E%3Cpath fill="%233f4161" d="M2 5L0 3h4z" /%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 10px;
+}
+
+.form-select:focus {
+    box-shadow: none;
+    border-color: #3f4161;
+    outline: none;
+}
+
+.form-select.expanded {
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3E%3Cpath fill="%233f4161" d="M2 0L0 2h4z" /%3E%3C/svg%3E');
+}
+
 .alert-message {
-	display: none;
+    display: none;
 }
+
+.text-danger {
+    color: #dc3545;
+}
+
+/* Estilos para a lista de opções */
+.form-select option {
+    padding-top: 30px;
+    background-color: white;
+    color: #3f4161;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+
 /*=========== toggle-password =============*/
 .toggle-password {
 	display: inline-flex;
