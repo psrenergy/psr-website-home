@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'General Information': ['New business', 'PSR Solutions', 'Schedule a meeting', 'Other'],
         'Technical Support': ['SDDP', 'OptGen', 'NCP', 'TSL', 'PSR Cloud', 'PSRIO', 'Other'],
         'Licensing': ['Commercial License', 'Trial License', 'Academic License', 'Other'],
-        'Feedback': ['']
     };
 
     function updateTopics(subject) {
