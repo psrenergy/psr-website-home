@@ -16,7 +16,7 @@ function appendFooter() {
                 var footer = tempDiv.getElementsByTagName('footer')[0];
                 document.body.append(footer);
                 const endSync = performance.now();
-                console.log("Elapse time header in seconds: " + ((endSync - startSync)/1000).toFixed(2));           
+                console.log("Elapse time footer in seconds: " + ((endSync - startSync)/1000).toFixed(2));           
             })
             .catch(error => {
                 console.error('Erro:', error);
