@@ -276,7 +276,7 @@ function menu(){
                                                                                         {
                                                                                             "tag": "a",
                                                                                             "attributes": {
-                                                                                                "href": "./en/software/?tabId=sddp&subPanelId=sub-panel-sddp-1"
+                                                                                                "href": "./sddp.html"
                                                                                             },
                                                                                             "text": "SDDP"
                                                                                         }
@@ -292,7 +292,7 @@ function menu(){
                                                                                         {
                                                                                         "tag": "a",
                                                                                         "attributes": {
-                                                                                            "href": "./en/software/?tabId=sddp&subPanelId=sub-panel-sddp-2"
+                                                                                            "href": "./optgen.html"
                                                                                         },
                                                                                         "text": "OptGen"
                                                                                         }
@@ -308,7 +308,7 @@ function menu(){
                                                                                         {
                                                                                             "tag": "a",
                                                                                             "attributes": {
-                                                                                                "href": "./en/software/?tabId=sddp&subPanelId=sub-panel-sddp-3"
+                                                                                                "href": "./ncp.html"
                                                                                             },
                                                                                             "text": "NCP"
                                                                                         }
@@ -364,7 +364,7 @@ function menu(){
                                                                             {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "https://www.psr-inc.com/en/software/?tabId=renewables&subPanelId=sub-panel-renewables-1"
+                                                                                "href": "./hera.html"
                                                                             },
                                                                             "text": "HERA"
                                                                             }
