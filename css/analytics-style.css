@@ -299,6 +299,13 @@
 	background-size: cover;
 	background-position: center;
 }
+.bg-image-geometric {
+	background-image: linear-gradient(90deg, rgba(19, 89, 94, 0.9) 0%,rgba(2, 44, 73, 0.75) 50%, rgba(0, 40, 70, 0.75) 100%), url(../images/hero-background-geometric.jpg) ;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 .bg-image-support {
 	background-image: url(../images/section-support.png);
 	background-size: 100%;
@@ -1523,6 +1530,96 @@ body {
 	font-size: 20px;
 	color: #002846 !important;
 }
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card-login {
+    background-color: white; /* Cor de fundo do card */
+    padding: 40px; /* Espaçamento interno do card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar destaque */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 900px; /* Largura máxima do card */
+}
+.card-login h1
+{
+	font-size:24px;
+	color: #002846;
+	margin-bottom: 25px;
+	line-height: 120%;
+	font-weight: 600;
+	text-align: left;
+}
+/* Estilos para centralizar o conteúdo */
+.card-login .form-group {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.card-login label {
+    display: block; /* Garante que as labels sejam exibidas como blocos */
+    margin-bottom: 5px; /* Espaço entre a label e o input */
+}
+
+.left-group {
+    padding-right: 40px;
+    border-right: 1px solid #ccc; /* Linha vertical */
+}
+
+.right-group {
+    padding-left: 40px;
+}
+
+.card-login input {
+    width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+    padding: 10px; /* Espaçamento interno dos inputs */
+    margin-bottom: 15px; /* Espaço entre os inputs */
+    border: 1px solid #ccc; /* Borda dos inputs */
+    border-radius: 4px; /* Bordas arredondadas dos inputs */
+}
+
+.container-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 60%; /* Limita a largura máxima dos conteúdos */
+}
+
+.card-register, .card-help {
+    background-color: white; /* Cor de fundo do card */
+    padding: 20px; /* Espaçamento interno do card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+
+.card-register {
+    width: 100%; /* Largura total do card de registro */
+}
+
+.card-register .form-group {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.card-register label {
+    display: block; /* Garante que as labels sejam exibidas como blocos */
+    margin-bottom: 5px; /* Espaço entre a label e o input */
+}
+
+.card-register input, .card-register select {
+    width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+    padding: 10px; /* Espaçamento interno dos inputs */
+    margin-bottom: 15px; /* Espaço entre os inputs */
+    border: 1px solid #ccc; /* Borda dos inputs */
+    border-radius: 4px; /* Bordas arredondadas dos inputs */
+}
+
+.card-help {
+    width: 100%; /* Largura total dos cards de ajuda */
+}
+
 /*======= timeline =======*/
 .timeline {
 	display: flex;
@@ -1612,21 +1709,55 @@ body {
 		margin-top: 0;
 	}
 }
+.full-page-section {
+    width: 100%;
+    height: 100vh; /* 100 viewport height units */
+    padding-top: 20px; /* Espaço na parte superior */
+    overflow-y: auto; /* Permite o scroll vertical */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao início */
+    text-align: center;
+}
+.full-page-section-signup {
+    width: 100%;
+    height: 100vh; /* 100 viewport height units */
+    padding-top: 500px; /* Espaço na parte superior */
+    overflow-y: auto; /* Permite o scroll vertical */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao início */
+    text-align: center;
+}
 
 .page-title{
 	font-size: 46px;
 	font-weight: 700;
 	margin-right: 400px;
+	color: #002846;
+}
+.page-subtitle{
+	margin-right: 400px; 
+	font-size: 30px; 
+	font-weight: 700;
+	line-height: 30px;
+	color: #002846;
 }
 .section-title-bold{
-	font-size:40px;
+	font-size:42px;
 	color: #002846;
 	font-weight: 650;
 	margin-bottom: 30px;
 }
 .section-title-regular{
-	font-size:40px;
+	font-size:42px;
 	color: #002846;
+	margin-bottom: 30px;
+}
+.section-white-title-bold{
+	font-size:42px;
+	color: #ffffff;
+	font-weight: 600;
 	margin-bottom: 30px;
 }
 .section-title-bold-sm{
@@ -1651,23 +1782,30 @@ body {
 	text-align: left;
 	font-size: 18px;
 	color: #002846;
+	font-weight: 400;
 }
 .section-body-text-lg{
 	text-align: left;
 	font-size: 22px;
 	color: #002846;
-	line-height: 120%;
+	line-height: 130%;
 }
 
-
+.section-title-bold em,
+.section-title-bold-sm em,
 .section-title-regular em, 
 .section-title-regular-sm em, 
 .section-subtitle em{
 	color: #2A838A;
 	font-style: normal !important;
+	text-decoration: none !important;
 }
 
-
+.section-white-title-bold em{
+	color: #DAEAE9 !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+}
 
 .section-title-model{
 	font-size:40px;
@@ -2043,7 +2181,7 @@ body {
 	font-size: 16px;
 	/* Espaçamento entre a imagem e o texto */
 }
-.card-capabilities-sddp {
+.card-model-capabilities {
 	display: flex;
 	flex-direction: row;
 	/* Orientação horizontal */
@@ -2053,12 +2191,12 @@ body {
 	/* height: 110px;
 	*/
 }
-.card-capabilities-sddp-title {
+.card-model-capabilities-title {
 	font-size: 20px;
 	/* Espaçamento entre a imagem e o texto */
 	color: #00111e
 }
-.card-capabilities-sddp-body {
+.card-model-capabilities-body {
 	margin-top: 5px;
 	font-size: 16px;
 	/* Espaçamento entre a imagem e o texto */
@@ -2304,11 +2442,11 @@ body {
 	/* Define a largura da imagem */
 	height: auto;
 	/* Mantém a proporção da imagem */
-	margin-left: 20px ;
-	margin-right: 20px ;
+	margin-left: 15px ;
+	margin-right: 15px ;
 }
 .card-financial-body {
-	padding-left: 20px;
+	padding-left: 15px;
 	/* Espaçamento entre a imagem e o texto */
 }
 .card-financial-title {
@@ -2316,11 +2454,13 @@ body {
 	font-weight: 700;
 }
 .financial-title {
-	font-size: 48px;
+	font-size: 42px;
 	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 30px;
 }
 .financial-title em {
-	font-size: 48px;
+	font-size: 42px;
 	font-weight: 600;
 	color: #C3B191;
 	font-style: normal !important;
