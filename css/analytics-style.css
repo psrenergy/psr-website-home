@@ -343,6 +343,13 @@
 	background-position: right center;
 	/* Mantém a imagem alinhada à direita e centraliza verticalmente */
 }
+.bg-image-hero-psrcloud {
+	background-image: linear-gradient(90deg, rgba(218, 234, 233, 0.79) 0%, rgba(218, 234, 233, 0.79) 90%), url(../images/hero-psrcloud.png) ;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 /*========== font-size ==========*/
 .font-120 {
 	font-size: 120px !important;
@@ -1733,11 +1740,10 @@ body {
 .page-title{
 	font-size: 46px;
 	font-weight: 700;
-	margin-right: 400px;
+	margin-bottom: 6px;
 	color: #002846;
 }
 .page-subtitle{
-	margin-right: 400px; 
 	font-size: 30px; 
 	font-weight: 700;
 	line-height: 30px;
@@ -1771,6 +1777,12 @@ body {
 	color: #002846;
 	margin-bottom: 30px;
 }
+.section-white-title-bold-sm{
+	font-size:32px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
 .section-subtitle{
 	font-size:26px;
 	color: #002846;
@@ -1786,7 +1798,7 @@ body {
 }
 .section-body-text-lg{
 	text-align: left;
-	font-size: 22px;
+	font-size: 20px;
 	color: #002846;
 	line-height: 130%;
 }
@@ -1803,6 +1815,12 @@ body {
 
 .section-white-title-bold em{
 	color: #DAEAE9 !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+}
+
+.section-white-title-bold-sm em{
+	color: #81abae;
 	font-style: normal !important;
 	text-decoration: none !important;
 }
@@ -2194,7 +2212,8 @@ body {
 .card-model-capabilities-title {
 	font-size: 20px;
 	/* Espaçamento entre a imagem e o texto */
-	color: #00111e
+	color: #00111e;
+	font-weight: bold;
 }
 .card-model-capabilities-body {
 	margin-top: 5px;
