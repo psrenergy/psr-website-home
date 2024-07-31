@@ -2678,7 +2678,7 @@ table tbody tr:hover {
 /* A classe .container e .row já são definidas no Bootstrap, então garantir que não sobrescreva */
 .container {
 	max-width: 1200px;
-	margin: 65px auto 0px auto;
+	margin: 0px auto 0px auto;
 }
 .analytics-news-filter {
 	margin-bottom: 20px;
