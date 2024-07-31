@@ -242,6 +242,9 @@
 .bgGhostGreen {
 	background-color: #DAEAE9 !important;
 }
+.bgGhostGreen2 {
+	background-color: #DFEDEC !important;
+}
 .bgGhostBlue {
 	background-color: #42425c !important;
 }
@@ -1938,10 +1941,8 @@ margin-top: 100px !important;
 
 .background-video-tsl {
     position: absolute;
-    top: 0;
-    right: 0%; /* Ajusta a posição para alinhar com background-position */
-    width: 50%;
-    height: 100%;
+    right: 20%; /* Ajusta a posição para alinhar com background-position */
+    height: 80%;
     object-fit: cover; /* Garante que o vídeo cobre toda a área */
     z-index: 0;
     pointer-events: none; /* Para garantir que o vídeo não interfira com interações */
@@ -3195,7 +3196,7 @@ table tbody tr:hover {
 }
 .d-flex {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 .flex-wrap {
 	flex-wrap: wrap;
