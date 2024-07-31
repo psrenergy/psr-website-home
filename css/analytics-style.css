@@ -184,7 +184,7 @@
 	color: #2A838A !important;
 }
 .text-grey {
-	color: #646464 !important;
+	color: #778899 !important;
 }
 .colorPSRDarkBlue {
   color: #122945 !important;
@@ -343,6 +343,13 @@
 	background-position: right center;
 	/* Mantém a imagem alinhada à direita e centraliza verticalmente */
 }
+.bg-image-hero-psrcloud {
+	background-image: linear-gradient(90deg, rgba(218, 234, 233, 0.79) 0%, rgba(218, 234, 233, 0.79) 90%), url(../images/hero-psrcloud.png) ;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 /*========== font-size ==========*/
 .font-120 {
 	font-size: 120px !important;
@@ -387,7 +394,7 @@
 	padding-bottom: 100px;
 }
 .section--padding {
-	padding-top: 100px;
+	padding-top: 70px;
 	padding-bottom: 70px;
 }
 .section---padding {
@@ -1476,7 +1483,7 @@ body {
 	/* Cor do texto */
 	font-size: 24px;
 	/* Tamanho do texto */
-	font-weight: bold !important;
+	font-weight: 650 !important;
 	/* Peso da fonte */
 	margin: 0;
 	/* Remove margens padrão do <p> */
@@ -1501,11 +1508,6 @@ body {
 .analytics-overview-card-text.number{
 	font-size: 30px !important;
 	font-weight: 700 !important;
-}
-.capabilities-area {
-	position: relative;
-	overflow: hidden;
-	/* Ensures no overflow from the line */
 }
 .card-solution-text {
 	text-align: center !important;
@@ -1671,6 +1673,7 @@ body {
 }
 .timeline-content {
 	padding-top: 20px;
+	margin-right: 20px;
 }
 .timeline-content h2 {
 	font-size: 22px;
@@ -1737,13 +1740,12 @@ body {
 }
 
 .page-title{
-	font-size: 46px;
+	font-size: 50px;
 	font-weight: 700;
-	margin-right: 400px;
+	margin-bottom: 6px;
 	color: #002846;
 }
 .page-subtitle{
-	margin-right: 400px; 
 	font-size: 30px; 
 	font-weight: 700;
 	line-height: 30px;
@@ -1777,6 +1779,12 @@ body {
 	color: #002846;
 	margin-bottom: 30px;
 }
+.section-white-title-bold-sm{
+	font-size:32px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
 .section-subtitle{
 	font-size:26px;
 	color: #002846;
@@ -1792,7 +1800,7 @@ body {
 }
 .section-body-text-lg{
 	text-align: left;
-	font-size: 22px;
+	font-size: 20px;
 	color: #002846;
 	line-height: 130%;
 }
@@ -1813,6 +1821,37 @@ body {
 	text-decoration: none !important;
 }
 
+.section-white-title-bold-sm em{
+	color: #81abae;
+	font-style: normal !important;
+	text-decoration: none !important;
+}
+
+.section-body-text em,
+.section-body-text-lg em {
+	font-weight: 600;
+	font-style: normal !important;
+}
+
+.section-body-text a {
+	color: inherit;
+	font-weight: 600;
+	/* text-decoration: underline; */
+	font-style: normal !important;
+}
+.section-body-text a:hover {
+	color: #295f7c;
+	font-weight: 600;
+	/* text-decoration: underline; */
+	font-style: normal !important;
+}
+
+.section-area {
+	position: relative;
+	overflow: hidden;
+	/* Ensures no overflow from the line */
+}
+
 .section-title-model{
 	font-size:40px;
 	color: #002846;
@@ -1824,34 +1863,6 @@ body {
 .section-title-model em{
 	color: #2A838A;
 	font-style: normal !important;
-}
-.section-subtitle-model{
-	font-size:28px;
-	color: #002846;
-	margin-bottom: 25px;
-	line-height: 120%;
-}
-.section-subtitle-model em{
-	color: #2A838A;
-	font-style: normal !important;
-}
-
-.section-title-model-marketplace{
-	font-size:40px;
-	color: #002846;
-}
-.section-title-model-marketplace em{
-	color: #2A838A;
-	font-weight: 500;
-	font-style: normal !important;
-}
-.section-support-title{
-	font-size:40px;
-	color: #ffffff;
-}
-.section-support-text{
-	font-size:20px;
-	color: #ffffff;
 }
 .integration-body {
 	text-align: left !important;
@@ -2135,6 +2146,10 @@ body {
 	color: #fff;
 	font-size: 18px;
 }
+.support-area{
+	position: relative;
+	overflow: hidden;
+}
 .card-support {
 	border: none;
 	background-color: #A49375;
@@ -2146,10 +2161,25 @@ body {
 .card-support:hover {
 	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+.card-support-body {
+	padding:15px;
+	text-align: center;
+}
 .card-support-title {
-	font-size: 24px;
-	font-weight: 500;
-	color: #fff;
+	font-size: 22px !important;
+	font-weight: 600 !important;
+	color: #002846 !important;
+}
+.card-support-img {
+	display: block;
+	margin: 0 auto;
+	/* Centralizar imagem */
+	width: 25%;
+	/* Dimensionamento da imagem */
+	max-width: 100%;
+	/* Garantir que a imagem não ultrapasse o tamanho do contêiner */
+	margin-bottom: 1px  !important;
+	
 }
 .card-capabilities {
 	display: flex;
@@ -2200,7 +2230,8 @@ body {
 .card-model-capabilities-title {
 	font-size: 20px;
 	/* Espaçamento entre a imagem e o texto */
-	color: #00111e
+	color: #00111e;
+	font-weight: bold;
 }
 .card-model-capabilities-body {
 	margin-top: 5px;
@@ -2336,85 +2367,41 @@ body {
 	height: auto;
 	/* Mantém a proporção da imagem */
 }
-.feature-list li {
-	padding-left: 30px;
-	/* Espaçamento à esquerda para o texto */
-	margin-bottom: 20px;
-	/* Espaço entre itens */
-	position: relative;
-	/* Necessário para posicionamento absoluto dos ícones */
-	line-height: 1.6;
-	/* Espaçamento entre linhas */
-	font-size: 20px;
-	/* Define o tamanho da fonte */
-	font-weight: normal;
-	/* Define a espessura da fonte */
-	color: #333;
-	/* Define a cor do texto */
-	text-transform: none;
-	/* Define transformações de texto (opcional) */
-}
-.feature-list li::before {
-	content: '\f111';
-	/* Unicode para icon-circle-blank */
-	font-family: 'FontAwesome';
-	/* Define a fonte para FontAwesome */
-	position: absolute;
-	/* Posiciona absolutamente em relação ao item da lista */
-	left: 0;
-	/* Alinha à esquerda */
-	top: 0;
-	/* Alinha ao topo */
-	font-size: 16px;
-	/* Tamanho do ícone */
-	color: #2A838A;
-	/* Cor do ícone */
-}
-.feature-list li:not(:last-child)::after {
-	content: '';
-	position: absolute;
-	left: 5.5px;
-	/* Centraliza a linha no meio do ícone */
-	top: 17.5px;
-	/* Início da linha após o ícone */
-	height: calc(120%);
-	/* Altura até o próximo ícone */
-	border-left: 3px solid #2A838A;
-	/* Linha vertical */
-}
 .feature-list-style li {
-	padding-left: 30px;
 	/* Espaçamento à esquerda para o texto */
 	margin-bottom: 20px;
 	/* Espaço entre itens */
 	position: relative;
 	/* Necessário para posicionamento absoluto dos ícones */
-	line-height: 1.6;
+	/* line-height: 1.6; */
 	/* Espaçamento entre linhas */
 	font-size: 20px;
-	/* Define o tamanho da fonte */
-	font-weight: 600;
+
 	/* Define a espessura da fonte */
-	color: #2A838A;
+	color: #002846;
 	/* Define a cor do texto */
 	text-transform: none;
 	/* Define transformações de texto (opcional) */
+	padding-left: 30px;
 }
 .feature-list-style li::before {
 	content: '\f111';
 	/* Unicode para icon-circle-blank */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	/* Define a fonte para FontAwesome */
-	position: absolute;
 	/* Posiciona absolutamente em relação ao item da lista */
 	left: 0;
 	/* Alinha à esquerda */
 	top: 0;
 	/* Alinha ao topo */
-	font-size: 16px;
+	font-size: 14px;
 	/* Tamanho do ícone */
 	color: #2A838A;
 	/* Cor do ícone */
+	/* Define o tamanho da fonte */
+	font-weight: 600;
+	margin-right: 15px;
+	margin-left: -30px;
 }
 .feature-list-style li:not(:last-child)::after {
 	content: '';
@@ -2423,7 +2410,7 @@ body {
 	/* Centraliza a linha no meio do ícone */
 	top: 17.5px;
 	/* Início da linha após o ícone */
-	height: calc(120%);
+	height: calc(130%);
 	/* Altura até o próximo ícone */
 	border-left: 3px solid #2A838A;
 	/* Linha vertical */
