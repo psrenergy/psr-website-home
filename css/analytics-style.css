@@ -1483,7 +1483,7 @@ body {
 	/* Cor do texto */
 	font-size: 24px;
 	/* Tamanho do texto */
-	font-weight: bold !important;
+	font-weight: 650 !important;
 	/* Peso da fonte */
 	margin: 0;
 	/* Remove margens padrão do <p> */
@@ -1670,6 +1670,7 @@ body {
 }
 .timeline-content {
 	padding-top: 20px;
+	margin-right: 20px;
 }
 .timeline-content h2 {
 	font-size: 22px;
@@ -1818,6 +1819,25 @@ body {
 	color: #81abae;
 	font-style: normal !important;
 	text-decoration: none !important;
+}
+
+.section-body-text em,
+.section-body-text-lg em {
+	font-weight: 600;
+	font-style: normal !important;
+}
+
+.section-body-text a {
+	color: inherit;
+	font-weight: 600;
+	/* text-decoration: underline; */
+	font-style: normal !important;
+}
+.section-body-text a:hover {
+	color: #295f7c;
+	font-weight: 600;
+	/* text-decoration: underline; */
+	font-style: normal !important;
 }
 
 .section-area {
@@ -2341,85 +2361,41 @@ body {
 	height: auto;
 	/* Mantém a proporção da imagem */
 }
-.feature-list li {
-	padding-left: 30px;
-	/* Espaçamento à esquerda para o texto */
-	margin-bottom: 20px;
-	/* Espaço entre itens */
-	position: relative;
-	/* Necessário para posicionamento absoluto dos ícones */
-	line-height: 1.6;
-	/* Espaçamento entre linhas */
-	font-size: 20px;
-	/* Define o tamanho da fonte */
-	font-weight: normal;
-	/* Define a espessura da fonte */
-	color: #333;
-	/* Define a cor do texto */
-	text-transform: none;
-	/* Define transformações de texto (opcional) */
-}
-.feature-list li::before {
-	content: '\f111';
-	/* Unicode para icon-circle-blank */
-	font-family: 'FontAwesome';
-	/* Define a fonte para FontAwesome */
-	position: absolute;
-	/* Posiciona absolutamente em relação ao item da lista */
-	left: 0;
-	/* Alinha à esquerda */
-	top: 0;
-	/* Alinha ao topo */
-	font-size: 16px;
-	/* Tamanho do ícone */
-	color: #2A838A;
-	/* Cor do ícone */
-}
-.feature-list li:not(:last-child)::after {
-	content: '';
-	position: absolute;
-	left: 5.5px;
-	/* Centraliza a linha no meio do ícone */
-	top: 17.5px;
-	/* Início da linha após o ícone */
-	height: calc(120%);
-	/* Altura até o próximo ícone */
-	border-left: 3px solid #2A838A;
-	/* Linha vertical */
-}
 .feature-list-style li {
-	padding-left: 30px;
 	/* Espaçamento à esquerda para o texto */
 	margin-bottom: 20px;
 	/* Espaço entre itens */
 	position: relative;
 	/* Necessário para posicionamento absoluto dos ícones */
-	line-height: 1.6;
+	/* line-height: 1.6; */
 	/* Espaçamento entre linhas */
 	font-size: 20px;
-	/* Define o tamanho da fonte */
-	font-weight: 600;
+
 	/* Define a espessura da fonte */
-	color: #2A838A;
+	color: #002846;
 	/* Define a cor do texto */
 	text-transform: none;
 	/* Define transformações de texto (opcional) */
+	padding-left: 30px;
 }
 .feature-list-style li::before {
 	content: '\f111';
 	/* Unicode para icon-circle-blank */
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Pro';
 	/* Define a fonte para FontAwesome */
-	position: absolute;
 	/* Posiciona absolutamente em relação ao item da lista */
 	left: 0;
 	/* Alinha à esquerda */
 	top: 0;
 	/* Alinha ao topo */
-	font-size: 16px;
+	font-size: 14px;
 	/* Tamanho do ícone */
 	color: #2A838A;
 	/* Cor do ícone */
+	/* Define o tamanho da fonte */
+	font-weight: 600;
+	margin-right: 15px;
+	margin-left: -30px;
 }
 .feature-list-style li:not(:last-child)::after {
 	content: '';
@@ -2428,7 +2404,7 @@ body {
 	/* Centraliza a linha no meio do ícone */
 	top: 17.5px;
 	/* Início da linha após o ícone */
-	height: calc(120%);
+	height: calc(130%);
 	/* Altura até o próximo ícone */
 	border-left: 3px solid #2A838A;
 	/* Linha vertical */
