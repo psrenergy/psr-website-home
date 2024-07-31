@@ -1893,6 +1893,39 @@ body {
 		padding-left: 0 !important;
 	}
 }
+
+/* Classes para seções com imagem de background parcial. */
+/* Está feito para o lado direito, mas é facilmente invertível. Para copiar, trocar a imagem, e os overlays para desktop e mobile */
+.section-area-coral {
+    position: relative;
+	max-height: 667px;
+    background-image: linear-gradient(to right, #daeae9 30%, #daeae985), url(../images/image-section-coral-2.jpg);
+    background-position: 100% 0;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.text-content-coral {
+    z-index: 2;
+    padding-right: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    .section-area-coral {
+        background-position: center bottom;
+        background-size: 100%;
+		background-image: linear-gradient(to bottom, #daeae9 70%, #daeae9b0 100%), url(../images/image-section-coral-2.jpg);
+    }
+
+    .text-content-coral {
+        padding-right: 0;
+		padding-bottom: 200px;
+    }
+}
+
+
 /*===== integration =====*/
 .integration-area {
 	display: flex;
