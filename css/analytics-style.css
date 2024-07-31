@@ -702,6 +702,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.margin-nav{
+margin-top: 100px !important;
+}
 .link-faixa{
 	color: #fff;
 	text-decoration: underline;
@@ -1925,6 +1928,58 @@ body {
     }
 }
 
+.section-area-tsl {
+    position: relative;
+    max-height: 667px;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Para garantir que o conteúdo extra seja ocultado */
+}
+
+.background-video-tsl {
+    position: absolute;
+    top: 0;
+    right: 0%; /* Ajusta a posição para alinhar com background-position */
+    width: 50%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cobre toda a área */
+    z-index: 0;
+    pointer-events: none; /* Para garantir que o vídeo não interfira com interações */
+}
+
+.text-content-tsl {
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.overlay-tsl {
+    position: absolute;
+    top: 0;
+    right: -10%; /* Ajusta a posição para alinhar com background-position */
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #daeae9 2%, #daeae900 20%); /* Overlay com transparência */
+    pointer-events: none; /* Para permitir interações através do overlay */
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .section-area-tsl {
+        flex-direction: column;
+    }
+
+    .text-content-tsl {
+        width: 100%;
+    }
+
+    .background-video-tsl, .overlay-tsl {
+        right: 0;
+        width: 100%;
+        height: 200px; /* Ajuste conforme necessário */
+    }
+}
 
 /*===== integration =====*/
 .integration-area {
