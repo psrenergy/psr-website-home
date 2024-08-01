@@ -117,7 +117,7 @@ function menu(){
                                                         {
                                                             "tag": "a",
                                                             "attributes": {
-                                                                "href": "./en/who_we_are/"
+                                                                "href": "https://www.psr-inc.com/en/who_we_are/"
                                                             },
                                                             "text": "About Us"
                                                         },
@@ -329,7 +329,7 @@ function menu(){
                                                                     {
                                                                     "tag": "a",
                                                                     "attributes": {
-                                                                        "href": "https://www.psr-inc.com/en/software/?tabId=renewables&subPanelId=sub-panel-renewables-1"
+                                                                        "href": "./tsl.html"
                                                                     },
                                                                     "text": "Modeling of Renewable Resources"
                                                                     },
@@ -441,7 +441,7 @@ function menu(){
                                                                     {
                                                                     "tag": "a",
                                                                     "attributes": {
-                                                                        "href": "https://www.psr-inc.com/en/software/?tabId=consulting&subPanelId=sub-panel-consulting-1"
+                                                                        "href": "./psrcloud.html"
                                                                     },
                                                                     "text": "Computational Environments"
                                                                     },

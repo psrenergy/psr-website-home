@@ -4,27 +4,27 @@ footerTag.innerHTML =
 '    <div class="container">' +
 '        <div class="menu-footer my-5">' +
 '            <div class="col1">' +
-'                <a href="https://sitedev.psr-inc.com/en/who_we_are/"><h2>About PSR</h2></a>' +
+'                <a href="https://www.psr-inc.com/en/who_we_are/"><h2>About PSR</h2></a>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/who_we_are/"><h4>Who we are</h4></a>' +                  
+'                    <a href="https://www.psr-inc.com/en/who_we_are/"><h4>Who we are</h4></a>' +                  
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/parceria/"><h4>Partnerships</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/parceria/"><h4>Partnerships</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/localizacao/"><h4>Location</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/localizacao/"><h4>Location</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/clientes/"><h4>Clients</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/clientes/"><h4>Clients</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/psr-academy-2/"><h4>PSR Academy</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/psr-academy-2/"><h4>PSR Academy</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/who_we_are/equipe/"><h4>Team</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/who_we_are/equipe/"><h4>Team</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/contact-us/"><h4>Contact us</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/contact-us/"><h4>Contact us</h4></a>' +
 '                </div>' +
 '            </div>' +
 '            <div class="col2">' +
@@ -33,10 +33,10 @@ footerTag.innerHTML =
 '                    <a href="./sddp.html"><h4>Modelling of Energy Systems</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="./hera.html"><h4>Modeling of Renewable Resources</h4></a>' +
+'                    <a href="./tsl.html"><h4>Modeling of Renewable Resources</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="./optvalue.html"><h4>Financial Support Tools</h4></a>' +
+'                    <a href="./optfolio.html"><h4>Financial Support Tools</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
 '                    <a href="./psrcloud.html"><h4>Computational Environments</h4></a>' +
@@ -63,7 +63,7 @@ footerTag.innerHTML =
 '                    <a href="http://www.psr-inc.com/en/publicacoes/"><h4>Energy Report</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="https://sitedev.psr-inc.com/en/publicacoes/articles-and-papers/"><h4>Scientific Publications</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/publicacoes/articles-and-papers/"><h4>Scientific Publications</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
 '                    <a href="http://www.psr-inc.com/en/noticias/"><h4>News</h4></a>' +
