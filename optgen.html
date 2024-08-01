@@ -10,18 +10,15 @@
 
     <title>OptGen</title>
 
-    <!-- Favicon -->
-    <link rel="icon" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" sizes="16x16" href="images/optgen_color.svg">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <!-- inject:css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -29,8 +26,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/analytics-style.css">
+    <link rel="stylesheet" href="css/headerMenu.css">
     <!-- end inject -->
 </head>
 <body>
@@ -42,7 +39,7 @@
 <!--================================
      START HERO AREA
 =================================-->
-<section class="hero-area text-left">
+<section class="hero-area text-left margin-nav">
     <div class="hero-item pt-100 pb-100">
         <!-- Video Background -->
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
@@ -56,11 +53,11 @@
             <div class="hero-content" style="display: flex; align-items: center;">
                 <img src="images/optgen.svg" alt="Descrição da Imagem" style="width: 90px; height: auto; margin-right: 20px;">
                 <div>
-                    <h2 class="sec-title text-white font-60" style="margin-right: 400px; font-weight: 700 !important;">OptGen</h2>
-                    <p class="sec-title mb-4" style="margin-right: 400px; color: #fff; font-size: 30px;">Energy Systems Expansion Planning</p>
+                    <h2 class="page-title text-white">OptGen</h2>
+                    <p class="page-subtitle text-white">Energy Systems Expansion Planning</p>
                 </div>
             </div><!-- end hero-content -->
-            <a href="https://www.example.com" class="button-support-link" style="font-weight: 500;">Download OptGen</a>
+            <a href="optgen_download.html" class="button-support-link" style="font-weight: 500;">Download OptGen</a>
         </div><!-- container -->
     </div><!-- end hero-item -->
 </section><!-- end hero-area -->
@@ -73,8 +70,11 @@
      START BAND AREA
 =================================-->
 <div class="faixa-impacto">
-    <p class="frase-impacto">OptGen 8.2 - Download new version <a href="https://example.com" class="link-faixa">here</a>!</p>
+    <p class="frase-impacto">View the <a href="https://psr-energy.com/software/optgen-8.1.html" class="link-faixa">release notes</a> of OptGen 8.1</p>
 </div>
+<!-- <div class="faixa-impacto">
+    <p class="frase-impacto">OptGen 8.2 - Download new version <a href="https://www.psr-inc.com/app/link/?t=d&f=optgen-8.1-setup.zip" class="link-faixa">here</a>!</p>
+</div> -->
 <!--================================
     END BAND AREA
 =================================-->
@@ -85,19 +85,19 @@
 <section class="overview-area section----padding">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img src="images/image-sddp-overview.png" alt="feature image" class="img-fluid">
-            </div><!-- end col-lg-6 -->
-            <div class="col-lg-6">
+            <div class="col-lg-4">
+                <img src="images/image-optgen-overview.jpeg" alt="feature image" class="img-fluid">
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-8">
                 <div class="about-content-box mt-5 mt-lg-0 pl-lg-5">
-                    <p class="my-4" style="font-size: 25px; line-height: 32px; color: #002846;">
-                        <b>OptGen</b> is a long-term expansion planning model that determines dimensioning, 
-                        least-cost capacity expansion planning and optimal timing for construction, 
+                    <p class="section-body-text-lg">
+                        <em>OptGen</em> is a long-term capacity expansion planning model that determines dimensioning, 
+                        <em>least-cost capacity expansion planning</em> and <em>optimal timing</em> for construction, 
                         reinforcement and retirement of generation capacities, transmission networks 
                         and energy supply chains.
                     </p>
                 </div>
-            </div><!-- end col-lg-6 -->
+            </div><!-- end col-lg-8 -->
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end event-area -->
@@ -109,99 +109,101 @@
 <!--======================================
         START CAPABILITIES AREA
 ======================================-->
-<section class="capabilities-area section----padding">
+<section class="section-area section----padding">
     <div class="container">
-        <div class="text-left">
-            <h2 class="sec-title" style="font-size: 35px; margin-bottom: 30px; color: #002846;">Modeling Capabilities</h2>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title-regular"style="margin-bottom: 50px;">Modeling Capabilities</h2>
+            </div>
         </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-sddp-hydro.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Full integration with SDDP</b></p>
-                            <p class="card-capabilities-sddp-body">Leverage the full capabilities of our stochastic dispatch model </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-co2.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Environmental criteria</b></p>
-                            <p class="card-capabilities-sddp-body">Incorporates clean energy certificates, emission costs and caps to meet sustainability goals</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-resilience.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Resilience planning</b></p>
-                            <p class="card-capabilities-sddp-body">Accounts for high-impact, low-probability events to enhance system robustness</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-investment.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Investment cost reduction curves</b></p>
-                            <p class="card-capabilities-sddp-body">Reflects technological advances and other factors to capture evolving investment costs</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-project.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Project relationship constraints</b></p>
-                            <p class="card-capabilities-sddp-body">Manages mutually exclusive projects, associative constraints, and precedence between investments</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-sddp-reliability.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Reliability</b></p>
-                            <p class="card-capabilities-sddp-body">Allows energy supply reliability criteria using CORAL, our reliability tool</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-constraints.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Firm energy and firm capacity constraints</b></p>
-                            <p class="card-capabilities-sddp-body">Enforces system policies to ensure secure supply</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-policy.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Governmental energy policies</b></p>
-                            <p class="card-capabilities-sddp-body">Adheres to decarbonization policies and renewable energy penetration targets</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card-capabilities-sddp">
-                        <img src="images/icon-optgen-flexibility.png" class="card-capabilities-img-left" alt="Logo TSL Renewable Modeling">
-                        <div class="card-content">
-                            <p class="card-capabilities-sddp-title"><b>Flexibility</b></p>
-                            <p class="card-capabilities-sddp-body">Integrates Dynamic Probabilistic Reserve (DPR) in the expansion planning process</p>
-                        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-sddp-hydro.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Full integration with SDDP</p>
+                        <p class="card-model-capabilities-body">Leverage the full capabilities of our stochastic dispatch model </p>
                     </div>
                 </div>
             </div>
-            <p class="my-4" style="font-size: 24px; font-weight: 300 ; text-align: center;"><b>And much more...</b></p>
+            <div class="col-lg-4 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-co2.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Environmental criteria</p>
+                        <p class="card-model-capabilities-body">Incorporates clean energy certificates, emission costs and caps to meet sustainability goals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-resilience.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Resilience planning</p>
+                        <p class="card-model-capabilities-body">Accounts for high-impact, low-probability events to enhance system robustness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-investment.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Investment cost reduction curves</p>
+                        <p class="card-model-capabilities-body">Reflects technological advances and other factors to capture evolving investment costs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-project.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Project relationship constraints</p>
+                        <p class="card-model-capabilities-body">Manages mutually exclusive projects, associative constraints, and precedence between investments</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-sddp-reliability.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Reliability</p>
+                        <p class="card-model-capabilities-body">Allows energy supply reliability criteria using CORAL, our reliability tool</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-constraints.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Firm energy and firm capacity constraints</p>
+                        <p class="card-model-capabilities-body">Enforces system policies to ensure secure supply</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-policy.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Governmental energy policies</p>
+                        <p class="card-model-capabilities-body">Adheres to decarbonization policies and renewable energy penetration targets</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-model-capabilities d-flex align-items-start">
+                    <img src="images/icon-optgen-flexibility.png" class="card-capabilities-img-left me-3 img-fluid">
+                    <div class="card-content">
+                        <p class="card-model-capabilities-title">Flexibility</p>
+                        <p class="card-model-capabilities-body">Integrates Dynamic Probabilistic Reserve (DPR) in the expansion planning process</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="my-4" style="font-size: 24px; font-weight: 300 ; text-align: center;"><b>And much more...</b></p>
        
 
     </div><!-- end container -->
-</section><!-- end team-area -->
+</section><!-- end  -->
 <!--======================================
         END CAPABILITIES AREA
 ======================================-->
@@ -209,24 +211,24 @@
 <!--======================================
         START TECHNICAL DATA I AREA
 ======================================-->
-<section class="capabilities-area section--padding bgGhostGreen">
+<section class="section-area section--padding bgGhostGreen">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <div class="about-content-box mt-5pl-lg-5">
-                    <h2 class="section-title-model" style="margin-bottom: 30px; "> OptGen <em>optimizes the trade-off</em> between investment costs and operating costs </h2>
-                    <p class="card-tools-text" style="margin-bottom: 30px; ">
-                        The objective of <b>OptGen</b> is to minimize the sum of investment costs to build new projects
+                    <h2 class="section-title-regular-sm"> OptGen <em>optimizes the trade-off</em> between investment costs and operating costs </h2>
+                    <p class="section-body-text" style="margin-bottom: 50px; ">
+                        The objective of OptGen is to minimize the sum of investment costs to build new projects
                         and expected value of operating costs, subject to supply reliability constraints.
                         OptGen is the only tool in the market capable of co-optimizing Generation, Transmission 
                         and Dynamic Probabilistic Reserves. That way, OptGen is capable of determining which
                         projects should be constructed and when. </p>
                 </div>
-                <a href="#" class="analytics-btn analytics-btn-primary" style="margin-top: 30px; font-size: 22px;">Download OptGen folder</a>
+                <a href="https://www.psr-inc.com/wp-content/uploads/softwares/OptgenFolderEng.pdf" class="analytics-btn analytics-btn-primary" style="font-size: 20px;">Download OptGen folder</a>
             </div><!-- end col-lg-6 -->
         </div><!-- end row -->
     </div><!-- end container -->
-</section><!-- end team-area -->
+</section><!-- end  -->
 <!--======================================
         END TECHNICAL DATA I AREA
 ======================================-->
@@ -234,16 +236,16 @@
 <!--======================================
         START LICENSING AREA
 =======================================-->
-<section class="financial-tools-area section--padding bg-image-licensing">
+<section class="section-area section--padding bg-image-licensing">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="get-sddp-title font-40" style="font-size: 40px !important; color:#ffffff">Get OptGen today</h2>
+                <h2 class="section-white-title-bold" style="margin-bottom: 10px">Get OptGen today</h2>
                 <a href="https://www.example.com" class="button-support-link" style="font-weight: 500;">Talk to an expert</a>
-                <a href="https://www.example.com" class="button-support-link" style="margin-left: 20px; font-weight: 500;">Licensing schemes</a>
+                <a href="licensing.html" class="button-support-link" style="margin-left: 20px; font-weight: 500;">Licensing schemes</a>
             </div>
             <div class="col-lg-6">
-                <h2 class="get-sddp-title" style="font-size: 20px; font-weight: 400; margin-bottom: 10px;  color:#fff"> 
+                <h2 class="section-body-text text-white" style="margin-bottom: 10px;"> 
                     <b>SDDP</b> and <b>OptGen</b> are recognized as a best-in-class energy market simulation engines, providing 
                     leading analytical tools and support for professionals such as modelers, power producers, 
                     and analysts. </h2>
@@ -255,80 +257,17 @@
         END LICENSING AREA
 =======================================-->
 
-<!--======================================
-        START CASE STUDIES AREA
-=======================================-->
-<section class="capabilities-area section--padding bgGhostWhite">
-    <div class="container">
-        <div class="text-left">
-            <h2 class="section-title-model" style="margin-bottom: 30px; font-weight: 450; ">Find out where <em>SDDP is used</em></h2>
-        </div>
-        <div class="row mt-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card hover-y">
-                        <div class="card-head position-relative">
-                            <img src="images/article-panama-1.png" data-src="images/img4.jpg" alt="blog image" class="card-img-top lazy">
-                            <span class="position-absolute top-0 left-0 mt-3 ml-3 badge badge-md badge-light"> <i class="la la-calendar"></i> May 14, 2024</span>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-item">
-                                <li class="d-inline-block mr-3"><span class="fal fa-user mr-2 colorBluePSR2 font-14"></span>By <a href="#">PSR Dev</a></li>
-                            </ul>
-                            <h4 class="card-title mb-4"><a href="blog-single.html"><b>AES Panama</b></a></h4>
-                            <p class="card-text my-4">There are many variations of passages of but majority have in some by inject.</p>
-                            <a href="blog-single.html" class="btn-link">Continue Reading <i class="fal fa-angle-right ml-1"></i></a>
-                        </div><!-- end card-body -->
-                    </div><!-- end card -->
-                </div><!-- end card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card hover-y">
-                        <div class="card-head position-relative">
-                            <img src="images/article-canada-2.png" data-src="images/img4.jpg" alt="blog image" class="card-img-top lazy">
-                            <span class="position-absolute top-0 left-0 mt-3 ml-3 badge badge-md badge-light"> <i class="la la-calendar"></i> May 14, 2024</span>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-item">
-                                <li class="d-inline-block mr-3"><span class="fal fa-user mr-2 colorBluePSR2 font-14"></span>By <a href="#">PSR Dev</a></li>
-                            </ul>
-                            <h4 class="card-title mb-4"><a href="blog-single.html"><b>Manitoba Hydro</b></a></h4>
-                            <p class="card-text my-4">There are many variations of passages of but majority have in some by inject.</p>
-                            <a href="blog-single.html" class="btn-link">Continue Reading <i class="fal fa-angle-right ml-1"></i></a>
-                        </div><!-- end card-body -->
-                    </div><!-- end card -->
-                </div><!-- end card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card hover-y">
-                        <div class="card-head position-relative">
-                            <img src="images/article-iceland-3.png" data-src="images/img4.jpg" alt="blog image" class="card-img-top lazy">
-                            <span class="position-absolute top-0 left-0 mt-3 ml-3 badge badge-md badge-light"> <i class="la la-calendar"></i> May 14, 2024</span>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-item">
-                                <li class="d-inline-block mr-3"><span class="fal fa-user mr-2 colorBluePSR2 font-14"></span>By <a href="#">PSR Dev</a></li>
-                            </ul>
-                            <h4 class="card-title mb-4"><a href="blog-single.html"><b>Landsnet</b></a></h4>
-                            <p class="card-text my-4">There are many variations of passages of but majority have in some by inject.</p>
-                            <a href="blog-single.html" class="btn-link">Continue Reading <i class="fal fa-angle-right ml-1"></i></a>
-                        </div><!-- end card-body -->
-                    </div><!-- end card -->
-                </div><!-- end card -->
-    </div>
-    </div><!-- end container-fluid -->
-</section><!-- end testimonial -->
-<!--======================================
-        END CASE STUDIES AREA
-======================================-->
 
 <!--======================================
         START TECHNICAL DATA I AREA
 ======================================-->
-<section class="capabilities-area section---padding bgGhostGreen">
+<section class="section-area section---padding bgGhostWhite">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
                 <div class="about-content-box mt-5pl-lg-5">
-                    <h2 class="section-title-model" style="margin-bottom: 30px; ">OptGen is <em>fully integrated</em> with our <em>stochastic dispatch tool</em> of the system </h2>
-                    <p class="card-tools-text">OptGen initiates the optimization process with expansion planning. The subsequent phase, 
+                    <h2 class="section-title-regular-sm">OptGen is <em>fully integrated</em> with our <em>stochastic dispatch tool</em> of the system </h2>
+                    <p class="section-body-text">OptGen initiates the optimization process with expansion planning. The subsequent phase, 
                         relative to operation planning, is driven by our transmission-constrained stochastic dispatch model, SDDP. 
                         This iterative dual-phase approach ensures a detailed and balanced representation of supply and demand. 
                         By sharing the same database for operational and investment data, OptGen and SDDP continuously refine the 
@@ -340,32 +279,132 @@
             </div><!-- end col-lg-6 -->
         </div><!-- end row -->
     </div><!-- end container -->
-</section><!-- end team-area -->
+</section><!-- end  -->
 <!--======================================
         END TECHNICAL DATA I AREA
 ======================================-->
 
 <!--======================================
-        START SUPPORT AREA
+        START EXTRA TOOLS AREA
 ======================================-->
-<section class="financial-tools-area section---padding bg-image-support">
+<section class="section-area section--padding bgGhostGreen">
     <div class="container">
-        <div class="row align-items-center align-items-center">
-            <div class="col-lg-12">
-                <div class="text-left">
-                    <h2 class="financial-title font-40" style="margin-bottom: 30px;  color:#ffffff"> Support & Training</h2>
-                    <p class="font-weight-100" style="margin-bottom: 20px; font-size: 24px; color:#ffffff">Our team provides not only support services on software, but also an interactive knowledge base platform and the possibility to organize training sessions.</p>
+        <!-- <div class="text-left">
+            <h2 class="section-title-bold">
+                <em>Complementary tools</em>
+            </h2>
+        </div> -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-left" style="margin-right: 30px;">
+                    <h2 class="section-title-bold-sm" style="margin-bottom: 15px;"> 
+                        <em>Complementary tools</em>
+                    </h2>
+                    <p class="section-body-text">
+                        The OptGen license includes a suite of additional tools designed to enhance your experience and productivity.
+                    </p>
                 </div>
-                <a href="https://www.example.com" class="button-support-link">Learn more</a>
-            </div><!-- end col-lg-6 -->
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-8 align-items-self">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
+                            <a href="tsl.html" class="stretched-link"></a>
+                            <img src="images/tsl_blue.svg" class="card-extra-tools-img-left" style="width: 14%;" alt="Logo TSL Renewable Modeling">
+                            <div class="card-extra-tools-body">
+                                <h5 class="card-extra-tools-title">Time Series Lab</h5>
+                                <p class="card-text">Renewable Modeling Tool</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
+                            <a href="psrio.html" class="stretched-link"></a>
+                            <img src="images/psrio_dark.svg" class="card-extra-tools-img-left"  alt="Logo TSL Renewable Modeling">
+                            <div class="card-extra-tools-body">
+                                <h5 class="card-extra-tools-title">PSRIO</h5>
+                                <p class="card-text">B.I. for Data Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
+                            <a href="psrcloud.html" class="stretched-link"></a>
+                            <img src="images/psrcloud_blue.svg" class="card-extra-tools-img-left" style="width: 14%;" alt="Logo TSL Renewable Modeling">
+                            <div class="card-extra-tools-body">
+                                <h5 class="card-extra-tools-title">PSR Cloud</h5>
+                                <p class="card-text">Cloud Computing Environment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card-extra-tools position-relative"> <!-- Adicione position-relative para o stretched-link funcionar -->
+                            <a href="coral.html" class="stretched-link"></a>
+                            <img src="images/coral.png" class="card-extra-tools-img-left" alt="Logo TSL Renewable Modeling">
+                            <div class="card-extra-tools-body">
+                                <h5 class="card-extra-tools-title">Coral</h5>
+                                <p class="card-text">Reliability Analysis Tool</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col-lg-8 -->
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end event-area -->
 <!--======================================
-        END SUPPORT AREA
+        END EXTRA TOOLS AREA
 ======================================-->
 
+<!--======================================
+        START SUPPORT AREA
+=======================================-->
+<section class="support-area section---padding bgDarkBlue">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-white-title-bold-sm">Need help?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                    <p class="section-body-text text-white">
+                        As an active user of PSR solutions, you have access to our support services and to our Knowledge Hub, 
+                        a platform in which you can find documentation, frequently asked questions and detailed methodology.
+                    </p>
+            </div><!-- end col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="row align-items-center"> <!-- Adicionado uma nova row para os cards -->
+                    <div class="col-lg-6 mb-4"> <!-- Alterado para col-lg-6 para alinhar os cards lado a lado -->
+                        <div class="card-support hover-y">
+                            <a href="support.html" class="stretched-link"></a>
+                            <div class="card-support-body">
+                                <img src="images/icon-support.png" class="card-support-img">
+                                <h5 class="card-support-title">Support & Training</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4"> <!-- Alterado para col-lg-6 para alinhar os cards lado a lado -->
+                        <div class="card-support hover-y">
+                            <a href="https://docs.psr-inc.com/knowledge/index.html" class="stretched-link"></a>
+                            <div class="card-support-body">
+                                <img src="images/icon-kw.png" class="card-support-img">
+                                <h5 class="card-support-title">Knowledge Hub</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end inner row -->
+            </div><!-- end col-lg-6 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end support-area -->
+<!--======================================
+        END SUPPORT AREA
+=======================================-->
+
 <!-- theme js files -->
+<script src="js/headerMenu.js"></script>
+<script src="js/footer.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>

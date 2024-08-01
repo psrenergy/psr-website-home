@@ -1,11 +1,3 @@
-/*---------------------------------------------
-Template name:  Elaze
-Version:        1.0
-Author:         TechyDevs
-Author Email:   contact@techydevs.com
-----------------------------------------------*/
-
-
 (function ($) {
     "use strict";
     var $window = $(window);
