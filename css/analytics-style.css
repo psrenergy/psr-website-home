@@ -2295,6 +2295,7 @@ margin-top: 100px !important;
 	/* Alinha o conteúdo no topo */
 	margin-left: 0px ;
 	margin-right: 20px ;
+	max-width: 80px !important;
 }
 .card-capabilities:hover {
 	background-color: #e6e6e694;
