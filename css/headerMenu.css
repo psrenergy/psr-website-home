@@ -12,9 +12,7 @@
 	position: relative;
 	z-index: 1;
   }
-  header .content-header .logo a.menu-mobile {
-	display: none;
-  }
+
   header .content-header .logo a img {
 	max-width: 130px;
 	width: 100%;
@@ -332,3 +330,19 @@
 	  width: auto;
 	}
   }
+
+  @media (max-width: 844px) {
+	.hide-modile {
+		display: none !important;   
+	}
+
+	.login_capa{
+		height:100%;		
+	}
+
+	.container-login{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+}
+  

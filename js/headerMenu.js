@@ -9,15 +9,13 @@ function createHrefTag(url, text){
 function appendHeaderFooter() {   
     const startSync = performance.now();
     window.addEventListener('DOMContentLoaded', function() {
-           let headerTag = document.createElement("header");
-           headerTag.setAttribute("class","fixed-top");
+        let headerTag = document.createElement("header");
+        headerTag.setAttribute("class","fixed-top");
             
-           let navTag = document.createElement("nav");
-           navTag.setAttribute("id","menu");
-
-           let ulTag = document.createElement("ul");
-
-
+        let navTag = document.createElement("nav");
+        navTag.setAttribute("id","menu");
+       
+        let ulTag = document.createElement("ul");
 
     });
 }
@@ -64,7 +62,8 @@ function menu(){
                                     "tag":"a",
                                     "attributes":{
                                         "href": "#",
-                                        "class": "menu-mobile"
+                                        "class": "menu-mobile",
+                                        "id": "hamburgerPSR"
                                     },
                                     "children":[
                                         {
@@ -84,13 +83,15 @@ function menu(){
                             "tag":"nav",
                             "attributes":{
                                 "class": "nav slide-left",
+                                "id": "menuLeft"
                             },
                             "children": [
                                 {
                                     "tag": "a",
                                     "attributes": {
                                         "href": "#",
-                                        "class": "menu-mobile-close"
+                                        "class": "menu-mobile-close",
+                                        "id": "menu-mobile-close-id"
                                     }
                                 },
                                 {
@@ -364,9 +365,9 @@ function menu(){
                                                                             {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./tcl.html"
+                                                                                "href": "./tsl.html"
                                                                             },
-                                                                            "text": "TCL"
+                                                                            "text": "TSL"
                                                                             }
                                                                         ]
                                                                         }
@@ -442,7 +443,7 @@ function menu(){
                                                                     "attributes": {
                                                                         "href": "https://www.psr-inc.com/en/software/?tabId=consulting&subPanelId=sub-panel-consulting-1"
                                                                     },
-                                                                    "text": "Supporting Activities"
+                                                                    "text": "Computational Environments"
                                                                     },
                                                                     {
                                                                     "tag": "ul",
@@ -453,48 +454,16 @@ function menu(){
                                                                         {
                                                                         "tag": "li",
                                                                         "attributes": {
-                                                                            "id": "menu-item-13467",
-                                                                            "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-13467"
+                                                                            "id": "menu-item-134677",
+                                                                            "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-134677"
                                                                         },
                                                                         "children": [
                                                                             {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "https://www.psr-inc.com/en/software/?tabId=consulting&subPanelId=sub-panel-consulting-1"
+                                                                                "href": "./psrcloud.html"
                                                                             },
-                                                                            "text": "TechSupport"
-                                                                            }
-                                                                        ]
-                                                                        },
-                                                                        {
-                                                                        "tag": "li",
-                                                                        "attributes": {
-                                                                            "id": "menu-item-13468",
-                                                                            "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-13468"
-                                                                        },
-                                                                        "children": [
-                                                                            {
-                                                                            "tag": "a",
-                                                                            "attributes": {
-                                                                                "href": "https://www.psr-inc.com/en/software/?tabId=consulting&subPanelId=sub-panel-consulting-2"
-                                                                            },
-                                                                            "text": "Training"
-                                                                            }
-                                                                        ]
-                                                                        },
-                                                                        {
-                                                                        "tag": "li",
-                                                                        "attributes": {
-                                                                            "id": "menu-item-13469",
-                                                                            "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-13469"
-                                                                        },
-                                                                        "children": [
-                                                                            {
-                                                                            "tag": "a",
-                                                                            "attributes": {
-                                                                                "href": "https://www.psr-inc.com/en/software/?tabId=consulting&subPanelId=sub-panel-consulting-3"
-                                                                            },
-                                                                            "text": "Publication"
+                                                                            "text": "PSRCloud"
                                                                             }
                                                                         ]
                                                                         }
@@ -673,6 +642,24 @@ function createElementFromJSON(json) {
     return element;
 }
 
-var resultado = menu();
-document.body.prepend(resultado); 
+const resultado = menu();
+document.body.prepend(resultado);
+const hamburgerPSR = document.getElementById("hamburgerPSR");
+
+hamburgerPSR.addEventListener("click", function(){
+    var menuLeft = document.getElementById("menuLeft");
+    if (!menuLeft.classList.contains("anima")){
+        menuLeft.classList.add("anima");
+    }else{
+        menuLeft.classList.remove("anima");
+    }
+});
+
+const btnCloseMenuMobile = document.getElementById("menu-mobile-close-id");
+btnCloseMenuMobile.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.target.parentElement.classList.remove("anima");
+});
+  
+
 

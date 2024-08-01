@@ -4178,8 +4178,10 @@ table tbody tr:hover {
 	header .content-header .logo a img {
 	  max-width: 105px;
 	}
+
+	
 	header .content-header .logo a.menu-mobile {
-	  display: block;
+	  display: none;
 	  margin-right: 8px;
 	}
 	header .content-header .logo a.menu-mobile span {
@@ -4189,6 +4191,14 @@ table tbody tr:hover {
 	  background: rgba(255, 255, 255, 0.6666666667);
 	  margin: 7px 0;
 	}
+
+	@media (max-width: 974px) {
+		header .content-header .logo a.menu-mobile {
+			display: block;
+			margin-right: 8px;
+		}
+	}
+
 	header .content-header .nav {
 	  display: block;
 	  position: absolute;
@@ -4253,6 +4263,13 @@ table tbody tr:hover {
 	  flex-direction: column;
 	  padding-block: 8px;
 	}
+
+	@media (max-width: 974px) {
+		body.home header .cabecalho {
+			display: none;
+		}
+	}
+
 	header .cabecalho span {
 	  font-weight: bold;
 	  font-size: 12px;
