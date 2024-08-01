@@ -353,6 +353,13 @@
 	background-size: cover;
 	background-position: center;
 }
+.bg-image-hero-psrfactory {
+	background-image: linear-gradient(90deg, rgba(218, 234, 233, 0.79) 0%, rgba(218, 234, 233, 0.79) 90%), url(../images/hero-psrfactory.png) ;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 /*========== font-size ==========*/
 .font-120 {
 	font-size: 120px !important;
@@ -2241,7 +2248,7 @@ margin-top: 100px !important;
 }
 .card-support {
 	border: none;
-	background-color: #A49375;
+	background-color: #dedde1;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease;
 	border-radius: .5rem;
