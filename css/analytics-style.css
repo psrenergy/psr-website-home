@@ -1285,6 +1285,7 @@ margin-top: 100px !important;
     font-size: 15px;
     border-radius: 4px;
     position: relative;
+	height: 50px;
 }
 
 .form-control:focus {
