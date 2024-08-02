@@ -983,7 +983,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "https://www.psr-inc.com/en/noticias/"
+                                                            "href": "./news.html"
                                                         },
                                                         "text": "News"
                                                         }
