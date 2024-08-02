@@ -1019,7 +1019,7 @@ function menu(){
                                                                         {
                                                                             "tag":"a",
                                                                             "attributes":{
-                                                                                "href": "https://www.psr-inc.com/en/contact-us/"
+                                                                                "href": "./contact.html"
                                                                             },
                                                                             "text": "Contact us" 
                                                                         }
