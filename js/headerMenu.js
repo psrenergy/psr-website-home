@@ -983,7 +983,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/noticias/"
+                                                            "href": "https://www.psr-inc.com/en/noticias/"
                                                         },
                                                         "text": "News"
                                                         }
@@ -993,15 +993,55 @@ function menu(){
                                                     "tag": "li",
                                                     "attributes": {
                                                         "id": "menu-item-13473",
-                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-13473"
+                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-13474"
                                                     },
                                                     "children": [
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/contato/"
+                                                            "href": "https://www.psr-inc.com/en/contato/"
                                                         },
-                                                        "text": "Contact"
+                                                        "text": "Contacts"
+                                                        },
+                                                        {
+                                                            "tag": "ul",
+                                                            "attributes":{
+                                                                "class": "sub"
+                                                            },
+                                                            "children":[
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes":{
+                                                                        "id": "menu-item-134750",
+                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134751"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                            "tag":"a",
+                                                                            "attributes":{
+                                                                                "href": "https://www.psr-inc.com/en/contact-us/"
+                                                                            },
+                                                                            "text": "Contact us" 
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes":{
+                                                                        "id": "menu-item-134752",
+                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134753"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                            "tag":"a",
+                                                                            "attributes":{
+                                                                                "href": "https://www.psr-inc.com/en/work-with-us/"
+                                                                            },
+                                                                            "text": "Work with us" 
+                                                                        }
+                                                                    ]
+                                                                }                                                                
+                                                            ]
                                                         }
                                                     ]
                                                 }
