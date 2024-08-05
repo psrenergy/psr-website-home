@@ -137,7 +137,7 @@ function menu(){
                                                                         {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./en/who_we_are/"
+                                                                                "href": "https://www.psr-inc.com/en/who_we_are/"
                                                                             },
                                                                             "text": "Who we are"
                                                                         }
@@ -153,7 +153,7 @@ function menu(){
                                                                         {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./en/who_we_are/equipe/"
+                                                                                "href": "https://www.psr-inc.com/en/who_we_are/equipe/"
                                                                             },
                                                                             "text": "Team"
                                                                         }
@@ -169,7 +169,7 @@ function menu(){
                                                                         {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./en/parceria/"
+                                                                                "href": "https://www.psr-inc.com/en/parceria/"
                                                                             },
                                                                             "text": "Partnerships"
                                                                             }
@@ -185,7 +185,7 @@ function menu(){
                                                                         {
                                                                         "tag": "a",
                                                                         "attributes": {
-                                                                            "href": "./en/clientes/"
+                                                                            "href": "https://www.psr-inc.com/en/clientes/"
                                                                         },
                                                                         "text": "Clients"
                                                                         }
@@ -201,7 +201,7 @@ function menu(){
                                                                     {
                                                                         "tag": "a",
                                                                         "attributes": {
-                                                                            "href": "./en/psr-academy-2/"
+                                                                            "href": "https://www.psr-inc.com/en/psr-academy-2/"
                                                                         },
                                                                         "text": "PSR Academy"
                                                                     }
@@ -217,7 +217,7 @@ function menu(){
                                                                         {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./en/localizacao/"
+                                                                                "href": "https://www.psr-inc.com/en/localizacao/"
                                                                             },
                                                                             "text": "Location"
                                                                         }
@@ -237,7 +237,7 @@ function menu(){
                                                         {
                                                             "tag": "a",
                                                             "attributes": {
-                                                                "href": "./software.html"
+                                                                "href": "https://www.psr-inc.com/software.html"
                                                             },
                                                             "text": "Software"
                                                         },
@@ -718,7 +718,7 @@ function menu(){
                                                                         {
                                                                         "tag": "a",
                                                                         "attributes": {
-                                                                            "href": "./en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-1"
+                                                                            "href": "https://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-1"
                                                                         },
                                                                         "text": "Technical Analysis of Projects"
                                                                         },
@@ -808,7 +808,7 @@ function menu(){
                                                                         {
                                                                         "tag": "a",
                                                                         "attributes": {
-                                                                            "href": "./en/consulting/?tabId=descarbonizacaoo-e-esg&subPanelId=sub-panel-descarbonizacaoo-e-esg-1"
+                                                                            "href": "https://www.psr-inc.com/en/consulting/?tabId=descarbonizacaoo-e-esg&subPanelId=sub-panel-descarbonizacaoo-e-esg-1"
                                                                         },
                                                                         "text": "Decarbonization and ESG"
                                                                         },
@@ -983,7 +983,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/noticias/"
+                                                            "href": "https://www.psr-inc.com/en/noticias/"
                                                         },
                                                         "text": "News"
                                                         }
@@ -1019,7 +1019,7 @@ function menu(){
                                                                         {
                                                                             "tag":"a",
                                                                             "attributes":{
-                                                                                "href": "./contact.html"
+                                                                                "href": "https://www.psr-inc.com/contact.html"
                                                                             },
                                                                             "text": "Contact us" 
                                                                         }
