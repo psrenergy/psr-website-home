@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const findUsOtherContainer = document.getElementById('find-us-other-container');
 
     const topics = {
-        'General Information': ['New business', 'PSR Solutions', 'Schedule a meeting', 'Other'],
-        'Technical Support': ['SDDP', 'OptGen', 'NCP', 'TSL', 'PSR Cloud', 'PSRIO', 'Other'],
-        'Licensing': ['Commercial License', 'Trial License', 'Academic License', 'Other'],
+        '1':[{id:10,text:'New business'}, {id:11, text:'PSR Solutions'}, {id:12,text:'Schedule a meeting'},{id:13, text: 'Other'}],
+        '2': [{id:20,text:'SDDP'}, {id:21,text:'OptGen'},{id:22, text: 'NCP'}, {id:23, text: 'TSL'}, {id:24, text: 'PSR Cloud'}, {id:10, text: 'PSRIO'}, {id:11, text: 'Other'}],
+        '3': [{id:30, text:'Commercial License'}, {id:31, text:'Trial License'}, {id:32, text:'Academic License'}, {id:33, text:'Other'}]
     };
 
     function updateTopics(subject) {
@@ -17,17 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (topics[subject]) {
             topics[subject].forEach(function (topic) {
                 const option = document.createElement('option');
-                option.value = topic;
-                option.text = topic;
+                option.value = topic.id;
+                option.text = topic.text;
                 topicSelect.appendChild(option);
             });
         }
     }
 
-    subjectElement.addEventListener('change', function () {
-        const selectedSubject = subjectElement.value;
+    subjectElement.addEventListener('change', function (e) {
+        const selectedSubject = e.target.value
 
-        if (selectedSubject === 'Other') {
+        if (selectedSubject === '5') {//Other
             titleContainer.style.display = 'block';
             topicContainer.style.display = 'none';
         } else {
