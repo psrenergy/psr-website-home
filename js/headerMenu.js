@@ -237,7 +237,7 @@ function menu(){
                                                         {
                                                             "tag": "a",
                                                             "attributes": {
-                                                                "href": "./landpage.html"
+                                                                "href": "./software.html"
                                                             },
                                                             "text": "Software"
                                                         },
@@ -257,7 +257,7 @@ function menu(){
                                                                         {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./landpage.html"
+                                                                                "href": "./software.html"
                                                                             },
                                                                             "text": "Modelling of Energy Systems"
                                                                         },
@@ -983,7 +983,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./news.html"
+                                                            "href": "./en/noticias/"
                                                         },
                                                         "text": "News"
                                                         }

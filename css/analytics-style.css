@@ -732,7 +732,7 @@ margin-top: 100px !important;
 	text-decoration: underline;
 }
 .link-license:hover{
-	color: #b2bcc6;
+	color: #b2bcc6 !important;
 	text-decoration: underline;
 }
 /*-=========== loader =============-*/
@@ -801,17 +801,6 @@ margin-top: 100px !important;
 	z-index: 1;
 	opacity: .2;
 	pointer-events: none;
-}
-/*-=========== title-shape =============-*/
-.title-shape {
-	border-bottom: 1px solid rgba(128, 137, 150, 0.1);
-	height: 1px;
-}
-.title-shape span {
-	display: block;
-	width: 50px;
-	height: 1px;
-	background-color: #F68A03;
 }
 /*-=========== spacing =============-*/
 /* Base size for .font-38 */
@@ -1757,6 +1746,24 @@ margin-top: 100px !important;
 	padding-top: 0;
 }
 
+@media only screen and (max-width: 800px) {
+	.full-page-section-login  .row{
+		display: flex;
+		justify-content: center;		
+	}
+	.full-page-section-login .card-login {	
+		width: 90%;		
+	}
+	.full-page-section-login .left-group {
+		border-right: none;
+		padding-right: 15px;
+	}
+
+	.full-page-section-login .right-group {
+		padding-left: 15px;
+	}
+}
+
 .page-title{
 	font-size: 50px;
 	font-weight: 700;
@@ -1919,6 +1926,51 @@ margin-top: 100px !important;
 
 	background-position: center center;
 	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+
+.section-area-optgen-download {
+    position: relative;
+    background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-optgen-download.jpg);
+    /* background-position: 100% 0; */
+
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+
+.section-area-ncp-download {
+    position: relative;
+    background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-ncp-download.jpg);
+    /* background-position: 100% 0; */
+
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+
+.section-area-tsl-download {
+    position: relative;
+    background-image: linear-gradient(to right,#daeae9 40%, #daeae985 100%), url(../images/analytics-tsl-download.jpg);
+    /* background-position: 100% 0; */
+
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+
+.section-area-support-kh {
+    position: relative;
+    background-image: linear-gradient(to right,#daeae9 40%, #daeae985 100%), url(../images/support-kh-background.jpg);
+    /* background-position: 100% 0; */
+	background-position: center bottom;
+	background-size: cover;
+	/* background-position: right center;
+	background-size:contain; */
     background-repeat: no-repeat;
 	
 }
@@ -2735,6 +2787,76 @@ input {
 	text-decoration: underline;
 	/* Adiciona um sublinhado ao passar o mouse, opcional */
 }
+
+/* ==== popup de notícias para landpage ==== */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden; /* Ensure rounded corners apply to the image */
+}
+
+.popup-content {
+    position: relative;
+}
+
+.popup-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
+.popup-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.popup-text h2 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #2c6e90;
+    margin-bottom: 10px;
+}
+
+.popup-text h2 i {
+    margin-right: 10px;
+}
+
+.popup-text p {
+    font-size: 14px;
+    color: #333;
+	text-align: justify;
+}
+
+.popup-text a {
+    color: #2c6e90;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.popup-text a:hover {
+    text-decoration: underline;
+}
+
 /* ===== responsive download table ===== */
 .table-container {
 	padding: 20px;
@@ -2783,6 +2905,15 @@ table tbody tr:hover {
 	/* Remove sublinhado ao passar o mouse */
 	color: #fff;
 }
+.btn-off {
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
 /* NEWS */
 /* A classe .container e .row já são definidas no Bootstrap, então garantir que não sobrescreva */
 .container {

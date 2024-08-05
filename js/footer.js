@@ -28,7 +28,7 @@ footerTag.innerHTML =
 '                </div>' +
 '            </div>' +
 '            <div class="col2">' +
-'                <a href="./landpage.html"><h2>Software</h2></a>' +
+'                <a href="./software.html"><h2>Software</h2></a>' +
 '                <div class="bloco">' +
 '                    <a href="./sddp.html"><h4>Modelling of Energy Systems</h4></a>' +
 '                </div>' +
@@ -43,30 +43,30 @@ footerTag.innerHTML =
 '                </div>' +
 '            </div>' +
 '            <div class="col3">' +
-'                <a href="http://www.psr-inc.com/en/consulting"><h2>Consulting</h2></a>' +
+'                <a href="https://www.psr-inc.com/en/consulting"><h2>Consulting</h2></a>' +
 '                <div class="bloco">' +
-'                    <a href="http://www.psr-inc.com/en/consulting/?tabId=modeling&amp;subPanelId=none"><h4>Analyses of Power Systems</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/consulting/?tabId=modeling&amp;subPanelId=none"><h4>Analyses of Power Systems</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="http://www.psr-inc.com/en/consulting/?tabId=consulting&amp;subPanelId=none"><h4>Economic and Strategic Evaluations</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/consulting/?tabId=consulting&amp;subPanelId=none"><h4>Economic and Strategic Evaluations</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="http://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&amp;subPanelId=none"><h4>Technical Analysis of Projects</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&amp;subPanelId=none"><h4>Technical Analysis of Projects</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="http://www.psr-inc.com/en/consulting/?tabId=descarbonizacaoo-e-esg&amp;subPanelId=none"><h4>Decarbonization and ESG</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/consulting/?tabId=descarbonizacaoo-e-esg&amp;subPanelId=none"><h4>Decarbonization and ESG</h4></a>' +
 '                </div>' +
 '            </div>' +
 '            <div class="col4">' +
-'                <a href="http://www.psr-inc.com/en/publicacoes/"><h2>Publications</h2></a>' +
+'                <a href="https://www.psr-inc.com/en/publicacoes/"><h2>Publications</h2></a>' +
 '                <div class="bloco">' +
-'                    <a href="http://www.psr-inc.com/en/publicacoes/"><h4>Energy Report</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/publicacoes/"><h4>Energy Report</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
 '                    <a href="https://www.psr-inc.com/en/publicacoes/articles-and-papers/"><h4>Scientific Publications</h4></a>' +
 '                </div>' +
 '                <div class="bloco">' +
-'                    <a href="http://www.psr-inc.com/en/noticias/"><h4>News</h4></a>' +
+'                    <a href="https://www.psr-inc.com/en/noticias/"><h4>News</h4></a>' +
 '                </div>' +
 '            </div>' +
 '        </div>' +
