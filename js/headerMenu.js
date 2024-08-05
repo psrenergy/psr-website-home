@@ -485,26 +485,492 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/consultoria/"
+                                                            "href": "https://www.psr-inc.com/en/consultoria/"
                                                         },
                                                         "text": "Consulting"
+                                                        },
+                                                        {
+                                                            "tag": "ul",
+                                                            "attributes":{
+                                                                "class": "sub"
+                                                            },
+                                                            "children":[
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes": {
+                                                                        "id": "menu-item-134733",
+                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134734"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                        "tag": "a",
+                                                                        "attributes": {
+                                                                            "href": "https://www.psr-inc.com/en/consulting/?tabId=modeling&amp;subPanelId=sub-panel-modeling-1"
+                                                                        },
+                                                                        "text": "Analyses of Power Systems"
+                                                                        },
+                                                                        {
+                                                                            "tag": "ul",
+                                                                            "attributes":{
+                                                                                "class": "sub2"
+                                                                            },
+                                                                            "children":[
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134744",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134745"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=modeling&subPanelId=sub-panel-modeling-1"
+                                                                                            },
+                                                                                            "text": "Regulatory Consulting"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134755",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134756"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=modeling&subPanelId=sub-panel-modeling-2"
+                                                                                            },
+                                                                                            "text": "Market Design"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134766",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134767"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=modeling&amp;subPanelId=sub-panel-modeling-3"
+                                                                                            },
+                                                                                            "text": "Integrated Energy Planning"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134777",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134778"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=modeling&subPanelId=sub-panel-modeling-4"
+                                                                                            },
+                                                                                            "text": "Pricing and Tariff Projections"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134788",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134789"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=modeling&amp;subPanelId=sub-panel-modeling-5"
+                                                                                            },
+                                                                                            "text": "Water Resources"
+
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                
+                                                                            ]
+                                                                        }
+                                                                       
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes": {
+                                                                        "id": "menu-item-134799",
+                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134800"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                        "tag": "a",
+                                                                        "attributes": {
+                                                                            "href": "https://www.psr-inc.com/en/consulting/?tabId=consulting&amp;subPanelId=sub-panel-consulting-1"
+                                                                        },
+                                                                        "text": "Economic and Strategic Evaluations"
+                                                                        },
+                                                                        {
+                                                                            "tag": "ul",
+                                                                            "attributes":{
+                                                                                "class": "sub2"
+                                                                            },
+                                                                            "children":[
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134800",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134801"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=consulting&subPanelId=sub-panel-consulting-1"
+                                                                                            },
+                                                                                            "text": "Investment Analysis"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134811",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134812"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=consulting&subPanelId=sub-panel-consulting-2"
+                                                                                            },
+                                                                                            "text": "Risk and Portfolio Management"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134822",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134823"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=consulting&subPanelId=sub-panel-consulting-3"
+                                                                                            },
+                                                                                            "text": "Support For Generation and Transmission Auctions"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134833",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134834"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=consulting&subPanelId=sub-panel-consulting-4"
+                                                                                            },
+                                                                                            "text": "Evaluation of Supply Alternatives"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134844",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134845"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=consulting&subPanelId=sub-panel-consulting-5"
+                                                                                            },
+                                                                                            "text": "Strategic Planning"
+
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                
+                                                                            ]
+                                                                        }                                                                        
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes": {
+                                                                        "id": "menu-item-134855",
+                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134856"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                        "tag": "a",
+                                                                        "attributes": {
+                                                                            "href": "./en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-1"
+                                                                        },
+                                                                        "text": "Technical Analysis of Projects"
+                                                                        },
+                                                                        {
+                                                                            "tag": "ul",
+                                                                            "attributes":{
+                                                                                "class": "sub2"
+                                                                            },
+                                                                            "children":[
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134866",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134867"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-1"
+                                                                                            },
+                                                                                            "text": "Connection Studies"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134877",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134878"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-2"
+                                                                                            },
+                                                                                            "text": "Evaluation of Generation Cuts"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134888",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134889"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-3"
+                                                                                            },
+                                                                                            "text": "Assessment of Environmental Impacts"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134899",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134900"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=meio-ambiente&subPanelId=sub-panel-meio-ambiente-4"
+                                                                                            },
+                                                                                            "text": "Energy Efficiency Studies"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                
+                                                                                
+                                                                            ]
+                                                                        }                                                                        
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes": {
+                                                                        "id": "menu-item-134900",
+                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134901"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                        "tag": "a",
+                                                                        "attributes": {
+                                                                            "href": "./en/consulting/?tabId=descarbonizacaoo-e-esg&subPanelId=sub-panel-descarbonizacaoo-e-esg-1"
+                                                                        },
+                                                                        "text": "Decarbonization and ESG"
+                                                                        },
+                                                                        {
+                                                                            "tag": "ul",
+                                                                            "attributes":{
+                                                                                "class": "sub2"
+                                                                            },
+                                                                            "children":[
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134911",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134912"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=descarbonizacaoo-e-esg&subPanelId=sub-panel-descarbonizacaoo-e-esg-1"
+                                                                                            },
+                                                                                            "text": "Building Decarbonization Strategies"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134922",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134923"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=descarbonizacaoo-e-esg&subPanelId=sub-panel-descarbonizacaoo-e-esg-2"
+                                                                                            },
+                                                                                            "text": "Insertion of Low Carbon Technologies"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes":{
+                                                                                        "id": "menu-item-134933",
+                                                                                        "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134934"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes":{
+                                                                                                "href": "https://www.psr-inc.com/en/consulting/?tabId=descarbonizacaoo-e-esg&subPanelId=sub-panel-descarbonizacaoo-e-esg-3"
+                                                                                            },
+                                                                                            "text": "Clean Energy Certification"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }                                                                           
+                                                                    ]
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
                                                 {
                                                     "tag": "li",
                                                     "attributes": {
-                                                        "id": "menu-item-13471",
-                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-13471"
+                                                        "id": "menu-item-134944",
+                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134945"
                                                     },
                                                     "children": [
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/projetos/"
+                                                            "href": "https://www.psr-inc.com/en/publicacoes/"
                                                         },
-                                                        "text": "Projects"
+                                                        "text": "Publications"
+                                                        },
+                                                        {
+                                                            "tag": "ul",
+                                                            "attributes":{
+                                                                "class": "sub"
+                                                            },
+                                                            "children":[
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes":{
+                                                                        "id": "menu-item-134955",
+                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134956"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                            "tag": "a",
+                                                                            "attributes": {
+                                                                                "href": "https://www.psr-inc.com/en/publicacoes/"                                                                                
+                                                                            },
+                                                                            "text": "Energy Report"
+                                                                        },
+                                                                        {
+                                                                            "tag": "ul",
+                                                                            "attributes": {
+                                                                                "class":"sub2"
+                                                                            },
+                                                                            "children":[
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes": {
+                                                                                        "id": "menu-item-134966",
+                                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134967"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes": {
+                                                                                                "href":"https://www.psr-inc.com/en/publicacoes/"
+                                                                                            },
+                                                                                            "text": "About" 
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "tag": "li",
+                                                                                    "attributes": {
+                                                                                        "id": "menu-item-134977",
+                                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134978"
+                                                                                    },
+                                                                                    "children":[
+                                                                                        {
+                                                                                            "tag": "a",
+                                                                                            "attributes": {
+                                                                                                "href":"https://www.psr-inc.com/en/publicacoes/issues/"
+                                                                                            },
+                                                                                            "text": "Issues" 
+                                                                                        }
+                                                                                    ]                                                                                    
+                                                                                }                                                                                
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes":{
+                                                                        "id": "menu-item-134988",
+                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134989"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                            "tag": "a",
+                                                                            "attributes": {
+                                                                                "href": "https://www.psr-inc.com/en/publicacoes/articles-and-papers/"                                                                                
+                                                                            },
+                                                                            "text":"Scientific Production"
+                                                                        }
+                                                                    ]
+                                                                }                                                                
+                                                            ]
                                                         }
+
+
+
                                                     ]
                                                 },
                                                 {
@@ -517,7 +983,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/noticias/"
+                                                            "href": "./news.html"
                                                         },
                                                         "text": "News"
                                                         }
@@ -527,15 +993,55 @@ function menu(){
                                                     "tag": "li",
                                                     "attributes": {
                                                         "id": "menu-item-13473",
-                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-13473"
+                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-13474"
                                                     },
                                                     "children": [
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./en/contato/"
+                                                            "href": "https://www.psr-inc.com/en/contato/"
                                                         },
-                                                        "text": "Contact"
+                                                        "text": "Contacts"
+                                                        },
+                                                        {
+                                                            "tag": "ul",
+                                                            "attributes":{
+                                                                "class": "sub"
+                                                            },
+                                                            "children":[
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes":{
+                                                                        "id": "menu-item-134750",
+                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134751"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                            "tag":"a",
+                                                                            "attributes":{
+                                                                                "href": "./contact.html"
+                                                                            },
+                                                                            "text": "Contact us" 
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "li",
+                                                                    "attributes":{
+                                                                        "id": "menu-item-134752",
+                                                                        "class": "menu-item menu-item-type-post_type menu-item-object-page menu-item-134753"
+                                                                    },
+                                                                    "children":[
+                                                                        {
+                                                                            "tag":"a",
+                                                                            "attributes":{
+                                                                                "href": "https://www.psr-inc.com/en/work-with-us/"
+                                                                            },
+                                                                            "text": "Work with us" 
+                                                                        }
+                                                                    ]
+                                                                }                                                                
+                                                            ]
                                                         }
                                                     ]
                                                 }
