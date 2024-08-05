@@ -983,7 +983,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./news.html"
+                                                            "href": "./en/noticias/"
                                                         },
                                                         "text": "News"
                                                         }
