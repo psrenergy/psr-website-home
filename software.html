@@ -504,7 +504,7 @@
 
 
 <!--======================================
-        START SUPPORT AREA
+    START SUPPORT AREA
 ======================================-->
 <section class="section-area section--padding bg-image-support">
     <div class="container">
@@ -520,7 +520,25 @@
     </div><!-- end container -->
 </section><!-- end section-area -->
 <!--======================================
-        END SUPPORT AREA
+    END SUPPORT AREA
+======================================-->
+
+
+<!--======================================
+    START POP UP AREA
+======================================-->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img src="IMAGES/psr-user-meeting.png" alt="PSR User Meeting" class="popup-image">
+        <div class="popup-text">
+            <h2><i class="fas fa-calendar-alt"></i> SAVE THE DATE!</h2>
+            <p>Our next user meeting will take place from May 18 to 22, 2025! It will be an incredible and immersive opportunity with developers and clients from all over the world. For more information, please <a href="contact.html">contact us</a>!</p>
+        </div>
+    </div>
+</div>
+<!--======================================
+    END POP UP AREA
 ======================================-->
 
 <!-- theme js files -->
@@ -538,6 +556,24 @@
 <script src="js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var popup = document.getElementById("popup");
+        var closeBtn = document.getElementById("closeBtn");
+
+        // Show the popup when the page loads
+        popup.style.display = "block";
+
+        closeBtn.addEventListener("click", function() {
+            popup.style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
+</script>
 </body>
 </html>
