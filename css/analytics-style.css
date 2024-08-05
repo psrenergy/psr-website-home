@@ -802,17 +802,6 @@ margin-top: 100px !important;
 	opacity: .2;
 	pointer-events: none;
 }
-/*-=========== title-shape =============-*/
-.title-shape {
-	border-bottom: 1px solid rgba(128, 137, 150, 0.1);
-	height: 1px;
-}
-.title-shape span {
-	display: block;
-	width: 50px;
-	height: 1px;
-	background-color: #F68A03;
-}
 /*-=========== spacing =============-*/
 /* Base size for .font-38 */
 .sec-title.font-38 {
@@ -1915,6 +1904,17 @@ margin-top: 100px !important;
 .section-area-sddp-download {
     position: relative;
     background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-sddp-download.jpg);
+    /* background-position: 100% 0; */
+
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+
+.section-area-optgen-download {
+    position: relative;
+    background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-optgen-download.jpg);
     /* background-position: 100% 0; */
 
 	background-position: center center;
