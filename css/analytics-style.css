@@ -1923,6 +1923,17 @@ margin-top: 100px !important;
 	
 }
 
+.section-area-ncp-download {
+    position: relative;
+    background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-ncp-download.jpg);
+    /* background-position: 100% 0; */
+
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+
 /* Classes para seções com imagem de background parcial. */
 /* Está feito para o lado direito, mas é facilmente invertível. Para copiar, trocar a imagem, e os overlays para desktop e mobile */
 .section-area-coral {
