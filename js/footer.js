@@ -28,7 +28,7 @@ footerTag.innerHTML =
 '                </div>' +
 '            </div>' +
 '            <div class="col2">' +
-'                <a href="./landpage.html"><h2>Software</h2></a>' +
+'                <a href="./software.html"><h2>Software</h2></a>' +
 '                <div class="bloco">' +
 '                    <a href="./sddp.html"><h4>Modelling of Energy Systems</h4></a>' +
 '                </div>' +
