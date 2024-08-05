@@ -2783,6 +2783,15 @@ table tbody tr:hover {
 	/* Remove sublinhado ao passar o mouse */
 	color: #fff;
 }
+.btn-off {
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
 /* NEWS */
 /* A classe .container e .row já são definidas no Bootstrap, então garantir que não sobrescreva */
 .container {
