@@ -303,41 +303,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Ajustar órbitas no carregamento inicial
   adjustOrbitsForMobile();
-
-  // Garantir que o pop-up esteja oculto quando a página for carregada
-  var popup = document.getElementById('popupForm');
-  popup.classList.remove('show');
-  popup.style.display = 'none'; // Garantir que o pop-up esteja oculto
-});
-
-document.getElementById('downloadBtn').addEventListener('click', function(event) {
-  event.preventDefault(); // Impedir comportamento padrão do link
-  var popup = document.getElementById('popupForm');
-  popup.style.display = 'flex';
-  setTimeout(function() {
-      popup.classList.add('show'); // Adicionar a classe 'show' para exibir o pop-up
-  }, 10); // Pequeno atraso para garantir a transição
-});
-
-document.querySelector('.close').addEventListener('click', function() {
-  var popup = document.getElementById('popupForm');
-  popup.classList.remove('show'); // Remover a classe 'show' para ocultar o pop-up
-  setTimeout(function() {
-      popup.style.display = 'none';
-  }, 300); // Aguardar a transição antes de ocultar o pop-up
-});
-
-document.getElementById('downloadForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  // Aqui você pode adicionar a lógica para salvar as informações ou enviar para um servidor
-
-  var popup = document.getElementById('popupForm');
-  popup.classList.remove('show'); // Remover a classe 'show' para ocultar o pop-up
-  setTimeout(function() {
-      popup.style.display = 'none';
-  }, 300); // Aguardar a transição antes de ocultar o pop-up
-
-  // Iniciar o download do PDF
-  window.location.href = 'path/to/your/pdf.pdf';
-});
+}
