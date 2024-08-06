@@ -1561,6 +1561,12 @@ margin-top: 100px !important;
 	font-weight: 600;
 	text-align: left;
 }
+
+@media (max-width: 774px) {
+	.card-login h1{			
+		margin-bottom: 10px;
+	}
+}
 /* Estilos para centralizar o conteúdo */
 .card-login .form-group {
     text-align: left; /* Alinha o texto à esquerda */
@@ -4359,6 +4365,7 @@ table tbody tr:hover {
 	  overflow: scroll;
 	  max-width: 325px;
 	}
+
 	header .content-header .nav ul.menu {
 	  display: flex;
 	  flex-direction: column;
