@@ -2341,6 +2341,24 @@ margin-top: 100px !important;
 	margin-bottom: 1px  !important;
 	
 }
+/* Estilo responsivo para os cartões */
+@media (max-width: 767px) {
+    .card-support {
+        margin: 0 auto 20px;
+        max-width: 80%;
+    }
+
+    .card-support-body {
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+.row-mb-mobile {
+	margin-top: 20px;
+}
+
+}
+
 .card-capabilities {
 	display: flex;
 	flex-direction: row;
