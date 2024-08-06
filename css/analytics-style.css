@@ -132,6 +132,22 @@
 .left-0 {
 	left: 0 !important;
 }
+/*========== padding ==========*/
+.pr-0 {
+	padding-right: 0px;
+}
+.pl-0 {
+	padding-left: 0px;
+}
+.pt-0 {
+	padding-top: 0px;
+}
+.pb-0 {
+	padding-bottom: 0px;
+}
+/*========== margin ==========*/
+
+
 /*========== z-index ==========*/
 .z-index-0 {
 	z-index: 0 !important;
