@@ -148,6 +148,23 @@
 /*========== margin ==========*/
 
 
+
+/* MARGIN PARA MOBILE*/
+@media (max-width: 767px) {
+	.mt-20-mobile {
+		margin-top: 20px;
+	}
+	.mb-20-mobile {
+		margin-bottom: 20px;
+	}
+	.mr-20-mobile {
+		margin-right: 20px;
+	}
+	.ml-20-mobile {
+		margin-left: 20px;
+	}
+}
+
 /*========== z-index ==========*/
 .z-index-0 {
 	z-index: 0 !important;
@@ -2368,12 +2385,7 @@ margin-top: 100px !important;
         text-align: center;
     }
 }
-@media (max-width: 767px) {
-.row-mb-mobile {
-	margin-top: 20px;
-}
 
-}
 
 .card-capabilities {
 	display: flex;
