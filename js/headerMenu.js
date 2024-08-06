@@ -999,7 +999,7 @@ function menu(){
                                                         {
                                                         "tag": "a",
                                                         "attributes": {
-                                                            "href": "./contact.html"
+                                                            "href": "https://www.psr-inc.com/en/contact-us/"
                                                         },
                                                         "text": "Contacts"
                                                         },
@@ -1019,7 +1019,7 @@ function menu(){
                                                                         {
                                                                             "tag":"a",
                                                                             "attributes":{
-                                                                                "href": "./contact.html"
+                                                                                "href": "https://www.psr-inc.com/en/contact-us/"
                                                                             },
                                                                             "text": "Contact us" 
                                                                         }
