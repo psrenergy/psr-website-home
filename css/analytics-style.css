@@ -2186,7 +2186,6 @@ margin-top: 100px !important;
 		flex-direction: column;
 		align-items: center;
 		justify-content:flex-start;
-		text-align: center;
 		height: 900px;
 		padding-top: 50px !important;
 	}
@@ -2375,7 +2374,7 @@ margin-top: 100px !important;
 	
 }
 /* Estilo responsivo para os cartões */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .card-support {
         margin: 0 auto 20px;
         max-width: 80%;
@@ -2384,7 +2383,7 @@ margin-top: 100px !important;
     .card-support-body {
         text-align: center;
     }
-}
+} */
 
 
 .card-capabilities {
