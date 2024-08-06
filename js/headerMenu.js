@@ -237,7 +237,7 @@ function menu(){
                                                         {
                                                             "tag": "a",
                                                             "attributes": {
-                                                                "href": "https://www.psr-inc.com/software.html"
+                                                                "href": "https://www.psr-inc.com/software"
                                                             },
                                                             "text": "Software"
                                                         },
@@ -257,7 +257,7 @@ function menu(){
                                                                         {
                                                                             "tag": "a",
                                                                             "attributes": {
-                                                                                "href": "./software.html"
+                                                                                "href": "./software"
                                                                             },
                                                                             "text": "Modelling of Energy Systems"
                                                                         },
