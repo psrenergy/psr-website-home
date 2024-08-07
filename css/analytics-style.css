@@ -2010,13 +2010,38 @@ margin-top: 100px !important;
 
 /* Classes para seções com imagem de background parcial. */
 /* Está feito para o lado direito, mas é facilmente invertível. Para copiar, trocar a imagem, e os overlays para desktop e mobile */
+/* .section-area-coral {
+    position: relative; */
+	/* max-height: 667px; */
+    /* background-image: linear-gradient(to right, #daeae9 50%, #daeae985 100%), url(../images/image-section-coral-2.jpg);
+    background-position: 100% 100%, right center;
+    background-size: 50% 100%, 50% contain;
+    background-repeat: no-repeat; */
+    /* display: flex; */
+    /* align-items: center; */
+/* } */
+
 .section-area-coral {
     position: relative;
-	max-height: 667px;
-    background-image: linear-gradient(to right, #daeae9 30%, #daeae985), url(../images/image-section-coral-2.jpg);
-    background-position: 100% 0;
-    background-size: 50%;
+    /* background-image: linear-gradient(to right, #daeae9 50%, #daeae985 100%); */
+    background-color:#daeae9;
+    background-position: left center; 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.section-area-coral::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, #daeae9 10%, #daeae985 70%), url(../images/image-section-coral-2.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
 }
 
 .text-content-coral {
@@ -2030,14 +2055,19 @@ margin-top: 100px !important;
     .section-area-coral {
         background-position: center bottom;
         background-size: 100%;
-		background-image: linear-gradient(to bottom, #daeae9 70%, #daeae9b0 100%), url(../images/image-section-coral-2.jpg);
+		background-image: linear-gradient(to bottom, #daeae9 50%, #daeae9b0 100%), url(../images/image-section-coral-2.jpg);
     }
+
+	.section-area-coral::after {
+		display: none;
+	}
 
     .text-content-coral {
         padding-right: 0;
 		padding-bottom: 200px;
     }
-}
+} 
+
 
 .section-area-tsl {
     position: relative;
