@@ -1950,6 +1950,38 @@ margin-top: 100px !important;
 		padding-left: 0 !important;
 	}
 }
+/* Para imagens dentro da classe .interface-area */
+.interface-area img {
+	max-width: 100%;
+	height: auto;
+}
+@media (min-width: 992px) {
+	.content-box {
+		margin-right: 75px !important;
+	}
+}
+@media (max-width: 991px) {
+	.interface-area img {
+		height: auto;
+		width: 80%;
+		display: block;
+        margin: 0 auto;
+	}
+	.content-box {
+		padding-left: 0 !important;
+	}
+}
+@media (max-width: 767px) {
+	.interface-area img {
+		height: auto;
+		width: 100%;
+		display: block;
+        margin: 0 auto;
+	}
+	.content-box {
+		padding-left: 0 !important;
+	}
+}
 
 .section-area-sddp-download {
     position: relative;
@@ -2085,7 +2117,7 @@ margin-top: 100px !important;
     z-index: 2;
     padding: 20px;
     box-sizing: border-box;
-    width: 50%;
+    /* kwidth: 50%; */
 }
 
 .overlay-tsl {
