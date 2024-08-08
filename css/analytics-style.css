@@ -1942,10 +1942,9 @@ margin-top: 100px !important;
 	max-width: 100%;
 	height: auto;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
 	.overview-area img {
-		height: auto;
-		width: 100%;
+		display: none;
 	}
 	.about-content-box {
 		padding-left: 0 !important;
