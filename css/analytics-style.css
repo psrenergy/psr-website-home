@@ -1910,18 +1910,6 @@ margin-top: 100px !important;
 	/* Ensures no overflow from the line */
 }
 
-.section-title-model{
-	font-size:40px;
-	color: #002846;
-}
-.section-title-model.gold{
-	font-size:40px;
-	color: #C3B191;
-}
-.section-title-model em{
-	color: #2A838A;
-	font-style: normal !important;
-}
 .integration-body {
 	text-align: left !important;
 	font-size: 20px !important;
@@ -1983,60 +1971,28 @@ margin-top: 100px !important;
 	}
 }
 
-.section-area-sddp-download {
+/* Left to right gradient cover backgrounds */
+.section-gradient {
     position: relative;
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-gradient.sddp-download {
     background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-sddp-download.jpg);
-    /* background-position: 100% 0; */
-
-	background-position: center center;
-	background-size: cover;
-    background-repeat: no-repeat;
-	
 }
-
-.section-area-optgen-download {
-    position: relative;
+.section-gradient.optgen-download {
     background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-optgen-download.jpg);
-    /* background-position: 100% 0; */
-
-	background-position: center center;
-	background-size: cover;
-    background-repeat: no-repeat;
-	
 }
-
-.section-area-ncp-download {
-    position: relative;
+.section-gradient.ncp-download {
     background-image: linear-gradient(to right,#daeae9 50%, #daeae985 100%), url(../images/analytics-ncp-download.jpg);
-    /* background-position: 100% 0; */
-
-	background-position: center center;
-	background-size: cover;
-    background-repeat: no-repeat;
-	
 }
-
-.section-area-tsl-download {
-    position: relative;
-    background-image: linear-gradient(to right,#daeae9 40%, #daeae985 100%), url(../images/analytics-tsl-download.jpg);
-    /* background-position: 100% 0; */
-
-	background-position: center center;
-	background-size: cover;
-    background-repeat: no-repeat;
-	
+.section-gradient.tsl-download {
+	background-image: linear-gradient(to right,#daeae9 40%, #daeae985 100%), url(../images/analytics-tsl-download.jpg);
 }
-
-.section-area-support-kh {
-    position: relative;
+.section-gradient.support-kh {
     background-image: linear-gradient(to right,#daeae9 40%, #daeae985 100%), url(../images/support-kh-background.jpg);
-    /* background-position: 100% 0; */
 	background-position: center bottom;
-	background-size: cover;
-	/* background-position: right center;
-	background-size:contain; */
-    background-repeat: no-repeat;
-	
 }
 
 /* Classes para seções com imagem de background parcial. */
@@ -2052,6 +2008,7 @@ margin-top: 100px !important;
     /* align-items: center; */
 /* } */
 
+/* Left to right (top to bottom in smaller screens) gradient background */
 .section-area-coral {
     position: relative;
     /* background-image: linear-gradient(to right, #daeae9 50%, #daeae985 100%); */
